@@ -70,7 +70,7 @@ class Voiture {
 -- $maVariable [la variable est déclarée mais n'a pas de valeur initiale, donc elle est non définie : sa valeur est considérée comme NULL]
 -- $mavariable2 = NULL [on définit explicitement la variable comme NULL]
 
-* un objet peut contenir des propriétés et des méthodes.
+** un objet peut contenir des propriétés et des méthodes.
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
