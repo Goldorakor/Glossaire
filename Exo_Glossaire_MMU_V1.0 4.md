@@ -84,7 +84,7 @@ Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux
 
 Les "tableaux indexés" sont des tableaux dont les éléments sont indexés par des nombres. Par défaut, les indices commencent à 0.
 
-Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut npas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
+Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut pas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
 
 Les "tableaux multidimensionnels" sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.
 
