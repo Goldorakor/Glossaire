@@ -59,7 +59,7 @@ Les différents types que l'on peut associer à une variable en PHP sont :
 - un nombre à virgule (float). Exemple : $float = 3.20
 - un booléen (boolean). Exemple : Exemple : $bool = true ou $bool = false
 - un tableau (array). Exemple : $tableau = [ "élément1" , 4 , 4.20 , "élément5", $variable ] -> un tableau peut contenir toute sorte de choses
-- un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] : 
+- un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe Voiture, on a dû définir la classe Voiture au préalable] : 
 class Voiture {
     // voici les propriétés de la classe que nous créeons.
     public $marque;
