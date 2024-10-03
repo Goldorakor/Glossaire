@@ -24,9 +24,11 @@ Laragon inclut le serveur web Apache et la base de données MySQL (visibles sur 
 
 XAMPP permet également de créer un environnement de développement local pour PHP. C'est une alernative à Laragon.
 
+
 2.	Qu’est-ce qu’un algorithme ?
 
 Un algorithme est une succession finie d'instructions claires et de règles bien définies, à réaliser pour résoudre un problème ou effectuer une tâche complexe. On doit garder en mémoire qu'il doit être efficace (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
+
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
 
@@ -34,9 +36,11 @@ Une variable est un emplacement mémoire qui associe un nom à une valeur. Elle 
 
 En PHP, une variable est préfixée par le symbole $.
 
+
 4.	Qu’est-ce que la portée d’une variable ?
 
 La portée d'une variable détermine où elle est accessible dans le code. Une variable définie à l'intérieur d'une fonction n'est en général pas accessible en dehors de cette fonction. 
+
 
 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
 
@@ -46,6 +50,7 @@ Les différences sont :
 - la constante n'est pas déclarée avec le symbole $.
 - la constante est souvent écrite en majuscule.
 - la constante ne sert pas à stocker une valeur (une information) qui peut varier pendant l'exécution du programme.
+
 
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
 
@@ -72,6 +77,7 @@ class Voiture {
 
 ** un objet peut contenir des propriétés et des méthodes.
 
+
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
 Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux associatifs et les tableaux multidimensionnels.
@@ -81,6 +87,7 @@ Les "tableaux indexés" sont des tableaux dont les éléments sont indexés par 
 Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut npas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
 
 Les "tableaux multidimensionnels" sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.
+
 
 9.	Quelles sont les différentes structures de contrôle qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles.
 
@@ -164,11 +171,13 @@ fin fonction
 La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : strlen (). Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.
 ATTENTION : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction mb_strlen().
 
+
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP.
 
 Une session en PHP est un mécanisme qui permet de stocker des données "utilisateur" sur le serveur afin de les conserver entre différentes requêtes HTTP. 
 La fonction session_start() permet de démarrer une session en PHP.
 Sur un site marchand, la session permet de conserver le contenu du panier d'achat jusqu'à la finalisation de la commande.
+
 
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP.
 
@@ -184,7 +193,9 @@ Si le fichier ne peut pas être inclus, "include" génère un avertissement et l
 
 En résumé, choisissez "require" lorsque le fichier est indispensable au fonctionnement du script et "include" lorsque le fichier est optionnel. Les variantes "require_once" et "include_once" permettent d'éviter les inclusions multiples, garantissant que le contenu du fichier est exécuté une seule fois.
 
+
 14.	Comment effectuer une redirection en PHP ?
+
 
 15.	Définir la partie « front-end » et « back-end » d’une application.
 
@@ -197,6 +208,7 @@ La partie back-end d'une application contient toute la machinerie cachée qui pe
 - PHP pour aller envoyer des requêtes au serveur.
 Mon navigateur ne gère pas correctement le langage PHP. En plus du logiciel VSCode, je vais installer Laragon, qui va me fournir les outils adaptés au besoin du développement en PHP.
 
+
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
 Le contrôle de version est un système qui enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet. 
@@ -208,16 +220,19 @@ Le contrôle de version est un système qui enregistre les modifications apport�
 
 Git est un logiciel de contrôle de version très populaire, utilisé pour la gestion de code source. Utilisé avec la plateforme en ligne GitHub, il permet en plus une gesion décentralisée.
 
+
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
 
 Un CMS (Content Management System), aussi appelé système de gestion de contenu, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
 Deux exemples de CMS : WordPress et Shopify.
 
+
 ## Front-end
 18.	Définir HTML
 
 HTML (HyperText Markup Language) est un langage de balisage qui permet d'ajouter du contenu et de le structurer, pour la création d'une page web. Il permet entre autres de créer des liens hypertextes qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
+
 
 19.	Définir CSS
 
@@ -226,6 +241,7 @@ CSS (Cascading Style Sheets) est un langage informatique utilisé pour contrôle
 ATTENTION : CSS peut être intégré dans un document HTML comme suit : En liant une feuille de style externe via une balise <link> dans la section <head>.
 - <link rel="stylesheet" href="styles.css">
 C'est la méthode la plus propre pour intégrer du CSS dans un document HTML et c'est la méthode à utiliser par la suite. Le CSS est rangé proprement dans un fichier CSS à part.
+
 
 20.	Définir Javascript
 
@@ -297,6 +313,7 @@ Exemple de code pour une balise <a> avec un attribut download :
    Télécharger notre brochure
 </a>
 
+
 25.	Qu’est-ce qu’une requête AJAX ?
 
 
@@ -313,9 +330,11 @@ Le deuxième s'appelle le sélecteur d'identifiant qui cible un élément unique
     background-color: yellow; /* L'élément avec l'id "mon-id" aura un fond jaune */
 }
 
+
 27.	Définir le responsive design
 
 Le responsive design est une approche de conception web qui vise à créer des sites et des applications capables de s'adapter à une variété de tailles d'écran.
+
 
 28.	Qu’est-ce que le templating ?
 
@@ -337,6 +356,7 @@ Une instruction pour appliquer des styles différents en fonction des caractéri
         background-color: lightblue; /* Applique un fond bleu clair sur les petits écrans */
     }
 }
+
 
 32.	Qu’est-ce qu’un pseudo-élément en CSS ?
 
@@ -365,6 +385,7 @@ p::first-letter {
     float: left; /* Permet de créer un effet de lettrine */
 }
 
+
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent.
 
 
@@ -379,6 +400,7 @@ p::first-letter {
 
 L'UI Design se concentre sur l'apparence et la présentation de l'interface alors que l'UX Design se concentre sur l'expérience globale de l'utilisateur.
 Pour moi, une UX Design réussie nécessite forcément une UI Design réussie, l'inverse n'est pas vraie : une UI Design réussie n'engendre pas forcément une UX Design réussie, si par ailleurs les fonctionnalités sont mauvaises.
+
 
 36.	Qu’est-ce qu’un wireframe ?
 
