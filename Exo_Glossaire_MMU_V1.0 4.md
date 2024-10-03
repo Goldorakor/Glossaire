@@ -18,7 +18,7 @@
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte.
 
 Il faut installer un serveur local sur son ordinateur, qui pourra interpréter le code PHP car le navigateur n'en est pas capable.
-Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script interagit avec une base de données(un choix fréquent est MySQL).
+Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script interagit avec une base de données (un choix fréquent est MySQL).
 
 Laragon inclut le serveur web Apache et la base de données MySQL (visibles sur la fenêtre menu) et propose plusieurs versions de PHP. C'est un environnement préconfiguré qui inclut ce dont on a besoin.
 
