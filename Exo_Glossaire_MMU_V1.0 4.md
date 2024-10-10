@@ -14,7 +14,7 @@
 
 
 ## Général
-
+<span style="color:red;">Texte en rouge</span>
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte.
 
 Il faut installer un serveur local sur son ordinateur, qui pourra interpréter le code PHP car le navigateur n'en est pas capable.
