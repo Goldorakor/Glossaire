@@ -59,6 +59,75 @@ ___
 
 6.	Qu’est-ce qu’une superglobale, combien en existe-t-il ? Donner un exemple d’utilisation.
 
+Une superglobale est une variable (variable prédéfinie) qui est toujours accessible, peu importe le contexte dans lequel elle est utilisée. Contrairement aux variables normales, qui ont une portée limitée, les superglobales sont accessibles de n'importe où dans le script.
+
+Il existe plusieurs superglobales en PHP :
+1. $GLOBALS : Contient toutes les variables globales.
+2. $_SERVER : Contient des informations sur les en-têtes, chemins, et emplacements des scripts.
+3. $_REQUEST : Contient les données envoyées via les méthodes GET et POST.
+4. $_POST : Contient les données envoyées via la méthode POST.
+5. $_GET : Contient les données envoyées via la méthode GET.
+6. $_FILES : Contient des informations sur les fichiers téléchargés via le script.
+7. $_COOKIE : Contient les cookies envoyés par le client.
+8. $_SESSION : Contient les variables de session.
+
+Une superglobale en PHP peut être vue comme un tableau associatif.
+
+Exemple d'utilisation de la superglobale $_POST, à étudier pour une meilleure compréhension :
+
+#### Un formulaire HTML :
+```
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <form action="traitement.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
+```
+
+#### Le fichier de traitement 'traitement.php'
+```
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $nom = htmlspecialchars($_POST['nom']);
+    $email = htmlspecialchars($_POST['email']);
+    
+    // Afficher les données
+    echo "Nom : " . $nom . "<br>";
+    echo "Email : " . $email;
+}
+?>
+```
+
+#### Explications :
+
+Formulaire HTML :
+
+    Le formulaire envoie les données à traitement.php en utilisant la méthode POST.
+
+Traitement en PHP :
+
+    Dans traitement.php, nous vérifions si la requête est de type POST.
+    Nous utilisons $_POST pour accéder aux valeurs des champs nom et email.
+    htmlspecialchars() est utilisé pour échapper les caractères spéciaux afin d'éviter les attaques XSS.
+
+Affichage :
+
+    Les données du formulaire sont ensuite affichées à l'écran.
+    
 ___
 
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
@@ -70,12 +139,14 @@ Les différents types que l'on peut associer à une variable en PHP sont :
 - un booléen (boolean). Exemple : Exemple : $bool = true ou $bool = false
 - un tableau (array). Exemple : $tableau = [ "élément1" , 4 , 4.20 , "élément5", $variable ] -> un tableau peut contenir toute sorte de choses
 - un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] :  
+```
 class Voiture {  
     // voici les propriétés de la classe que nous créeons :  
     public $marque;  
     public $modèle;  
     pblic $couleur;  
 }  
+```
 
 -  une variable sans valeur. Exemple : 
     - $maVariable [la variable est déclarée mais n'a pas de valeur initiale, donc elle est non définie : sa valeur est considérée comme NULL]
@@ -114,7 +185,6 @@ sinon
     faire autre chose  
 fin si  
 ```
-
 
 3. switch :  
 ```
@@ -266,13 +336,13 @@ ___
 
 ## Front-end
 
-18.	Définir HTML
+18.	Définir HTML.
 
 HTML (HyperText Markup Language) est un langage de balisage qui permet d'ajouter du contenu et de le structurer, pour la création d'une page web. Il permet entre autres de créer des liens hypertextes qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
 
 ___
 
-19.	Définir CSS
+19.	Définir CSS.
 
 CSS (Cascading Style Sheets) est un langage informatique utilisé pour contrôler l'apparence visuelle d'une page web. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage pour styliser et mettre en forme sa page web. Il s'utilise avec d'autres langages informatiques.
 
@@ -282,7 +352,7 @@ C'est la méthode la plus propre pour faire interagir du code CSS et du code HTM
 
 ___
 
-20.	Définir Javascript
+20.	Définir Javascript.
 
 Je n'utilise pas encore ce langage informatique. C'est l'un des 3 piliers du développement web, avec HMTL et CSS. 
 
@@ -302,31 +372,41 @@ Un sélecteur CSS est un élément qui permet de cibler des éléments HTML spé
 On notera comme différents sélecteurs :
 
 - le sélecteur de type qui cible tous les éléments d'un type particulier (balise). (je connais)  
+```
 p {  
     color: blue; /* Tous les paragraphes seront bleus */  
 }  
+```
 
 - le sélecteur de classe qui cible tous les éléments ayant une classe spécifique, préfixée par un point (.). (je connais)  
+```
 .mon-style {  
     font-weight: bold; /* Tous les éléments avec la classe "mon-style" seront en gras */  
 }  
+```
 
 - le sélecteur d'identifiant qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse (#). (je connais)  
+```
 #mon-id {  
     background-color: yellow; /* L'élément avec l'id "mon-id" aura un fond jaune */  
 }  
+```
 
 - le sélecteur d'attribut qui cible les éléments en fonction de leurs attributs ou de leurs valeurs d'attribut. (jamais utilisé)  
+```
 a[href] {  
     text-decoration: none; /* Tous les liens avec un attribut href n'auront pas de soulignement */  
 }  
+```
 
 - le sélecteur combiné qui combine plusieurs sélecteurs pour cibler des éléments en fonction de leur relation. Trop compliqué pour moi, je ne pense pas l'utiliser pour le moment. (jamais utilisé)  
 
 - le sélecteur pseudo-classe qui cible des éléments dans un état particulier. Peut être super utile pour des effets au survol de la souris par exemple. (jamais utilisé)  
+```
 a:hover {  
     color: green; /* Le lien deviendra vert au survol */  
 }  
+```
 
 - le sélecteur pseudo-élément qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser. (jamais utilisé)  
 p::first-line {  
@@ -417,27 +497,35 @@ ___
 En langage CSS, un pseudo-élément est un mot-clé (before, after, first-line, first-letter, etc) qui permet de sélectionner et de styliser une partie spécifique d'un élément HTML. Il ne cible pas des éléments entiers comme les sélecteurs classiques le font mais il applique des styles à des sous-éléments virtuels sans avoir à ajouter des éléments HTML supplémentaires. Les pseudo-éléments sont préfixés par deux deux-points (::), ce qui les distingue des pseudo-classes (comme :hover ou :focus, qui utilisent un seul deux-points). En conclusion, les pseudo-éléments sont un outil puissant en CSS pour styliser des parties spécifiques d'un élément sans modifier le HTML.
 
 Exemple 01 : ::before, qui insère du contenu avant le contenu d'un élément sélectionné.
+```
 p::before {
     content: "Note : "; /* Ajoute "Note : " avant chaque paragraphe */
     font-weight: bold;
 }
+```
 
 Exemple 02 : ::after, qui insère du contenu après le contenu d'un élément sélectionné.
+```
 p::after {
     content: " (fin)"; /* Ajoute " (fin)" après chaque paragraphe */
     font-style: italic;
 }
+```
 
 Exemple 03 : ::first-line, qui cible la première ligne de texte d'un élément.
+```
 p::first-line {
     font-weight: bold; /* La première ligne de tous les paragraphes sera en gras */
 }
+```
 
 Exemple 04 : ::first-letter, qui cible la première lettre d'un élément.
+```
 p::first-letter {
     font-size: 2em; /* Agrandit la première lettre de chaque paragraphe */
     float: left; /* Permet de créer un effet de lettrine */
 }
+```
 
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent.
 
@@ -731,15 +819,15 @@ ___
 
 ___
 
-98.	Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement.
+98. Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement.
 
 ___
 
-99.	A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
+99. A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
 
 ___
 
-100.	Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
+100.    Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
 
 ___
 
