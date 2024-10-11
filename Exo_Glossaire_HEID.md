@@ -176,9 +176,9 @@ ___
 
 Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux associatifs et les tableaux multidimensionnels.
 
-- Les "tableaux indexés" sont des tableaux dont les éléments sont indexés par des nombres. Par défaut, les indices commencent à 0.
-- Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut pas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
-- Les "tableaux multidimensionnels" sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.
+- Les **tableaux indexés** sont des tableaux dont les éléments sont indexés par des nombres. Par défaut, les indices commencent à 0.
+- Les **tableaux associatifs**  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut pas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
+- Les **tableaux multidimensionnels** sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.
 
 ___
 
@@ -288,7 +288,7 @@ ___
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP.
 
 Une session en PHP est un mécanisme qui permet de stocker des données "utilisateur" sur le serveur afin de les conserver entre différentes requêtes HTTP. 
-La fonction session_start() permet de démarrer une session en PHP.
+La **fonction session_start()** permet de démarrer une session en PHP.
 
 Sur un site marchand, la session permet de conserver le contenu du panier d'achat jusqu'à la finalisation de la commande.
 
@@ -302,11 +302,11 @@ ___
 
 Ces instructions sont utilisées pour inclure le contenu d'un fichier dans un autre fichier. Mais elles présentent des différences en terme de comportement et d'utilisation.
 
-Si le fichier spécifié ne peut pas être inclus, "require" génère une erreur fatale et arrête l'exécution du script : si le fichier est essentiel pour le fonctionnement du programme, l'utilisation de "require" est donc appropriée.
+Si le fichier spécifié ne peut pas être inclus, **require** génère une erreur fatale et arrête l'exécution du script : si le fichier est essentiel pour le fonctionnement du programme, l'utilisation de **require** est donc appropriée.
 
-Si le fichier ne peut pas être inclus, "include" génère un avertissement et le script continue à s'exécuter. Cela peut être utile si le fichier est optionnel ou si vous voulez que le programme continue même en cas d'erreur.
+Si le fichier ne peut pas être inclus, **include** génère un avertissement et le script continue à s'exécuter. Cela peut être utile si le fichier est optionnel ou si vous voulez que le programme continue même en cas d'erreur.
 
-En résumé, choisissez "require" lorsque le fichier est indispensable au fonctionnement du script et "include" lorsque le fichier est optionnel. Les variantes "require_once" et "include_once" permettent d'éviter les inclusions multiples, garantissant que le contenu du fichier est exécuté une seule fois.
+En résumé, choisissez **require** lorsque le fichier est indispensable au fonctionnement du script et **include** lorsque le fichier est optionnel. Les variantes **require_once** et **include_once** permettent d'éviter les inclusions multiples, garantissant que le contenu du fichier est exécuté une seule fois.
 
 14.	Comment effectuer une redirection en PHP ?
 
@@ -314,14 +314,14 @@ ___
 
 15.	Définir la partie « front-end » et « back-end » d’une application.
 
-La partie front-end d'une application contient toute la partie visible par l'utilisateur. Elle contient donc la partie "contenu informatif du site" et la partie "mise en forme du site". Les langages associés à cette partie sont le HTML et le CSS.
+La partie **front-end** d'une application contient toute la partie visible par l'utilisateur. Elle contient donc la partie "contenu informatif du site" et la partie "mise en forme du site". Les langages associés à cette partie sont le HTML et le CSS.
 
 - HTML pour fournir du contenu et le structurer.
 - CSS pour la mise en forme et la gestion graphique du site.
 
 Mon navigateur gère parfaitement l'affichage du front-end et je peux développer sans outil particulier. Le logiciel VSCode fait très bien le travail demandé.
 
-La partie back-end d'une application contient toute la machinerie cachée qui permet un bon fonctionnement de mon application. Le langage associé à cette partie est le PHP (en ce qui me concerne).
+La partie **back-end** d'une application contient toute la machinerie cachée qui permet un bon fonctionnement de mon application. Le langage associé à cette partie est le PHP (en ce qui me concerne).
 
 - PHP pour aller envoyer des requêtes au serveur.
 
@@ -344,9 +344,11 @@ ___
 
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
 
-Un CMS (Content Management System), aussi appelé système de gestion de contenu, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
+Un CMS (**Content Management System**), aussi appelé système de gestion de contenu, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
-Deux exemples de CMS : WordPress et Shopify.
+Deux exemples de CMS : 
+- WordPress
+- Shopify.
 
 ___
 
@@ -354,16 +356,17 @@ ___
 
 18.	Définir HTML.
 
-HTML (HyperText Markup Language) est un langage de balisage qui permet d'ajouter du contenu et de le structurer, pour la création d'une page web. Il permet entre autres de créer des liens hypertextes qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
+HTML (**HyperText Markup Language**) est un langage de balisage qui permet d'ajouter du contenu et de le structurer, pour la création d'une page web. Il permet entre autres de créer des liens hypertextes qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
 
 ___
 
 19.	Définir CSS.
 
-CSS (Cascading Style Sheets) est un langage informatique utilisé pour contrôler l'apparence visuelle d'une page web. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage pour styliser et mettre en forme sa page web. Il s'utilise avec d'autres langages informatiques.
+CSS (**Cascading Style Sheets**) est un langage informatique utilisé pour contrôler l'apparence visuelle d'une page web. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage pour styliser et mettre en forme sa page web. Il s'utilise avec d'autres langages informatiques.
 
-*ATTENTION* : un fichier CSS peut être couplé à un fichier HTML via une balise <link> dans la section '<head>' du fichier HTML.  
-- '<link rel="stylesheet" href="styles.css">'  
+*ATTENTION* : un fichier CSS peut être couplé à un fichier HTML via une balise `<link>` dans la section `<head>` du fichier HTML.  
+- `<link rel="stylesheet" href="styles.css">` 
+
 C'est la méthode la plus propre pour faire interagir du code CSS et du code HTML et nous l'utiliserons par la suite. Le code CSS est stocké proprement dans un fichier CSS distinct.
 
 ___
@@ -384,47 +387,47 @@ ___
 
 23.	Qu’est-ce qu’un sélecteur CSS ?
 
-Un sélecteur CSS est un élément qui permet de cibler des éléments HTML spécifiques pour leur appliquer des styles. Les sélecteurs CSS sont des outils puissants qui permettent de cibler des éléments HTML pour appliquer des styles de manière précise et flexible.  
+Un **sélecteur CSS** est un élément qui permet de cibler des éléments HTML spécifiques pour leur appliquer des styles. Les sélecteurs CSS sont des outils puissants qui permettent de cibler des éléments HTML pour appliquer des styles de manière précise et flexible.  
 On notera comme différents sélecteurs :
 
-- le sélecteur de type qui cible tous les éléments d'un type particulier (balise). (je connais)  
+- le **sélecteur de type** qui cible tous les éléments d'un type particulier (balise). (je connais)  
 ```
 p {  
     color: blue; /* Tous les paragraphes seront bleus */  
 }  
 ```
 
-- le sélecteur de classe qui cible tous les éléments ayant une classe spécifique, préfixée par un point (.). (je connais)  
+- le **sélecteur de classe** qui cible tous les éléments ayant une classe spécifique, préfixée par un point (.). (je connais)  
 ```
 .mon-style {  
     font-weight: bold; /* Tous les éléments avec la classe "mon-style" seront en gras */  
 }  
 ```
 
-- le sélecteur d'identifiant qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse (#). (je connais)  
+- le **sélecteur d'identifiant** qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse (#). (je connais)  
 ```
 #mon-id {  
     background-color: yellow; /* L'élément avec l'id "mon-id" aura un fond jaune */  
 }  
 ```
 
-- le sélecteur d'attribut qui cible les éléments en fonction de leurs attributs ou de leurs valeurs d'attribut. (jamais utilisé)  
+- le **sélecteur d'attribut** qui cible les éléments en fonction de leurs attributs ou de leurs valeurs d'attribut. (jamais utilisé)  
 ```
 a[href] {  
     text-decoration: none; /* Tous les liens avec un attribut href n'auront pas de soulignement */  
 }  
 ```
 
-- le sélecteur combiné qui combine plusieurs sélecteurs pour cibler des éléments en fonction de leur relation. Trop compliqué pour moi, je ne pense pas l'utiliser pour le moment. (jamais utilisé)  
+- le **sélecteur combiné** qui combine plusieurs sélecteurs pour cibler des éléments en fonction de leur relation. Trop compliqué pour moi, je ne pense pas l'utiliser pour le moment. (jamais utilisé)  
 
-- le sélecteur pseudo-classe qui cible des éléments dans un état particulier. Peut être super utile pour des effets au survol de la souris par exemple. (jamais utilisé)  
+- le **sélecteur pseudo-classe** qui cible des éléments dans un état particulier. Peut être super utile pour des effets au survol de la souris par exemple. (jamais utilisé)  
 ```
 a:hover {  
     color: green; /* Le lien deviendra vert au survol */  
 }  
 ```
 
-- le sélecteur pseudo-élément qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser. (jamais utilisé)  
+- le **sélecteur pseudo-élément** qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser. (jamais utilisé)  
 ```
 p::first-line {  
     font-weight: bold; /* La première ligne de tous les paragraphes sera en gras */  
@@ -435,16 +438,16 @@ ___
 
 24.	Quelle balise HTML permet de créer un lien hypertexte ?
 
-La balise qui permet de créer un lien hypertexte est la balise '<a></a>'.
-Exemple : '<a href="https://www.example.com">Visitez notre site</a>'
+La balise qui permet de créer un lien hypertexte est la balise `<a></a>`.
+Exemple : `<a href="https://www.example.com">Visitez notre site</a>`
 
-#### attributs de la balise '<a>' :
+#### attributs de la balise `<a>` :
 - href : obligatoire, il spécifie l'URL de la page vers laquelle renvoie le lien.
 - target : facultatif, il spécifie comment ouvrir le lien. target="_blank" ouvre le lein dans un nouvel onglet ou une nouvelle fenêtre alors que target="_self" ouvre le lien dans le même onglet.
 - title : fournit des informations supplémentaires sur le lien. Ce texte s'affiche généralement en tant qu'info-bulle lorsque l'utilisateur survole le lien.
 - download : indique que le lien doit être traité comme un téléchargement. Si cet attribut est présent, le lien déclenche le téléchargement du fichier lié au lieu de naviguer vers celui-ci.
 
-Exemple de code pour une balise '<a>' avec un attribut download :
+Exemple de code pour une balise `<a>` avec un attribut download :
 ```
 <a href="https://www.example.com" 
    target="_blank" 
