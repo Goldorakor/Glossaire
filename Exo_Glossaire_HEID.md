@@ -106,15 +106,18 @@ si (condition) alors
 fin si 
 ``` 
 
-2. if ... else :  ```
+2. if ... else :  
+```
 si (condition) alors  
     faire quelque chose  
 sinon  
     faire autre chose  
-fin si  ```
+fin si  
+```
 
 
 3. switch :  
+```
 choix variable  
     cas valeur1 :  
         faire quelque chose  
@@ -123,30 +126,37 @@ choix variable
     par défaut :  
         faire une autre chose   
 fin choix  
+```
 
 
 #### Il y a les structures de répétition (les boucles) qui permettent de répéter un bloc de code plusieurs fois.
 
 1. while :  
+```
 tant que (condition) faire  
     faire quelque chose  
 fin tant que  
+```
 
 La condition est vérifiée avant chaque itération.  
 Elle est généralement utilisée lorsque le nombre d'itérations n'est pas connu à l'avance et dépend d'une condition dynamique.  
 
 2. for : 
+```
 pour i de 1 à 10 faire  
     faire quelque chose  
 fin pour  
+```
 
 L'initialisation, la condition et l'incrément sont généralement définis dans la même ligne.  
 Elle est souvent utilisée lorsque le nombre d'itérations est connu à l'avance.  
 
 3. do ... while :  
+```
 faire  
     faire quelque chose  
-tant que (condition)  
+tant que (condition) 
+``` 
 
 Le bloc de code est exécuté au moins une fois, car la condition est vérifiée après l'exécution du code.  
 Elle est utile lorsque vous souhaitez garantir qu'une action est effectuée au moins une fois, indépendamment de la condition.  
@@ -155,31 +165,37 @@ Elle est utile lorsque vous souhaitez garantir qu'une action est effectuée au m
 #### Il y a les structures de saut qui permettent de modifier le flux d'exécution en sautant à d'autres parties du code.
 
 1. break (utilisé pour sortir d'une boucle ou d'une structure de contrôle) : 
+```
 pour i de 1 à 10 faire  
     si (i = 5) alors  
         sortir  
     fin si  
 fin pour  
+```
 
 2. continue (utilisé pour sauter à l'itération suivante d'une boucle) : 
+```
 pour i de 1 à 10 faire  
     si (i est pair) alors  
         continuer  
     fin si  
     faire quelque chose  
-fin pour  
+fin pour 
+``` 
 
-3. return (utilisé pour sortir d'une fonction et éventuellement renvoyer une valeur) : 
+3. return (utilisé pour sortir d'une fonction et éventuellement renvoyer une valeur) :
+``` 
 fonction somme(a, b)  
     retourner a + b  
 fin fonction   
+```
 
 ___
 
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
 La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : *strlen ()*. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
-ATTENTION : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction *mb_strlen()*.
+*ATTENTION* : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction *mb_strlen()*.
 
 ___
 
