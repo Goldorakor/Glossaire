@@ -106,14 +106,13 @@ si (condition) alors
 fin si 
 ``` 
 
-2. if ... else :  
-```
+2. if ... else :  ```
 si (condition) alors  
     faire quelque chose  
 sinon  
     faire autre chose  
-fin si  
-```
+fin si  ```
+
 
 3. switch :  
 choix variable  
