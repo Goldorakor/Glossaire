@@ -130,6 +130,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 **En images pour bien comprendre :**
 
+![Les détails du formulaire HTML](images/05_code_pour_exemple.jpg)
+
+![Les détails du formulaire HTML](images/06_explication_code_pour_exemple.jpg)
+
+**Dans les détails :**
+
 ![Les détails du formulaire HTML](images/01_details_du_formulaire.jpg)
 
 ![Le traitement dans traitement.php](images/02_traitement_dans_traitement_php.jpg)
@@ -274,8 +280,8 @@ ___
 
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
-La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : *strlen ()*. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
-*ATTENTION* : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction *mb_strlen()*.
+La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : **strlen ()**. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
+*ATTENTION* : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction **mb_strlen()**.
 
 ___
 
@@ -356,7 +362,7 @@ ___
 
 CSS (Cascading Style Sheets) est un langage informatique utilisé pour contrôler l'apparence visuelle d'une page web. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage pour styliser et mettre en forme sa page web. Il s'utilise avec d'autres langages informatiques.
 
-ATTENTION : un fichier CSS peut être couplé à un fichier HTML via une balise <link> dans la section '<head>' du fichier HTML.  
+*ATTENTION* : un fichier CSS peut être couplé à un fichier HTML via une balise <link> dans la section '<head>' du fichier HTML.  
 - '<link rel="stylesheet" href="styles.css">'  
 C'est la méthode la plus propre pour faire interagir du code CSS et du code HTML et nous l'utiliserons par la suite. Le code CSS est stocké proprement dans un fichier CSS distinct.
 
@@ -419,9 +425,11 @@ a:hover {
 ```
 
 - le sélecteur pseudo-élément qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser. (jamais utilisé)  
+```
 p::first-line {  
     font-weight: bold; /* La première ligne de tous les paragraphes sera en gras */  
 }  
+```
 
 ___
 
