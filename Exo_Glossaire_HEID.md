@@ -114,20 +114,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 #### Explications :
 
-Formulaire HTML :
+**Formulaire HTML :**
 
-    Le formulaire envoie les données à traitement.php en utilisant la méthode POST.
+- Le formulaire envoie les données à traitement.php en utilisant la méthode POST.
 
-Traitement en PHP :
+**Traitement en PHP :**
 
-    Dans traitement.php, nous vérifions si la requête est de type POST.
-    Nous utilisons $_POST pour accéder aux valeurs des champs nom et email.
-    htmlspecialchars() est utilisé pour échapper les caractères spéciaux afin d'éviter les attaques XSS.
+- Dans traitement.php, nous vérifions si la requête est de type POST.
+- Nous utilisons $_POST pour accéder aux valeurs des champs nom et email.
+- htmlspecialchars() est utilisé pour échapper les caractères spéciaux afin d'éviter les attaques XSS.
 
-Affichage :
+**Affichage :**
 
-    Les données du formulaire sont ensuite affichées à l'écran.
-    
+- Les données du formulaire sont ensuite affichées à l'écran.
+
+**En images pour bien comprendre :**
+
+![Les détails du formulaire HTML](images/01_details_du_formulaire.jpg)
+
+![Le traitement dans traitement.php](images/02_traitement_dans_traitement_php.jpg)
+
+![La récupération des données](images/03_recuperation_des_donnees.jpg)
+
+![Conclusion](images/04_conclusion.jpg)
+
 ___
 
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
