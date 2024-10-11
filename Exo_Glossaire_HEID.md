@@ -15,10 +15,10 @@
 
 ## Général
 
-1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte.
+1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
 Il faut installer un serveur local sur son ordinateur, qui pourra interpréter le code PHP car le navigateur n'en est pas capable.
-Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script intergait avec une base de données(un choix fréquent est MySQL).
+Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script intergait avec une base de données (un choix fréquent est MySQL).
 
 Laragon inclut le serveur web Apache et la base de données MySQL (visibles sur la fenêtre menu) et propose plusieurs versions de PHP. C'est un environnement préconfiguré qui inclut ce dont on a besoin.
 
@@ -61,7 +61,7 @@ ___
 
 ___
 
-7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
+7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
 
 Les différents types que l'on peut associer à une variable en PHP sont :
 - une chaine de caracères (string). Exemple : $chaine = "Bonjour"
@@ -69,30 +69,35 @@ Les différents types que l'on peut associer à une variable en PHP sont :
 - un nombre à virgule (float). Exemple : $float = 3.20
 - un booléen (boolean). Exemple : Exemple : $bool = true ou $bool = false
 - un tableau (array). Exemple : $tableau = [ "élément1" , 4 , 4.20 , "élément5", $variable ] -> un tableau peut contenir toute sorte de choses
-- un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] : 
+- un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] :  
 class Voiture {  
-    // voici les propriétés de la classe que nous créeons.  
+    // voici les propriétés de la classe que nous créeons :  
     public $marque;  
     public $modèle;  
     pblic $couleur;  
 }  
 
 -  une variable sans valeur. Exemple : 
- - $maVariable [la variable est déclarée mais n'a pas de valeur initiale, donc elle est non définie : sa valeur est considérée comme NULL]
- - $mavariable2 = NULL [on définit explicitement la variable comme NULL]
+    - $maVariable [la variable est déclarée mais n'a pas de valeur initiale, donc elle est non définie : sa valeur est considérée comme NULL]
+    - $mavariable2 = NULL [on définit explicitement la variable comme NULL]
 
-* un objet peut contenir des propriétés et des méthodes.
+> un objet peut contenir des propriétés et des méthodes.
+
+___
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
-Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux associatifs et les tableaux multidimensionnels.  
-Les "tableaux indexés" sont des tableaux dont les éléments sont indexés par des nombres. Par défaut, les indices commencent à 0.  
-Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut pas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.  
-Les "tableaux multidimensionnels" sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.  
+Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux associatifs et les tableaux multidimensionnels.
+
+- Les "tableaux indexés" sont des tableaux dont les éléments sont indexés par des nombres. Par défaut, les indices commencent à 0.
+- Les "tableaux associatifs"  sont des tableaux dont les éléments sont indexés par des clés nommées. On peut donc accéder aux valeurs par ces clés. Attention, on ne peut pas avoir dans un même tableau deux clés identiques. Par contre, deux clés différentes peuvent avoir la même valeur.
+- Les "tableaux multidimensionnels" sont des tableaux contenant d'autres tableaux, pour créer des structures de données plus complexes.
+
+___
 
 9.	Quelles sont les différentes structures de contrôle qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles.
 
-### Il y a les structures conditionnelles qui permettent de prendre des décisions basées sur des conditions.
+#### Il y a les structures conditionnelles qui permettent de prendre des décisions basées sur des conditions.
 
 1. if :  
 si (condition) alors  
