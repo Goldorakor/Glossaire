@@ -130,9 +130,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 **En images pour bien comprendre :**
 
-![Les détails du formulaire HTML](images/05_code_pour_exemple.jpg)
+![Exemple de formulaire et de fichier de traitement](images/05_code_pour_exemple.jpg)
 
-![Les détails du formulaire HTML](images/06_explication_code_pour_exemple.jpg)
+![Les explications de l'exemple précédent](images/06_explication_code_pour_exemple.jpg)
 
 **Dans les détails :**
 
@@ -344,7 +344,7 @@ ___
 
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
 
-Un CMS (**Content Management System**), aussi appelé système de gestion de contenu, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
+Un CMS (**Content Management System**), aussi appelé **système de gestion de contenu**, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
 Deux exemples de CMS : 
 - WordPress
@@ -388,46 +388,51 @@ ___
 23.	Qu’est-ce qu’un sélecteur CSS ?
 
 Un **sélecteur CSS** est un élément qui permet de cibler des éléments HTML spécifiques pour leur appliquer des styles. Les sélecteurs CSS sont des outils puissants qui permettent de cibler des éléments HTML pour appliquer des styles de manière précise et flexible.  
+  
 On notera comme différents sélecteurs :
 
-- le **sélecteur de type** qui cible tous les éléments d'un type particulier (balise). (je connais)  
+- le **sélecteur de type** qui cible tous les éléments d'un type particulier (balise).    
 ```
 p {  
     color: blue; /* Tous les paragraphes seront bleus */  
 }  
 ```
 
-- le **sélecteur de classe** qui cible tous les éléments ayant une classe spécifique, préfixée par un point (.). (je connais)  
+- le **sélecteur de classe** qui cible tous les éléments ayant une classe spécifique, préfixée par un point `.`.  
 ```
 .mon-style {  
     font-weight: bold; /* Tous les éléments avec la classe "mon-style" seront en gras */  
 }  
 ```
 
-- le **sélecteur d'identifiant** qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse (#). (je connais)  
+- le **sélecteur d'identifiant** qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse `#`.   
 ```
 #mon-id {  
     background-color: yellow; /* L'élément avec l'id "mon-id" aura un fond jaune */  
 }  
 ```
 
-- le **sélecteur d'attribut** qui cible les éléments en fonction de leurs attributs ou de leurs valeurs d'attribut. (jamais utilisé)  
+- le **sélecteur d'attribut** qui cible les éléments en fonction de leurs attributs ou de leurs valeurs d'attribut.    
 ```
 a[href] {  
     text-decoration: none; /* Tous les liens avec un attribut href n'auront pas de soulignement */  
 }  
 ```
 
-- le **sélecteur combiné** qui combine plusieurs sélecteurs pour cibler des éléments en fonction de leur relation. Trop compliqué pour moi, je ne pense pas l'utiliser pour le moment. (jamais utilisé)  
+**Une illustration syntaxique avec les deux premiers cas :**
 
-- le **sélecteur pseudo-classe** qui cible des éléments dans un état particulier. Peut être super utile pour des effets au survol de la souris par exemple. (jamais utilisé)  
+![Des exemples de sélecteurs d'attribut](images/07_selecteur_attribut.jpg)
+
+- le **sélecteur combiné** qui combine plusieurs sélecteurs pour cibler des éléments en fonction de leur relation. Trop compliqué pour moi, je ne pense pas l'utiliser pour le moment.    
+
+- le **sélecteur pseudo-classe** qui cible des éléments dans un état particulier. Peut être super utile pour des effets au survol de la souris par exemple.    
 ```
 a:hover {  
     color: green; /* Le lien deviendra vert au survol */  
 }  
 ```
 
-- le **sélecteur pseudo-élément** qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser. (jamais utilisé)  
+- le **sélecteur pseudo-élément** qui cible des parties spécifiques d'un élément. Peut être sympa à utiliser.  
 ```
 p::first-line {  
     font-weight: bold; /* La première ligne de tous les paragraphes sera en gras */  
@@ -462,6 +467,28 @@ ___
 
 25.	Qu’est-ce qu’une requête AJAX ?
 
+Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui permet de communiquer avec un serveur sans recharger la page web. Cela permet d'**échanger des données en arrière-plan** et de mettre à jour des parties de la page sans interrompre l'expérience utilisateur.
+
+#### Caractéristiques principales
+1. **Asynchrone** : Les requêtes AJAX se font de manière asynchrone, ce qui signifie que l'utilisateur peut continuer à interagir avec la page pendant que la requête est en cours.
+
+2. **Formats de données** : Bien que le nom fasse référence à XML, AJAX peut également utiliser d'autres formats de données comme JSON, HTML ou texte brut.
+
+3. **Utilisation de JavaScript** : AJAX s'appuie sur JavaScript, souvent en utilisant l'objet ``XMLHttpRequest` ou la méthode `fetch()` pour effectuer des requêtes.
+
+#### Exemples simples
+
+![Un exemple de code de requête AJAX](images/08_ajax.jpg)
+
+#### Avantages
+- **Expérience utilisateur améliorée** : les pages se chargent plus rapidement et de manière plus fluide.
+- **Réduction de la bande passante** : seules les données nécessaires sont échangées, pas la page entière.
+
+#### Utilisations courantes
+- Chargement de contenu dynamique (comme les commentaires ou les articles).
+- Envoi de formulaires sans recharger la page.
+- Mise à jour de sections spécifiques d'une page (comme les notifications).
+
 ___
 
 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
@@ -484,12 +511,48 @@ ___
 
 27.	Définir le responsive design
 
-Le responsive design est une approche de conception web qui vise à créer des sites et des applications capables de s'adapter à une variété de tailles d'écran.
+Le **responsive design** est une approche de conception web qui vise à créer des sites et des applications capables de s'adapter à une variété de tailles d'écran.
 
 ___
 
 28.	Qu’est-ce que le templating ?
 
+*Le templating est une technique* utilisée dans le développement web pour générer du contenu HTML dynamique à partir de **modèles** (ou **templates** en anglais). Ces modèles contiennent généralement des espaces réservés (**placeholders** en anglais) qui sont remplacés par des données réelles au moment de l'exécution. Cela permet de séparer la logique de l'application de la présentation, rendant le code plus organisé et maintenable. Le templating est essentiel pour créer des applications web dynamiques et modernes.
+
+#### Caractéristiques principales :
+
+1. **Séparation des préoccupations** : le templating aide à séparer **le code logique** (JavaScript, PHP, etc.) de **la présentation** (HTML, CSS). Cela rend le code plus lisible et plus facile à maintenir.
+
+2. **Réutilisabilité** : les templates peuvent être réutilisés pour générer plusieurs pages ou sections de pages, ce qui évite la duplication de code.
+
+3. **Données dynamiques** : les modèles peuvent être remplis avec des données provenant de bases de données, d'API, ou d'autres sources, permettant ainsi de créer du contenu personnalisé.
+
+#### Comment ça fonctionne :
+
+1. **Création d'un modèle** : un fichier template est créé avec des balises spécifiques pour les variables. Par exemple, en utilisant une syntaxe comme {{ variable }} pour indiquer où une donnée doit être insérée. Commentaire : la plateforme de Nalan utilisait cette technique.
+
+2. **Rendu** : lorsqu'une page est demandée, le serveur (ou le client, selon l'architecture) remplace les espaces réservés par les valeurs réelles et génère le HTML final.
+
+#### Exemple simple :
+
+![Un exemple de syntaxe de templating](images/09_template_exemple.jpg)
+
+#### Outils et frameworks :
+
+Il existe de nombreux outils et frameworks qui facilitent le templating, tels que :
+
+- JavaScript : Handlebars, EJS, Mustache
+- Python : Jinja2, Django Templates
+- PHP : Twig, Blade
+- Ruby : ERB, Haml
+
+On notera un lien entre les notions de templating et de frameworks. Voici les remarques de chatGPT sur la question : 
+
+Un framework est un ensemble d'outils, de bibliothèques et de conventions qui facilitent le développement d'applications en fournissant une structure de base. Il permet aux développeurs de gagner du temps et de respecter des bonnes pratiques en intégrant des fonctionnalités réutilisables et des abstractions.
+
+En résumé, un framework est un outil puissant qui aide à structurer et à accélérer le développement d'applications en fournissant des ressources et des conventions bien définies.
+
+**Le templating est souvent une composante essentielle des frameworks**, permettant de générer des interfaces utilisateur dynamiques et de maintenir une bonne organisation du code. **Les deux concepts se renforcent mutuellement**, rendant le développement d'applications plus fluide et structuré.
 ___
 
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
@@ -497,6 +560,27 @@ ___
 ___
 
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+
+La méthode JavaScript utilisée pour ajouter un élément à la fin d'un tableau est **push()**.
+
+Exemple 1 :
+```
+let fruits = ['pomme', 'banane'];
+fruits.push('orange'); // Ajoute 'orange' à la fin du tableau
+
+console.log(fruits); // Affiche : ['pomme', 'banane', 'orange']
+```
+Exemple 2 :
+```
+fruits.push('kiwi', 'fraise'); // Ajoute 'kiwi' et 'fraise' à la fin du tableau
+
+console.log(fruits); // Affiche : ['pomme', 'banane', 'orange', 'kiwi', 'fraise']
+```
+
+#### Détails :
+
+- La méthode **push()** modifie le tableau original et retourne la nouvelle longueur du tableau après l'ajout.
+- Elle peut également accepter plusieurs arguments pour ajouter plusieurs éléments en une seule fois (exemple 2).
 
 ___
 
@@ -515,7 +599,7 @@ ___
 
 32.	Qu’est-ce qu’un pseudo-élément en CSS ?
 
-En langage CSS, un pseudo-élément est un mot-clé (before, after, first-line, first-letter, etc) qui permet de sélectionner et de styliser une partie spécifique d'un élément HTML. Il ne cible pas des éléments entiers comme les sélecteurs classiques le font mais il applique des styles à des sous-éléments virtuels sans avoir à ajouter des éléments HTML supplémentaires. Les pseudo-éléments sont préfixés par deux deux-points (::), ce qui les distingue des pseudo-classes (comme :hover ou :focus, qui utilisent un seul deux-points). En conclusion, les pseudo-éléments sont un outil puissant en CSS pour styliser des parties spécifiques d'un élément sans modifier le HTML.
+En langage CSS, **un pseudo-élément est un mot-clé** (before, after, first-line, first-letter, etc) qui permet de sélectionner et de styliser une partie spécifique d'un élément HTML. Il ne cible pas des éléments entiers comme les sélecteurs classiques le font mais il applique des styles à des sous-éléments virtuels sans avoir à ajouter des éléments HTML supplémentaires. Les **pseudo-éléments sont préfixés par deux deux-points (::)**, ce qui les distingue des pseudo-classes (comme :hover ou :focus, qui utilisent un seul deux-points). En conclusion, les pseudo-éléments sont un outil puissant en CSS pour styliser des parties spécifiques d'un élément sans modifier le HTML.
 
 Exemple 01 : ::before, qui insère du contenu avant le contenu d'un élément sélectionné.
 ```
@@ -548,11 +632,75 @@ p::first-letter {
 }
 ```
 
-33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent.
+33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalents.
+
+Bootstrap est **un framework front-end open-source** conçu pour faciliter le développement d'interfaces web réactives et attrayantes. Il fournit une collection de composants CSS et JavaScript préconstruits, permettant aux développeurs de créer rapidement des sites web modernes et adaptatifs.
+
+
+#### Utilisation :
+
+Pour commencer à utiliser Bootstrap, il suffit d'inclure les fichiers CSS et JavaScript dans ton projet. Tu peux soit télécharger les fichiers depuis le site officiel, soit utiliser un CDN (**Content Delivery Network** = un réseau de serveurs répartis géographiquement qui stockent et distribuent du contenu web.).
+
+#### Exemple d'inclusion via un CDN : (dans notre fichier .html)
+
+```
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+```
 
 ___
 
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes.
+
+Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être associées sont GET et POST. Voici une explication des deux méthodes et leurs différences.
+
+#### Méthode GET
+
+- Description : la méthode GET envoie les données du formulaire en les ajoutant à l'URL sous forme de paramètres de requête. Les données sont visibles dans la barre d'adresse du navigateur.
+
+- Caractéristiques :
+    - Limité en taille (environ 2000 caractères selon le navigateur).
+    - Les données sont exposées dans l'URL, ce qui peut poser des problèmes de sécurité pour des informations sensibles.
+    - Idéal pour des requêtes non sensibles, comme des recherches ou des filtrages, où les données peuvent être mises en cache et partagées.
+
+- Exemple :
+```
+<form action="/search" method="GET">
+    <input type="text" name="query">
+    <button type="submit">Rechercher</button>
+</form>
+```
+
+#### Méthode POST
+
+- Description : La méthode POST envoie les données du formulaire dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.
+
+- Caractéristiques :
+    - Pas de limite de taille stricte, permettant d'envoyer des volumes de données plus importants.
+    - Les données ne sont pas visibles dans l'URL, offrant une meilleure sécurité pour les informations sensibles (comme les mots de passe).
+    - Idéal pour soumettre des données sensibles, télécharger des fichiers ou effectuer des opérations qui modifient les données sur le serveur.
+
+- Exemple :
+
+```
+<form action="/submit" method="POST">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <button type="submit">Se connecter</button>
+</form>
+```
+
+#### Différences clés :
+
+| Caractéristique          | GET                        | POST                        |
+|-------------------------|---------------------------|-----------------------------|
+| Visibilité des données   | Dans l'URL                | Dans le corps de la requête |
+| Limite de taille         | Environ 2000 caractères    | Pas de limite stricte        |
+| Sécurité des données     | Moins sécurisée           | Plus sécurisée              |
+| Utilisation typique      | Requêtes non sensibles     | Soumissions de données sensibles |
+
 
 ___
 
