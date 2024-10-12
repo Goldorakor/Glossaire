@@ -12,9 +12,9 @@
 - [Gestion de projets / DevOps](#gestion-de-projets---devops)
 - [English](#english)
 
+___
 
 ## Général
-
 
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
@@ -332,7 +332,7 @@ ___
 
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
-Le contrôle de version est un système qui enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet. 
+Le **contrôle de version** est un système qui enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet. 
 - On sait quelle modification a été faite, qui a fait la modification et quand elle a été faite.
 - On garde un historique complet des versions des fichiers, pour revenir facilement à une version ancienne si besoin.
 - On peut travailler à plusieurs sur un même projet, en travaillant chacun sur sa propre copie des fichiers.
@@ -351,6 +351,7 @@ Deux exemples de CMS :
 - WordPress
 - Shopify.
 
+___
 ___
 
 ## Front-end
@@ -449,7 +450,7 @@ Exemple : `<a href="https://www.example.com">Visitez notre site</a>`
 
 #### attributs de la balise `<a>` :
 - href : obligatoire, il spécifie l'URL de la page vers laquelle renvoie le lien.
-- target : facultatif, il spécifie comment ouvrir le lien. target="_blank" ouvre le lein dans un nouvel onglet ou une nouvelle fenêtre alors que target="_self" ouvre le lien dans le même onglet.
+- target : facultatif, il spécifie comment ouvrir le lien. `target="_blank"` ouvre le lien dans un nouvel onglet ou une nouvelle fenêtre alors que `target="_self"` ouvre le lien dans le même onglet.
 - title : fournit des informations supplémentaires sur le lien. Ce texte s'affiche généralement en tant qu'info-bulle lorsque l'utilisateur survole le lien.
 - download : indique que le lien doit être traité comme un téléchargement. Si cet attribut est présent, le lien déclenche le téléchargement du fichier lié au lieu de naviguer vers celui-ci.
 
@@ -471,9 +472,9 @@ ___
 Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui permet de communiquer avec un serveur sans recharger la page web. Cela permet d'**échanger des données en arrière-plan** et de mettre à jour des parties de la page sans interrompre l'expérience utilisateur.
 
 #### Caractéristiques principales
-1. **Asynchrone** : Les requêtes AJAX se font de manière asynchrone, ce qui signifie que l'utilisateur peut continuer à interagir avec la page pendant que la requête est en cours.
+1. **Asynchrone** : les requêtes AJAX se font de manière asynchrone, ce qui signifie que l'utilisateur peut continuer à interagir avec la page pendant que la requête est en cours.
 
-2. **Formats de données** : Bien que le nom fasse référence à XML, AJAX peut également utiliser d'autres formats de données comme JSON, HTML ou texte brut.
+2. **Formats de données** : bien que le nom fasse référence à XML, AJAX peut également utiliser d'autres formats de données comme JSON, HTML ou texte brut.
 
 3. **Utilisation de JavaScript** : AJAX s'appuie sur JavaScript, souvent en utilisant l'objet ``XMLHttpRequest` ou la méthode `fetch()` pour effectuer des requêtes.
 
@@ -483,11 +484,14 @@ Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui pe
 
 #### Avantages
 - **Expérience utilisateur améliorée** : les pages se chargent plus rapidement et de manière plus fluide.
+
 - **Réduction de la bande passante** : seules les données nécessaires sont échangées, pas la page entière.
 
 #### Utilisations courantes
 - Chargement de contenu dynamique (comme les commentaires ou les articles).
+
 - Envoi de formulaires sans recharger la page.
+
 - Mise à jour de sections spécifiques d'une page (comme les notifications).
 
 ___
@@ -547,7 +551,7 @@ Il existe de nombreux outils et frameworks qui facilitent le templating, tels qu
 - PHP : Twig, Blade
 - Ruby : ERB, Haml
 
-On notera un lien entre les notions de templating et de frameworks. Voici les remarques de chatGPT sur la question : 
+On notera **un lien entre les notions de templating et de frameworks**. Voici les remarques de chatGPT sur la question : 
 
 Un framework est un ensemble d'outils, de bibliothèques et de conventions qui facilitent le développement d'applications en fournissant une structure de base. Il permet aux développeurs de gagner du temps et de respecter des bonnes pratiques en intégrant des fonctionnalités réutilisables et des abstractions.
 
@@ -581,7 +585,8 @@ console.log(fruits); // Affiche : ['pomme', 'banane', 'orange', 'kiwi', 'fraise'
 #### Détails :
 
 - La méthode **push()** modifie le tableau original et retourne la nouvelle longueur du tableau après l'ajout.
-- Elle peut également accepter plusieurs arguments pour ajouter plusieurs éléments en une seule fois (exemple 2).
+
+- Elle peut également accepter plusieurs arguments pour ajouter plusieurs éléments en une seule fois (voir l'exemple 2).
 
 ___
 
@@ -702,7 +707,7 @@ Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être a
 | Sécurité des données     | Moins sécurisée           | Plus sécurisée              |
 | Utilisation typique      | Requêtes non sensibles     | Soumissions de données sensibles |
 
-
+___
 ___
 
 ## UX UI
@@ -714,6 +719,8 @@ UX Design (User Experience Design) et UI Design (User Interface Design) sont deu
  L'UX Design se concentre sur l'expérience globale de l'utilisateur lors de l'interaction avec un produit ou un service. Cela inclut la recherche, la définition des besoins des utilisateurs, et la création de parcours utilisateur efficaces. L'objectif principal est de rendre l'interaction aussi fluide, intuitive et agréable que possible. L'UX Designer s'efforce de résoudre des problèmes pour les utilisateurs et d'optimiser la satisfaction. **Se concentre sur l'expérience utilisateur globale et l'interaction, en s'assurant que le produit répond aux besoins des utilisateurs.**
 
  L'UI Design se concentre sur l'aspect visuel et l'interaction d'une interface utilisateur. Cela inclut la conception de tous les éléments visuels, tels que les boutons, les icônes, les typographies, les couleurs, et la mise en page. L'objectif principal est de créer une interface esthétique et cohérente qui facilite l'interaction et améliore l'attrait visuel du produit. **Se concentre sur l'aspect visuel et l'esthétique de l'interface, en créant une présentation attrayante et cohérente.**
+
+___
 
 36.	Qu’est-ce qu’un wireframe ?
 
@@ -756,27 +763,183 @@ ___
 
 38.	Qu’est-ce que la hiérarchie visuelle en UI Design ?
 
+La hiérarchie visuelle en UI Design est un principe qui organise les éléments d'une interface de manière à guider l'utilisateur à travers le contenu et à mettre en avant les informations les plus importantes. Elle utilise des techniques visuelles pour créer un ordre de priorité et aider à la compréhension et à la navigation.
+
+#### Éléments de la hiérarchie visuelle :
+
+- **Taille et échelle** : les éléments plus grands attirent plus l'attention. Par exemple, un titre principal sera généralement plus grand qu'un sous-titre.
+
+- **Couleur** : l'utilisation de couleurs contrastées peut faire ressortir certains éléments. Les couleurs vives attirent l'œil, tandis que des couleurs plus neutres peuvent être utilisées pour des éléments moins importants.
+
+- **Poids typographique** : les polices de caractères en gras ou différentes tailles peuvent indiquer l'importance. Un texte en gras ou en italique peut attirer l'attention.
+
+- **Espacement et alignement** : un bon espacement entre les éléments crée une structure claire. Les éléments alignés de manière cohérente facilitent la lecture et la compréhension.
+
+- **Position** : les éléments placés en haut ou au centre d'une page sont souvent perçus comme plus importants. La position sur la page peut influencer la manière dont l'information est interprétée.
+
+- **Contraste** : le contraste entre les éléments (couleur, forme, texture) aide à faire ressortir des informations clés.
+
+
+#### Importance de la hiérarchie visuelle
+
+- **Guidage de l'utilisateur** : elle aide les utilisateurs à naviguer dans l'interface et à comprendre quelles actions sont prioritaires.
+
+- **Amélioration de l'expérience utilisateur** : une hiérarchie claire rend l'interface plus intuitive et agréable à utiliser.
+
+- **Facilitation de la compréhension** : elle permet aux utilisateurs de traiter rapidement l'information, en leur montrant ce qui est le plus pertinent.
+
+
+En résumé, la hiérarchie visuelle est un outil essentiel en UI Design pour orienter l'attention des utilisateurs, simplifier la navigation et améliorer l'expérience globale.
+
 ___
 
 39.	Qu’est-ce que l’accessibilité en UX Design ? 
+
+L'accessibilité en UX Design fait référence à la conception d'interfaces et d'expériences utilisateur qui peuvent être utilisées par tous, y compris les personnes ayant des handicaps ou des limitations. Cela inclut des considérations pour les personnes ayant des problèmes de vision, d'audition, de motricité ou de cognition.
+
+
+#### Principes de l'accessibilité :
+
+- **Perceptibilité** : l'information et les éléments de l'interface doivent être présentés de manière à ce qu'ils puissent être perçus par tous les utilisateurs. Cela inclut des textes lisibles, des contrastes suffisants, et des alternatives textuelles pour les images.
+
+- **Utilisabilité** : l'interface doit être utilisable, c'est-à-dire que tous les utilisateurs doivent pouvoir interagir avec elle facilement. Cela peut impliquer des tailles de boutons appropriées, des zones cliquables assez grandes, et des éléments facilement navigables.
+
+- **Compréhensibilité** : le contenu doit être facile à comprendre. Cela inclut une terminologie simple, des instructions claires et une structure logique de l'information.
+
+- **Robustesse** : l'interface doit être compatible avec divers appareils et technologies d'assistance, tels que les lecteurs d'écran. Cela signifie que le code HTML doit être sémantique et bien structuré.
+
+#### Importance de l'accessibilité :
+
+- **Inclusion** : l'accessibilité garantit que tout le monde, quel que soit son handicap, peut accéder à l'information et aux services en ligne.
+    
+- **Conformité** : de nombreuses législations, comme la loi ADA (Americans with Disabilities Act) aux États-Unis ou les normes WCAG (Web Content Accessibility Guidelines), exigent que les sites web soient accessibles.
+    
+- **Amélioration de l'expérience utilisateur** : une conception accessible bénéficie à tous les utilisateurs, car elle améliore la clarté et la facilité d'utilisation de l'interface.
+    
+- **Élargissement de l'audience** : en rendant un produit accessible, tu peux toucher un public plus large, y compris des personnes ayant des besoins spécifiques.
+
+
+#### Exemples de bonnes pratiques en accessibilité :
+
+- Utiliser un contraste élevé entre le texte et l'arrière-plan.
+    
+- Fournir des descriptions alternatives pour les images.
+    
+- Assurer que tous les éléments interactifs sont accessibles au clavier.
+    
+- Utiliser des titres et des balises pour structurer le contenu de manière logique.
+
+En résumé, l'accessibilité en UX Design est **essentielle pour créer des expériences inclusives et conviviales** qui répondent aux besoins de tous les utilisateurs.
 
 ___
 
 40.	Qu’est-ce qu’une grille de mise en page ?
 
+Une grille de mise en page (ou **grid layout** en anglais) est un système de lignes et de colonnes utilisé en design graphique et en design d'interface pour organiser et structurer le contenu de manière cohérente et esthétique. Elle aide à aligner les éléments visuels et à créer une hiérarchie visuelle, facilitant ainsi la lecture et la navigation.
+
+#### Caractéristiques d'une grille de mise en page :
+
+- **Colonnes et rangées** : Une grille est généralement composée de colonnes (verticales) et de rangées (horizontales) qui forment des cellules où les éléments peuvent être placés.
+
+- **Espacement** : les grilles définissent souvent des marges et des gouttières (l'espace entre les colonnes) pour assurer un espacement cohérent entre les éléments.
+
+- **Flexibilité** : les grilles peuvent être rigides (avec des dimensions fixes) ou fluides (s'adaptant à différentes tailles d'écran), ce qui les rend utiles pour le **responsive design**.
+
+- **Alignement** : elles aident à aligner les éléments de manière cohérente, ce qui contribue à une **apparence soignée et ordonnée**.
+
+#### Avantages d'une grille de mise en page :
+
+- **Cohérence** : en utilisant une grille, tu peux **maintenir une structure cohérente** à travers différentes pages ou sections d'un site.
+
+- **Hiérarchie visuelle** : les grilles aident à établir une hiérarchie, rendant le contenu plus facile à lire et à comprendre.
+
+- **Facilité de mise en œuvre** : elles simplifient le processus de conception, car les designers peuvent se concentrer sur le contenu sans se soucier constamment de l'alignement.
+
+#### Types de grilles :
+
+- **Grille à colonnes fixes** : les colonnes ont des largeurs définies, souvent utilisées pour des designs plus traditionnels.
+
+- **Grille fluide** : les colonnes s'ajustent en fonction de la taille de l'écran, couramment utilisée dans le **design web moderne**.
+
+- **Grille asymétrique** : les éléments peuvent avoir des largeurs variées, offrant plus de flexibilité pour des compositions créatives.
+
+- **Grille modulaire** : elle utilise à la fois des colonnes et des rangées, permettant de créer des modules ou des sections répétitives.
+
+#### Conclusion
+
+En résumé, une grille de mise en page est un outil essentiel en design qui **aide à organiser le contenu de manière claire et esthétique**, facilitant ainsi la navigation et l'expérience utilisateur. Elle est particulièrement **importante dans le design d'interface, où la lisibilité et l'accessibilité sont primordiales**.
+
 ___
 
 41.	Qu’est-ce que la notion d’affordance en UX Design ?
+
+#### définitions 
+
+Faculté d'un objet ou d'un environnement à suggérer spontanément sa propre utilisation.
+
+L’affordance est la capacité d’un objet ou d’un système à évoquer son utilisation, sa fonction.
+Par définition, l’affordance provoque une interaction spontanée entre un environnement et son utilisateur. En ergonomie, elle permet de rendre l’utilisation d’un objet ou d’un service « intuitive ». Pour améliorer l’interface utilisateur (UI) et l’expérience utilisateur (UX), les affordances sont donc essentielles dans le design des interfaces et des services
+
+### définition du chat 
+
+L'affordance en UX Design désigne la qualité d'un objet ou d'un élément d'interface qui suggère son utilisation ou son interaction. En d'autres termes, c'est la manière dont un design communique à l'utilisateur comment il doit interagir avec un élément donné.
+
+#### Types d'affordance :
+
+- **Affordance réelle** : cela fait référence aux propriétés physiques d'un objet qui permettent une interaction. Par exemple, une poignée de porte offre une prise pour être tirée ou poussée.
+
+- **Affordance perçue** : c'est la manière dont un utilisateur perçoit comment interagir avec un objet ou un élément d'interface, même si cela n'est pas évident. Par exemple, un bouton avec une ombre ou un effet de survol indique à l'utilisateur qu'il peut cliquer dessus.
+
+#### Importance de l'affordance en UX Design :
+
+- **Facilite l'utilisation** : une bonne affordance **rend l'interface intuitive**, permettant aux utilisateurs de comprendre rapidement comment interagir avec les éléments sans avoir besoin d'instructions.
+
+- **Réduit la courbe d'apprentissage** : les utilisateurs peuvent naviguer et utiliser une interface de manière plus fluide, car ils savent instinctivement comment interagir avec les éléments.
+
+- **Améliore l'expérience utilisateur** : en créant des éléments qui sont faciles à comprendre et à utiliser, l'affordance **contribue à une expérience utilisateur positive et satisfaisante**.
+
+#### Exemples d'affordance :
+
+- **Boutons** : un bouton qui semble en relief (avec des ombres et des bordures) indique qu'il peut être cliqué.
+- **Liens** : le texte souligné et en couleur est souvent perçu comme un lien cliquable.
+- **Glissières** : les barres de défilement ou les curseurs qui semblent pouvoir être tirés indiquent une interactivité.
+
+#### Conclusion
+
+En résumé, l'affordance en UX Design est essentielle pour créer des interfaces intuitives et faciles à utiliser. Elle permet aux utilisateurs de comprendre rapidement comment interagir avec les éléments d'une interface, améliorant ainsi l'efficacité et la satisfaction générale.
 
 ___
 
 42.	Qu’est-ce qu’un « mobile first design » ?
 
+Le **mobile first design** est une approche de conception web qui consiste à créer des sites et des applications **en partant d'abord de la version mobile**, avant de s'adapter aux écrans plus grands, comme ceux des tablettes et des ordinateurs de bureau. Cette méthode est devenue populaire avec l'augmentation de l'utilisation des appareils mobiles pour naviguer sur Internet.
+
+#### Principes du mobile first design :
+
+1. **Priorité au contenu essentiel** : En concevant d'abord pour les petits écrans, les designers sont forcés de se concentrer sur les fonctionnalités et le contenu les plus importants, éliminant le superflu.
+
+2. **Responsive design** : Après avoir conçu la version mobile, on adapte progressivement le design pour les écrans plus grands, en ajoutant des éléments et des fonctionnalités supplémentaires au fur et à mesure.
+
+3. **Performance optimisée** : Les sites conçus en mobile first sont généralement plus légers et plus rapides, car ils doivent fonctionner efficacement sur des appareils avec des ressources limitées.
+
+4. **Expérience utilisateur améliorée** : En se concentrant d'abord sur les besoins des utilisateurs mobiles, cette approche garantit une expérience fluide et intuitive, quel que soit l'appareil utilisé.
+
+#### Avantages du mobile first design :
+
+- **Adaptation à la réalité actuelle** : Avec une part croissante du trafic web provenant des appareils mobiles, cette approche répond aux besoins des utilisateurs modernes.
+
+- **Meilleure accessibilité** : Les utilisateurs mobiles peuvent accéder au contenu plus facilement et rapidement, ce qui peut améliorer l'engagement.
+
+- **Optimisation pour le SEO** : Les moteurs de recherche favorisent souvent les sites conçus en mobile first, ce qui peut améliorer leur classement dans les résultats de recherche.
+
+#### Conclusion
+
+En résumé, le mobile first design est une approche stratégique qui met l'accent sur la création d'expériences utilisateur optimales pour les appareils mobiles avant de s'étendre à des écrans plus grands. Cela permet de répondre aux besoins des utilisateurs modernes et d'assurer une interface efficace et conviviale.
+
+___
 ___
 
-
 ## Programmation orientée objet (POO)
-
 
 43.	Donner une définition de la programmation orientée objet.   
 
@@ -820,7 +983,7 @@ En PHP, tu as la liberté d'utiliser plusieurs paradigmes de programmation, ce q
 
 4. Programmation déclarative : PHP ne se concentre pas spécifiquement sur la programmation déclarative, mais tu peux utiliser des bibliothèques ou des frameworks qui adoptent ce style, notamment pour des requêtes SQL ou des configurations.
 
-En résumé, **PHP te permet de mélanger ces paradigmes selon les besoins de ton projet**, ce qui te donne beaucoup de flexibilité dans ta façon de coder.
+En résumé, **PHP permet de mélanger ces paradigmes selon les besoins du projet**, ce qui donne beaucoup de flexibilité dans la façon de coder.
 
 ___
 
@@ -992,7 +1155,7 @@ ___
 
 49.	Qu’est-ce que l’encapsulation ?
 
-
+ 
 
 ___
 
@@ -1054,6 +1217,7 @@ ___
 
 
 
+___
 ___
 
 ## Architecture 
