@@ -15,6 +15,7 @@
 
 ## Général
 
+
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
 Il faut installer un serveur local sur son ordinateur, qui pourra interpréter le code PHP car le navigateur n'en est pas capable.
@@ -708,14 +709,48 @@ ___
 
 35.	Quelle est la différence entre UX Design et UI Design ?
 
-L'UI Design se concentre sur l'apparence et la présentation de l'interface alors que l'UX Design se concentre sur l'expérience globale de l'utilisateur.
-Pour moi, une UX Design réussie nécessite forcément une UI Design réussie, l'inverse n'est pas vraie : une UI Design réussie n'engendre pas forcément une UX Design réussie, si par ailleurs les fonctionnalités sont mauvaises.
+UX Design (User Experience Design) et UI Design (User Interface Design) sont deux concepts distincts mais complémentaires dans le processus de création d'interfaces numériques.
+
+ L'UX Design se concentre sur l'expérience globale de l'utilisateur lors de l'interaction avec un produit ou un service. Cela inclut la recherche, la définition des besoins des utilisateurs, et la création de parcours utilisateur efficaces. L'objectif principal est de rendre l'interaction aussi fluide, intuitive et agréable que possible. L'UX Designer s'efforce de résoudre des problèmes pour les utilisateurs et d'optimiser la satisfaction. **Se concentre sur l'expérience utilisateur globale et l'interaction, en s'assurant que le produit répond aux besoins des utilisateurs.**
+
+ L'UI Design se concentre sur l'aspect visuel et l'interaction d'une interface utilisateur. Cela inclut la conception de tous les éléments visuels, tels que les boutons, les icônes, les typographies, les couleurs, et la mise en page. L'objectif principal est de créer une interface esthétique et cohérente qui facilite l'interaction et améliore l'attrait visuel du produit. **Se concentre sur l'aspect visuel et l'esthétique de l'interface, en créant une présentation attrayante et cohérente.**
 
 36.	Qu’est-ce qu’un wireframe ?
+
+Un **wireframe** est une **représentation visuelle simplifiée** d'une interface utilisateur, généralement utilisée dans les phases de conception d'un produit numérique (site web, application, etc.). Il sert de plan ou de maquette qui montre la structure, la disposition et les fonctionnalités de l'interface **sans se soucier des détails esthétiques**.
+
+#### Caractéristiques principales d'un wireframe :
+
+1. **Simplicité** : les wireframes sont **souvent en noir et blanc** et se concentrent sur la disposition des éléments, tels que les boutons, les images, les menus et le contenu, sans inclure de couleurs ou de graphiques complexes.
+
+2. **Fonctionnalités** : ils mettent en avant la **hiérarchie de l'information** et les **interactions possibles**, aidant à clarifier comment les utilisateurs interagiront avec le produit.
+
+3. **Communication** : les wireframes facilitent la **communication entre les membres de l'équipe de projet** (designers, développeurs, clients) en fournissant un aperçu clair de l'interface sans distractions visuelles.
+
+4. **Itératif** : les wireframes peuvent être **facilement modifiés et améliorés** en fonction des **retours d'expérience**, ce qui permet de tester et d'affiner les idées avant de passer à des étapes de conception plus détaillées. (itératif -> processus qui se déroule en plusieurs étapes ou cycles, où chaque itération permet d'apporter des améliorations et des ajustements.)
 
 ___
 
 37.	Qu’est-ce qu’un prototype ? 
+
+
+Un **prototype** est une **version préliminaire** d'un produit ou d'un système, utilisée pour tester et valider des concepts, des fonctionnalités et des designs avant la production finale. Dans le domaine du design, notamment en UX/UI, **un prototype permet de simuler l'interaction avec une interface** sans avoir à construire le produit complet.
+
+#### Caractéristiques principales d'un prototype :
+
+1. **Interactivité** : les prototypes interactifs permettent aux utilisateurs de tester les fonctionnalités et d'interagir avec l'interface, ce qui aide à évaluer l'expérience utilisateur.
+
+2. **Validation** : ils sont utilisés pour recueillir des retours d'expérience de la part des utilisateurs, des parties prenantes et des équipes, afin d'identifier les problèmes et d'apporter des améliorations.
+
+3. **Itératif** : le processus de prototypage est généralement itératif, ce qui signifie que les prototypes sont affinés et modifiés en fonction des retours jusqu'à ce que le produit réponde aux attentes.
+
+#### Types de prototypes :
+
+1. Prototypes papier : utilisent des dessins sur papier pour représenter des interfaces et des flux utilisateur.
+
+2. Prototypes numériques : créés à l'aide d'outils comme **Figma**, Adobe XD, ou InVision, permettant une simulation plus réaliste des interactions.
+
+3. Prototypes fonctionnels : impliquent une certaine forme de code et de développement, permettant de tester des fonctionnalités spécifiques dans un **environnement plus proche du produit final**.
 
 ___
 
@@ -742,71 +777,282 @@ ___
 
 ## Programmation orientée objet (POO)
 
-43.	Donner une définition de la programmation orientée objet 
+
+43.	Donner une définition de la programmation orientée objet.   
+
+La programmation orientée objet (POO) est un paradigme de programmation qui organise le code autour d'objets, qui sont des instances de classes. Ces objets regroupent des données (attributs) et des comportements (méthodes) associés. La POO repose sur quatre concepts principaux :
+
+1. **Encapsulation** : regrouper les données et les méthodes qui manipulent ces données, tout en cachant les détails internes de l'objet.
+
+2. **Héritage** : permettre à une classe de dériver d'une autre classe, réutilisant ainsi le code existant et ajoutant ou modifiant des fonctionnalités.
+
+3. **Polymorphisme** : permettre à des objets de différentes classes d'être traités comme des objets de la même classe, facilitant ainsi la flexibilité et l'extensibilité du code.
+
+4. **Abstraction** : fournir une interface simplifiée tout en cachant la complexité sous-jacente, permettant aux utilisateurs de se concentrer sur les interactions essentielles.
+
+La POO favorise la modularité, la réutilisation du code et facilite la maintenance des applications.
+
+#### UTILE : une présentation des paradigmes les plus courants !
+
+Un **paradigme de programmation** est un style ou une approche fondamentale pour structurer et écrire du code. Il définit **la manière dont les problèmes sont résolus et comment les concepts de programmation sont organisés**.
+
+Les paradigmes de programmation influencent la façon dont les développeurs pensent et conçoivent leurs programmes. Voici quelques exemples courants :
+
+1. **Programmation impérative** : se concentre sur des instructions séquentielles qui modifient l'état du programme. C'est la façon traditionnelle de programmer, en utilisant des structures comme les boucles et les conditions.
+
+2. **Programmation orientée objet (POO)** : comme expliqué précédemment, elle organise le code autour d'objets, ce qui permet de modéliser des concepts du monde réel et de favoriser la réutilisation du code.
+
+3. **Programmation fonctionnelle** : met l'accent sur l'utilisation de fonctions comme des "citoyens de première classe" et évite les effets de bord. Elle favorise des approches déclaratives où le "quoi" est plus important que le "comment".
+
+4. **Programmation déclarative** : se concentre sur la description de ce que le programme doit accomplir, plutôt que sur les étapes spécifiques pour y parvenir. Les langages de requête comme SQL en sont un exemple.
+
+Chaque paradigme a ses avantages et ses inconvénients, et le choix d'un paradigme dépend souvent du problème à résoudre et des préférences du développeur.
+
+#### En ce qui nous concerne ...
+
+En PHP, tu as la liberté d'utiliser plusieurs paradigmes de programmation, ce qui en fait un langage polyvalent. Voici comment les principaux paradigmes peuvent être appliqués :
+
+1. Programmation impérative : Tu peux écrire du code de manière impérative en utilisant des instructions séquentielles, des boucles et des conditions. C’est le style le plus courant et accessible.
+
+2. Programmation orientée objet (POO) : PHP prend en charge la POO depuis sa version 5, te permettant de créer des classes, des objets, d'utiliser l'héritage, l'encapsulation et le polymorphisme. Cela te permet d'organiser ton code de manière modulaire et réutilisable.
+
+3. Programmation fonctionnelle : Bien que PHP ne soit pas un langage fonctionnel pur, il supporte certaines fonctionnalités de la programmation fonctionnelle, comme les fonctions anonymes (closures) et des fonctions de manipulation de tableaux comme array_map, array_filter, etc.
+
+4. Programmation déclarative : PHP ne se concentre pas spécifiquement sur la programmation déclarative, mais tu peux utiliser des bibliothèques ou des frameworks qui adoptent ce style, notamment pour des requêtes SQL ou des configurations.
+
+En résumé, **PHP te permet de mélanger ces paradigmes selon les besoins de ton projet**, ce qui te donne beaucoup de flexibilité dans ta façon de coder.
 
 ___
 
 44.	Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
 
+En programmation orientée objet (POO), une classe est un modèle ou un plan qui définit les propriétés (attributs) et les comportements (méthodes) que les objets créés à partir de cette classe auront. En d'autres termes, **une classe sert de structure pour créer des objets**.
+
+#### Principales caractéristiques d'une classe :
+
+1. **Attributs** : ce sont les variables qui stockent les données ou les états d'un objet. Par exemple, si tu as une classe `Voiture`, les attributs pourraient inclure `couleur`, `marque`, et `vitesse`.
+
+2. **Méthodes** : ce sont les fonctions définies au sein de la classe qui décrivent les comportements ou les actions que les objets peuvent effectuer. Dans notre exemple de `Voiture`, une méthode pourrait être `accélérer()` ou `freiner()`.
+
+3. **Constructeur** : c'est une **méthode spéciale** qui est appelée lors de la création d'un objet. Elle permet d'**initialiser les attributs de l'objet**.
+
+4. **Encapsulation** : les attributs et les méthodes d'une classe peuvent être rendus privés ou protégés pour contrôler l'accès, ce qui aide à **protéger les données**.
+
+#### Exemple en PHP :
+
+![Exemple d'une classe en POO en PHP](images/11_poo_definition_classe.jpg)
+
+Dans cet exemple, `Voiture` est une classe qui définit les attributs et les méthodes associés aux objets de type `Voiture`. Tu peux créer plusieurs objets à partir de cette classe, chacun ayant ses propres valeurs pour les attributs définis.
+
+> commentaire : En PHP, `$this` est une référence à l'objet courant dans lequel le code est exécuté. Il est utilisé au sein d'une classe pour accéder aux attributs et aux méthodes de l'objet en cours. Voici quelques points clés concernant $this :
+
+> 1. *Accès aux attributs* : lorsque tu veux accéder à un attribut d'un objet à l'intérieur d'une méthode de la même classe, tu utilises `$this->nomAttribut`. Par exemple, dans l'exemple de la classe `Voiture`, `$this->vitesse` accède à l'attribut `vitesse` de l'objet.
+
+> 2. *Accès aux méthodes* : de même, pour appeler une méthode de l'objet courant, tu utilises `$this->nomMethode()`. Cela permet d'exécuter d'autres méthodes de l'objet à l'intérieur de la méthode actuelle.
+
+> 3. *Identité de l'objet* : `$this` permet de distinguer entre les propriétés et méthodes de l'objet courant et les variables locales ou les paramètres de méthode. C'est particulièrement utile lorsqu'un paramètre a le même nom qu'un attribut.
+
+![Exemple d'utilisation de $this en PHP](images/12_poo_this.jpg)
+
 ___
 
 45.	Qu’est-ce qu’un objet ?
+
+En programmation orientée objet (POO), un objet est une instance d'une classe. Il représente une entité concrète qui combine des données (attributs) et des comportements (méthodes) définis par la classe dont il est issu.
+
+#### Caractéristiques d'un objet :
+
+1. **État** : les attributs d'un objet définissent son état. Par exemple, pour un objet `Voiture`, des attributs comme `couleur`, `marque`, et `vitesse` décrivent ses caractéristiques à un moment donné.
+
+2. **Comportement** : les méthodes de l'objet définissent ce qu'il peut faire. Par exemple, une méthode `accelerer()` permet à la voiture d'augmenter sa vitesse.
+
+3. **Identité** : **chaque objet a une identité unique**, même s'il est créé à partir de la même classe. Cela signifie que deux objets peuvent avoir les mêmes attributs mais sont des instances distinctes.
+
+#### Exemple en PHP : on reprend l'exemple de la classe `Voiture`.
+
+![Exemple d'un objet en POO en PHP](images/13_poo_objet.jpg)
+
+Dans cet exemple :
+
+- `maVoiture` et `autreVoiture` sont des objets distincts de la classe `Voiture`.
+- Chacun a ses propres valeurs pour `couleur`, `marque`, et `vitesse`, ce qui illustre l'état unique de chaque objet.
+- Ils peuvent interagir avec leurs propres méthodes sans interférer l'un avec l'autre.
+
+En résumé, **un objet est une instance concrète d'une classe**, combinant état et comportement, ce qui permet de modéliser des entités du monde réel dans le code.
+
+
+> commentaire : En PHP, on utilise le double underscore __ devant construct pour indiquer qu'il s'agit d'une méthode spéciale, appelée **méthode magique**.
+
+> - Constructeur : la méthode __construct est le constructeur de la classe. Elle est automatiquement appelée lors de la création d'une nouvelle instance de la classe (lorsque tu utilises le mot-clé new).
+
+> - Initialisation : son rôle principal est d'initialiser les attributs de l'objet. Dans l'exemple précédent, __construct est utilisé pour définir la couleur, la marque et la vitesse de la voiture au moment de sa création.
+
+![Exemple d'une variante](images/14_poo_objet_02.jpg)
 
 ___
 
 46.	Définir la notion de propriété / attribut / méthode
 
+En programmation orientée objet (POO), les notions de propriété, d'attribut et de méthode sont essentielles pour comprendre comment fonctionnent les classes et les objets. Voici une définition pour chacune de ces notions :
+
+#### Propriété
+
+La propriété fait généralement référence à une caractéristique d'une classe. En POO, on utilise souvent ce terme de manière interchangeable avec "attribut", mais il peut aussi désigner les propriétés d'une classe en tant que telles, souvent en relation avec les concepts de visibilité et d'encapsulation.
+
+#### Attribut
+
+Un attribut est une variable qui fait partie d'une classe. Il représente l'état ou les données d'un objet. Par exemple, dans une classe `Voiture`, les attributs pourraient être `couleur`, `marque`, et `vitesse`. Les attributs peuvent avoir différents niveaux de visibilité (public, privé, protégé) qui déterminent leur accessibilité.
+
+#### Méthode
+
+Une méthode est une fonction définie à l'intérieur d'une classe. Elle définit un comportement que l'objet peut réaliser. Les méthodes peuvent manipuler les attributs de l'objet et effectuer des actions. Par exemple, dans la classe `Voiture`, une méthode comme `accelerer()` permettrait d'augmenter la vitesse de la voiture.
+
+#### Exemple en PHP
+
+Voici comment ces notions se combinent dans un exemple :
+
+```
+php
+
+class Voiture {
+    // Attributs (ou propriétés)
+    private $couleur; // Attribut privé
+    private $marque;  // Attribut privé
+    private $vitesse; // Attribut privé
+
+    // Constructeur pour initialiser les attributs
+    public function __construct($couleur, $marque) {
+        $this->couleur = $couleur;
+        $this->marque = $marque;
+        $this->vitesse = 0; // Initialisation à 0
+    }
+
+    // Méthode pour accélérer
+    public function accelerer($augmentation) {
+        $this->vitesse += $augmentation; // Manipule l'attribut vitesse
+    }
+
+    // Méthode pour obtenir la vitesse actuelle
+    public function getVitesse() {
+        return $this->vitesse; // Retourne l'attribut vitesse
+    }
+}
+```
+
+#### Résumé
+
+- **Attribut** : variable qui stocke des données ou l'état d'un objet.
+- **Propriété** : terme souvent interchangeable avec "attribut", désignant une caractéristique d'une classe.
+- **Méthode** : fonction définie dans une classe, qui décrit les actions ou comportements que l'objet peut réaliser.
+
 ___
 
 47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité.
+
+La visibilité d’une propriété ou d’une méthode en programmation orientée objet (POO) détermine l'accessibilité de ces éléments depuis d'autres parties du code, notamment d'autres classes ou objets. En PHP, il existe trois types de visibilité :
+
+#### 1. Public
+
+- **Accessibilité** : les propriétés et méthodes déclarées comme `public` peuvent être **accessibles depuis n'importe où**, que ce soit à l'intérieur de la classe, à l'extérieur, ou dans des classes dérivées.
+- **Usage** : utilisé pour les éléments que l'on souhaite exposer et rendre accessibles à tous.
+
+#### 2. Privé (private)
+
+- **Accessibilité** : les éléments déclarés comme `private` ne sont **accessibles que depuis l'intérieur de la classe où ils sont définis**. Ils ne peuvent pas être accédés depuis d'autres classes, même celles qui héritent de cette classe.
+- **Usage** : utilisé pour protéger les données sensibles ou internes de l'objet, en empêchant les modifications non contrôlées.
+
+#### 3. Protégé (protected)
+
+- **Accessibilité** : les éléments `protected` sont **accessibles à l'intérieur de la classe où ils sont définis et dans toutes les classes qui en héritent (les sous-classes)**. Cependant, ils ne sont pas accessibles depuis l'extérieur de ces classes.
+- **Usage** : utilisé pour permettre un accès aux propriétés ou méthodes par des classes dérivées, tout en les protégeant de l'accès direct depuis l'extérieur.
+
+#### Exemple en PHP 
+
+Voici un exemple illustrant ces différents niveaux de visibilité :
+
+![Les niveaux de visibilité d'un élément d'une classe](images/15_visibilite.jpg)
+
+#### Résumé
+
+- **Public** : accessible de partout.
+- **Privé** : accessible uniquement à l'intérieur de la classe.
+- **Protégé** : accessible dans la classe et ses sous-classes.
+
+> Commentaire :
+> - Si aucune visibilité n'est spécifiée, les propriétés et méthodes sont considérées comme **publiques**.
+> - Il est généralement recommandé de toujours définir explicitement la visibilité pour plus de clarté et pour éviter toute confusion dans le code.
 
 ___
 
 48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
 
+
+
 ___
 
 49.	Qu’est-ce que l’encapsulation ?
+
+
 
 ___
 
 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple.
 
+
+
 ___
 
 51.	Définir l’opérateur de résolution de portée.
+
+
 
 ___
 
 52.	Définir une méthode / propriété statique.
 
+
+
 ___
 
 53.	Définir le polymorphisme en POO.
+
+
 
 ___
 
 54.	Définir une méthode / classe abstraite ?
 
+
+
 ___
 
 55.	Définir le chaînage de méthodes.
+
+
 
 ___
 
 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques » ?
 
+
+
 ___
 
 57.	Qu’est-ce qu’un « autoload » ?
+
+
 
 ___
 
 58.	Comment appelle-t-on en français les « getters » et les « setters » ?
 
+
+
 ___
 
 59.	Qu’est-ce que la sérialisation en PHP ? 
+
+
 
 ___
 
