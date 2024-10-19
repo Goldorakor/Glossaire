@@ -360,13 +360,13 @@ ___
 
 18.	Définir HTML.
 
-HTML (**HyperText Markup Language**) est un langage de balisage qui permet d'ajouter du contenu et de le structurer, pour la création d'une page web. Il permet entre autres de créer des liens hypertextes qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
+HTML (**HyperText Markup Language**) est un langage de balisage qui permet d'**ajouter du contenu et** de **le structurer**, pour la création d'une page web. Il permet entre autres de **créer des liens hypertextes** qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
 
 ___
 
 19.	Définir CSS.
 
-CSS (**Cascading Style Sheets**) est un langage informatique utilisé pour contrôler l'apparence visuelle d'une page web. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage pour styliser et mettre en forme sa page web. Il s'utilise avec d'autres langages informatiques.
+CSS (**Cascading Style Sheets**) est un langage informatique utilisé **pour contrôler l'apparence visuelle d'une page web**. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage **pour styliser et mettre en forme sa page web**. Il s'utilise avec d'autres langages informatiques.
 
 *ATTENTION* : un fichier CSS peut être couplé à un fichier HTML via une balise `<link>` dans la section `<head>` du fichier HTML.  
 - `<link rel="stylesheet" href="styles.css">` 
@@ -469,7 +469,7 @@ Exemple de code pour une balise `<a>` avec un attribut download :
 
 ___
 
-25.	Qu’est-ce qu’une requête AJAX ?
+25.	Qu’est-ce qu’une requête AJAX ? (je ne maitrise pas cet outil)
 
 Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui permet de communiquer avec un serveur sans recharger la page web. Cela permet d'**échanger des données en arrière-plan** et de mettre à jour des parties de la page sans interrompre l'expérience utilisateur.
 
@@ -498,16 +498,16 @@ Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui pe
 
 ___
 
-26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
+26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ? (déjà répondu à la question 23)
 
-Le premier s'appelle le sélecteur de classe qui cible tous les éléments ayant une classe spécifique, préfixée par un point (.).
+Le premier s'appelle le **sélecteur de classe** qui cible tous les éléments ayant une classe spécifique, **préfixée par un point (.)**.
 ```
 .mon-style {
     font-weight: bold; /* Tous les éléments avec la classe "mon-style" seront en gras */
 }
 ```
 
-Le deuxième s'appelle le sélecteur d'identifiant qui cible un élément unique ayant un identifiant spécifique, préfixé par un dièse (#).
+Le deuxième s'appelle le **sélecteur d'identifiant** qui cible un élément unique ayant un identifiant spécifique, **préfixé par un dièse (#)**.
 ```
 #mon-id {
     background-color: yellow; /* L'élément avec l'id "mon-id" aura un fond jaune */
@@ -524,7 +524,7 @@ ___
 
 28.	Qu’est-ce que le templating ?
 
-*Le templating est une technique* utilisée dans le développement web pour générer du contenu HTML dynamique à partir de **modèles** (ou **templates** en anglais). Ces modèles contiennent généralement des espaces réservés (**placeholders** en anglais) qui sont remplacés par des données réelles au moment de l'exécution. Cela permet de séparer la logique de l'application de la présentation, rendant le code plus organisé et maintenable. Le templating est essentiel pour créer des applications web dynamiques et modernes.
+**Le templating est une technique** utilisée dans le développement web pour générer du contenu HTML dynamique à partir de **modèles** (ou **templates** en anglais). Ces modèles contiennent généralement des espaces réservés (**placeholders** en anglais) qui sont remplacés par des données réelles au moment de l'exécution. Cela permet de séparer la logique de l'application de la présentation, rendant le code plus organisé et maintenable. Le templating est essentiel pour créer des applications web dynamiques et modernes.
 
 #### Caractéristiques principales :
 
