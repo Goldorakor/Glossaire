@@ -1532,15 +1532,15 @@ ___
 
 La gestion de projet est l’ensemble des pratiques et des techniques utilisées pour planifier, exécuter et finaliser un projet dans les délais et les budgets impartis. Elle implique plusieurs étapes clés :  
 
-    1. **Initiation** : Définir l’objectif du projet et ses parties prenantes.
+1. **Initiation** : Définir l’objectif du projet et ses parties prenantes.
     
-    2. **Planification** : Élaborer un plan qui inclut les ressources, le budget, les délais et les tâches nécessaires.
+2. **Planification** : Élaborer un plan qui inclut les ressources, le budget, les délais et les tâches nécessaires.
     
-    3. **Exécution** : Mettre en œuvre le plan, coordonner les équipes et gérer les ressources.
+3. **Exécution** : Mettre en œuvre le plan, coordonner les équipes et gérer les ressources.
     
-    4. **Suivi et contrôle** : Surveiller l’avancement du projet, ajuster les plans si nécessaire et gérer les risques.
+4. **Suivi et contrôle** : Surveiller l’avancement du projet, ajuster les plans si nécessaire et gérer les risques.
     
-    5. **Clôture** : Finaliser le projet, évaluer les résultats et documenter les leçons apprises.
+5. **Clôture** : Finaliser le projet, évaluer les résultats et documenter les leçons apprises.
 
 La gestion de projet vise à atteindre des résultats spécifiques tout en respectant les contraintes de temps, de coût et de qualité.
 ___
