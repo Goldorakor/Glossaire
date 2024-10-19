@@ -1549,15 +1549,15 @@ ___
 
 La méthode Agile est une approche de gestion de projet qui privilégie la flexibilité, la collaboration et l'adaptabilité face aux changements. Elle est particulièrement populaire dans le développement logiciel, mais peut être appliquée à divers types de projets. Voici quelques caractéristiques clés :
 
-    1. **Itérations courtes** : Les projets sont divisés en cycles appelés "sprints", généralement de deux à quatre semaines, permettant d'obtenir rapidement des résultats.
+1. **Itérations courtes** : Les projets sont divisés en cycles appelés "sprints", généralement de deux à quatre semaines, permettant d'obtenir rapidement des résultats.
 
-    2. **Collaboration** : Les équipes travaillent en étroite collaboration avec les parties prenantes, favorisant une communication ouverte et continue.
+2. **Collaboration** : Les équipes travaillent en étroite collaboration avec les parties prenantes, favorisant une communication ouverte et continue.
 
-    3. **Adaptabilité** : Les équipes peuvent ajuster leurs priorités et leurs plans en fonction des retours d'expérience et des changements de besoins.
+3. **Adaptabilité** : Les équipes peuvent ajuster leurs priorités et leurs plans en fonction des retours d'expérience et des changements de besoins.
 
-    4. **Feedback régulier** : Les retours des utilisateurs sont intégrés à chaque étape, permettant d'améliorer constamment le produit.
+4. **Feedback régulier** : Les retours des utilisateurs sont intégrés à chaque étape, permettant d'améliorer constamment le produit.
 
-    5. **Livraison continue** : L'objectif est de livrer des fonctionnalités opérationnelles à la fin de chaque sprint, assurant ainsi une progression constante.
+5. **Livraison continue** : L'objectif est de livrer des fonctionnalités opérationnelles à la fin de chaque sprint, assurant ainsi une progression constante.
 
 Les méthodes Agile, comme Scrum et Kanban, sont conçues pour répondre rapidement aux besoins changeants des clients et pour améliorer la qualité du produit final.
 ___
@@ -1566,11 +1566,11 @@ ___
 
 La méthode MoSCoW est une **technique de priorisation utilisée dans la gestion de projet** pour aider à classer les exigences en fonction de leur importance. MoSCoW est un acronyme qui signifie :
 
-    - **Must have** (doit avoir) : les éléments essentiels au succès du projet.
+- **Must have** (doit avoir) : les éléments essentiels au succès du projet.
     
-    - **Should have** (devrait avoir) : les éléments importants mais non critiques.
+- **Should have** (devrait avoir) : les éléments importants mais non critiques.
     
-    - **Could have** (pourrait avoir) : les éléments souhaitables qui peuvent être ajoutés si le temps et les ressources le permettent.
+- **Could have** (pourrait avoir) : les éléments souhaitables qui peuvent être ajoutés si le temps et les ressources le permettent.
     
     - **Won't have this time** (n’aura pas cette fois) : les éléments qui ne seront pas inclus dans cette phase.
 
