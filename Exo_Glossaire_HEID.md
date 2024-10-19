@@ -15,7 +15,8 @@
 ___
 
 ## Général
-
+  
+  
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
 Il faut installer un **serveur local** sur son ordinateur, qui pourra **interpréter le code PHP** car le navigateur n'en est pas capable.
@@ -358,6 +359,7 @@ ___
 
 ## Front-end
 
+    
 18.	Définir HTML.
 
 HTML (**HyperText Markup Language**) est un langage de balisage qui permet d'**ajouter du contenu et** de **le structurer**, pour la création d'une page web. Il permet entre autres de **créer des liens hypertextes** qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
@@ -640,6 +642,8 @@ p::first-letter {
 }
 ```
 
+___
+
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalents.
 
 Bootstrap est **un framework front-end open-source** conçu pour faciliter le développement d'interfaces web réactives et attrayantes. Il fournit une collection de composants CSS et JavaScript préconstruits, permettant aux développeurs de créer rapidement des sites web modernes et adaptatifs.
@@ -666,7 +670,7 @@ Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être a
 
 #### Méthode GET
 
-- Description : la méthode GET envoie les données du formulaire en les ajoutant à l'URL sous forme de paramètres de requête. Les données sont visibles dans la barre d'adresse du navigateur.
+- Description : **la méthode GET envoie les données du formulaire en les ajoutant à l'URL sous forme de paramètres de requête. Les données sont visibles dans la barre d'adresse du navigateur.**
 
 - Caractéristiques :
     - Limité en taille (environ 2000 caractères selon le navigateur).
@@ -683,7 +687,7 @@ Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être a
 
 #### Méthode POST
 
-- Description : La méthode POST envoie les données du formulaire dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.
+- Description : **La méthode POST envoie les données du formulaire dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.**
 
 - Caractéristiques :
     - Pas de limite de taille stricte, permettant d'envoyer des volumes de données plus importants.
@@ -713,6 +717,7 @@ ___
 ___
 
 ## UX UI
+
 
 35.	Quelle est la différence entre UX Design et UI Design ?
 
