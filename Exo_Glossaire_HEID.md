@@ -18,7 +18,7 @@ ___
 
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
-Il faut installer un serveur local sur son ordinateur, qui pourra interpréter le code PHP car le navigateur n'en est pas capable.
+Il faut installer un **serveur local** sur son ordinateur, qui pourra **interpréter le code PHP** car le navigateur n'en est pas capable.
 Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script interagit avec une base de données (un choix fréquent est MySQL).
 
 Laragon inclut le serveur web Apache et la base de données MySQL (visibles sur la fenêtre menu) et propose plusieurs versions de PHP. C'est un environnement préconfiguré qui inclut ce dont on a besoin.
@@ -29,21 +29,21 @@ ___
 
 2.	Qu’est-ce qu’un algorithme ?
 
-Un algorithme est une succession finie d'instructions claires et de règles bien définies, à réaliser pour résoudre un problème ou effectuer une tâche complexe. On doit garder en mémoire qu'il doit être efficace (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
+Un algorithme est une **succession finie d'instructions claires et de règles bien définies**, à réaliser pour **résoudre un problème ou effectuer une tâche complexe**. On doit garder en mémoire qu'il doit **être efficace** (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
 
 ___
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
 
-Une variable est un emplacement mémoire qui associe un nom à une valeur. Elle peut être de différents types : nombre entier, nombre à virgule, booléen, chaine de caractères, tableau, etc.  
+Une variable est un **emplacement mémoire qui associe un nom à une valeur**. Elle peut être de différents types : nombre entier, nombre à virgule, booléen, chaine de caractères, tableau, etc.  
 
-En PHP, une variable est préfixée par le symbole $.
+En PHP, une variable est **préfixée par le symbole $**.
 
 ___
 
 4.	Qu’est-ce que la portée d’une variable ?
 
-La portée d'une variable détermine où elle est accessible dans le code. Une variable définie à l'intérieur d'une fonction n'est en général pas accessible en dehors de cette fonction. 
+La portée d'une variable détermine **où elle est accessible dans le code**. Une variable définie à l'intérieur d'une fonction n'est en général pas accessible en dehors de cette fonction. 
 
 ___
 
@@ -52,15 +52,15 @@ ___
 Une constante est une valeur qui, une fois définie, ne sera plus jamais modifiée au cours de l'exécution d'un programme.
 
 Les différences sont :
-- la constante n'est pas déclarée avec le symbole $.
-- la constante est souvent écrite en majuscule.
-- la constante ne sert pas à stocker une valeur (une information) qui peut varier pendant l'exécution du programme.
+- la constante n'est **pas déclarée avec le symbole $**.
+- la constante est souvent **écrite en majuscule**.
+- la constante **ne sert pas à stocker une valeur (une information) qui peut varier** pendant l'exécution du programme.
 
 ___
 
 6.	Qu’est-ce qu’une superglobale, combien en existe-t-il ? Donner un exemple d’utilisation.
 
-Une superglobale est une variable (variable prédéfinie) qui est toujours accessible, peu importe le contexte dans lequel elle est utilisée. Contrairement aux variables normales, qui ont une portée limitée, les superglobales sont accessibles de n'importe où dans le script.
+Une superglobale est **une variable (variable prédéfinie) qui est toujours accessible, peu importe le contexte dans lequel elle est utilisée**. Contrairement aux variables normales, qui ont une portée limitée, les superglobales sont **accessibles de n'importe où dans le script**.
 
 Il existe plusieurs superglobales en PHP :
 1. $GLOBALS : Contient toutes les variables globales.
@@ -150,12 +150,12 @@ ___
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
 
 Les différents types que l'on peut associer à une variable en PHP sont :
-- une chaine de caracères (string). Exemple : $chaine = "Bonjour"
-- un nombre entier (integer). Exemple : $nombre = 4
-- un nombre à virgule (float). Exemple : $float = 3.20
-- un booléen (boolean). Exemple : Exemple : $bool = true ou $bool = false
-- un tableau (array). Exemple : $tableau = [ "élément1" , 4 , 4.20 , "élément5", $variable ] -> un tableau peut contenir toute sorte de choses
-- un objet (object). Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] :  
+- une **chaine de caracères (string)**. Exemple : $chaine = "Bonjour"
+- un **nombre entier (integer)**. Exemple : $nombre = 4
+- un **nombre à virgule (float)**. Exemple : $float = 3.20
+- un **booléen (boolean)**. Exemple : Exemple : $bool = true ou $bool = false
+- un **tableau (array)**. Exemple : $tableau = [ "élément1" , 4 , 4.20 , "élément5", $variable ] -> un tableau peut contenir toute sorte de choses
+- un **objet (object)**. Exemple : $maVoiture = new Voiture [avant de pouvoir créer une instance de la classe voiture, on a dû définir la classe voiture au préalable] :  
 ```
 class Voiture {  
     // voici les propriétés de la classe que nous créeons :  
@@ -165,7 +165,7 @@ class Voiture {
 }  
 ```
 
--  une variable sans valeur. Exemple : 
+-  une **variable sans valeur**. Exemple : 
     - $maVariable [la variable est déclarée mais n'a pas de valeur initiale, donc elle est non définie : sa valeur est considérée comme NULL]
     - $mavariable2 = NULL [on définit explicitement la variable comme NULL]
 
@@ -245,13 +245,13 @@ faire
 tant que (condition) 
 ``` 
 
-Le bloc de code est exécuté au moins une fois, car la condition est vérifiée après l'exécution du code.  
+Le **bloc de code est exécuté au moins une fois**, car la condition est vérifiée après l'exécution du code.  
 Elle est utile lorsque vous souhaitez garantir qu'une action est effectuée au moins une fois, indépendamment de la condition.  
 
 
 #### Il y a les structures de saut qui permettent de modifier le flux d'exécution en sautant à d'autres parties du code.
 
-1. break (utilisé pour sortir d'une boucle ou d'une structure de contrôle) : 
+1. break (utilisé **pour sortir d'une boucle** ou d'une structure de contrôle) : 
 ```
 pour i de 1 à 10 faire  
     si (i = 5) alors  
@@ -260,7 +260,7 @@ pour i de 1 à 10 faire
 fin pour  
 ```
 
-2. continue (utilisé pour sauter à l'itération suivante d'une boucle) : 
+2. continue (utilisé **pour sauter à l'itération suivante** d'une boucle) : 
 ```
 pour i de 1 à 10 faire  
     si (i est pair) alors  
@@ -270,7 +270,7 @@ pour i de 1 à 10 faire
 fin pour 
 ``` 
 
-3. return (utilisé pour sortir d'une fonction et éventuellement renvoyer une valeur) :
+3. return (utilisé **pour sortir d'une fonction** et éventuellement renvoyer une valeur) :
 ``` 
 fonction somme(a, b)  
     retourner a + b  
@@ -301,13 +301,15 @@ ___
 
 13.	Quelle est la différence entre les instructions «require» et «include» en PHP ?
 
-Ces instructions sont utilisées pour inclure le contenu d'un fichier dans un autre fichier. Mais elles présentent des différences en terme de comportement et d'utilisation.
+Ces instructions sont utilisées **pour inclure le contenu d'un fichier dans un autre fichier**. Mais elles présentent des différences en terme de comportement et d'utilisation.
 
 Si le fichier spécifié ne peut pas être inclus, **require** génère une erreur fatale et arrête l'exécution du script : si le fichier est essentiel pour le fonctionnement du programme, l'utilisation de **require** est donc appropriée.
 
 Si le fichier ne peut pas être inclus, **include** génère un avertissement et le script continue à s'exécuter. Cela peut être utile si le fichier est optionnel ou si vous voulez que le programme continue même en cas d'erreur.
 
-En résumé, choisissez **require** lorsque le fichier est indispensable au fonctionnement du script et **include** lorsque le fichier est optionnel. Les variantes **require_once** et **include_once** permettent d'éviter les inclusions multiples, garantissant que le contenu du fichier est exécuté une seule fois.
+En résumé, choisissez **require** lorsque le fichier est indispensable au fonctionnement du script et **include** lorsque le fichier est optionnel. Les variantes **require_once** et **include_once** permettent d'**éviter les inclusions multiples**, garantissant que le contenu du fichier est exécuté une seule fois.
+
+___
 
 14.	Comment effectuer une redirection en PHP ?
 
@@ -315,24 +317,24 @@ ___
 
 15.	Définir la partie « front-end » et « back-end » d’une application.
 
-La partie **front-end** d'une application contient toute la partie visible par l'utilisateur. Elle contient donc la partie "contenu informatif du site" et la partie "mise en forme du site". Les langages associés à cette partie sont le HTML et le CSS.
+La partie **front-end** d'une application contient toute la partie visible par l'utilisateur. Elle contient donc **la partie "contenu informatif du site" et la partie "mise en forme du site"**. Les langages associés à cette partie sont le **HTML** et le **CSS**.
 
-- HTML pour fournir du contenu et le structurer.
-- CSS pour la mise en forme et la gestion graphique du site.
+- **HTML pour fournir du contenu et le structurer**. (je maitrise les fondamentaux)
+- **CSS pour la mise en forme et la gestion graphique du site**. (je dois améliorer ma pratique des outils flexbox)
 
 Mon navigateur gère parfaitement l'affichage du front-end et je peux développer sans outil particulier. Le logiciel VSCode fait très bien le travail demandé.
 
 La partie **back-end** d'une application contient toute la machinerie cachée qui permet un bon fonctionnement de mon application. Le langage associé à cette partie est le PHP (en ce qui me concerne).
 
-- PHP pour aller envoyer des requêtes au serveur.
+- **PHP pour aller envoyer des requêtes au serveur**. (je découvre ce langage en ce moment même)
 
-Mon navigateur ne gère pas correctement le langage PHP. En plus du logiciel VSCode, je vais installer Laragon, qui va me fournir les outils adaptés au besoin du développement en PHP.
+**Mon navigateur ne gère pas correctement le langage PHP**. En plus du logiciel VSCode, je vais installer Laragon, qui va me fournir les outils adaptés au besoin du développement en PHP.
 
 ___
 
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
-Le **contrôle de version** est un système qui enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet. 
+Le **contrôle de version** est un système qui **enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet**. 
 - On sait quelle modification a été faite, qui a fait la modification et quand elle a été faite.
 - On garde un historique complet des versions des fichiers, pour revenir facilement à une version ancienne si besoin.
 - On peut travailler à plusieurs sur un même projet, en travaillant chacun sur sa propre copie des fichiers.
@@ -348,8 +350,8 @@ ___
 Un CMS (**Content Management System**), aussi appelé **système de gestion de contenu**, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
 Deux exemples de CMS : 
-- WordPress
-- Shopify.
+- **WordPress**
+- **Shopify**
 
 ___
 ___
