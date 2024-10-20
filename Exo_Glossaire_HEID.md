@@ -1475,7 +1475,6 @@ En résumé, les membres statiques offrent une manière efficace et centralisée
 
 ## Constantes de classe, c'est quoi ?
 
-
 Les **constantes de classe en PHP** sont des valeurs qui ne peuvent pas être modifiées après leur définition. Elles sont liées à la classe elle-même et non à des instances spécifiques de cette classe. Les constantes sont souvent utilisées pour définir des valeurs fixes qui doivent rester constantes tout au long de l'exécution du programme.
 
 ### Caractéristiques des constantes de classe :
@@ -1563,9 +1562,9 @@ echo Configuration::afficherVersion(); // Affiche "1.0"
 En résumé, déclarer une constante de classe comme `private` protège la constante des accès non autorisés, ce qui peut être utile pour maintenir l'intégrité des données ou pour cacher les détails d'implémentation. Cependant, cela signifie aussi que tu dois fournir des méthodes publiques (ou protégées) pour accéder à ces constantes si tu souhaites les utiliser en dehors de la classe.
 
 
-## si je déclare la propriété d'une classe comme private, cette propriété ne sera pas accessible en dehors de cette classe. Mais sera-t-elle accessible dans une instance de cette classe ou pas non plus ?
+## si on déclare la propriété d'une classe comme private, cette propriété ne sera pas accessible en dehors de cette classe. Mais sera-t-elle accessible dans une instance de cette classe ou pas non plus ?
 
-Si tu déclares une propriété d'une classe comme `private`, cette propriété **ne sera pas accessible en dehors de la classe, même à partir d'une instance de cette classe**. Cela signifie que les objets de cette classe ne peuvent pas accéder directement à cette propriété.
+Si on déclares une propriété d'une classe comme `private`, cette propriété **ne sera pas accessible en dehors de la classe, même à partir d'une instance de cette classe**. Cela signifie que les objets de cette classe ne peuvent pas accéder directement à cette propriété.
 
 ### Exemple :
 
@@ -1608,8 +1607,65 @@ ___
 
 52.	Définir une méthode / propriété statique.
 
+Une **méthode statique** et une **propriété statique** en PHP sont des **membres d'une classe qui appartiennent à la classe elle-même plutôt qu'à des instances spécifiques de cette classe**. Cela signifie qu'**on peut accéder à ces membres sans avoir à créer un objet de cette classe**.
+
+### Propriété statique
+
+Une **propriété statique** est une variable qui est définie avec le mot-clé `static` et qui est partagée par toutes les instances de la classe. Elle est accessible via l'opérateur de résolution de portée ::.
+
+#### Exemple de propriété statique :
+
+```
+class Compteur {
+    public static $nombreInstances = 0;
+
+    public function __construct() {
+        self::$nombreInstances++; // Incrémente à chaque nouvelle instance. Le mot-clé `self` en PHP est utilisé pour faire référence à la classe actuelle à l'intérieur de la classe elle-même.
+    }
+}
+
+// Créer des instances
+$instance1 = new Compteur();
+$instance2 = new Compteur();
+
+echo Compteur::$nombreInstances; // Affiche 2
+```
+
+### Méthode statique
+
+Une **méthode statique** est une fonction qui est définie avec le mot-clé `static` et qui peut être appelée sans avoir à créer une instance de la classe. Elle peut accéder uniquement aux membres statiques de la classe.
+
+#### Exemple de méthode statique :
+
+```
+class Utilitaire {
+    public static function direBonjour() {
+        return "Bonjour !";
+    }
+}
+
+// Appel de la méthode statique sans instancier la classe
+echo Utilitaire::direBonjour(); // Affiche "Bonjour !"
+```
+
+### Caractéristiques des méthodes et propriétés statiques :
+
+1. **Accès direct** : on peut accéder aux membres statiques en utilisant l'opérateur `::` sans créer d'instance de la classe.
+
+2. **Partage entre instances** : les propriétés statiques sont partagées entre toutes les instances de la classe. Si une instance modifie la propriété statique, cette modification est visible pour toutes les autres instances.
+
+3. **Pas d'accès à** `$this` : dans une méthode statique, tu ne peux pas utiliser `$this`, car `$this` fait référence à une instance de la classe. Pour accéder à d'autres membres (non statiques), tu dois créer une instance de la classe.
+
+### Utilisations courantes :
+
+- **Propriétés statiques** : souvent utilisées pour stocker des valeurs communes, comme un compteur d'instances ou des configurations globales.
+
+- **Méthodes statiques** : utilisées pour des fonctions utilitaires qui ne nécessitent pas d'état spécifique à une instance. Par exemple, des méthodes de validation, de formatage, etc.
+
+En résumé, les **méthodes et propriétés statiques en PHP offrent une manière efficace de gérer des données et des fonctionnalités qui ne dépendent pas d'une instance spécifique de la classe**.
 
 
+## A propos du mot-clé `self` 
 ___
 
 53.	Définir le polymorphisme en POO.
