@@ -1525,8 +1525,11 @@ ___
 126.	Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
 
 ___
+___
 
 ## Gestion de projets - DevOps
+
+___
 
 127.	Qu’est-ce que la gestion de projet ?
 
@@ -1572,17 +1575,17 @@ La méthode MoSCoW est une **technique de priorisation utilisée dans la gestion
     
 - **Could have** (pourrait avoir) : les éléments souhaitables qui peuvent être ajoutés si le temps et les ressources le permettent.
     
-    - **Won't have this time** (n’aura pas cette fois) : les éléments qui ne seront pas inclus dans cette phase.
+- **Won't have this time** (n’aura pas cette fois) : les éléments qui ne seront pas inclus dans cette phase.
 
 ### Avantages de la méthode MoSCoW :
 
-    1. **Clarté** : Aide à clarifier les priorités et à aligner les attentes des parties prenantes.
+1. **Clarté** : Aide à clarifier les priorités et à aligner les attentes des parties prenantes.
     
-    2. **Gestion des ressources** : Permet de concentrer les efforts sur les éléments les plus critiques, optimisant ainsi l'utilisation des ressources.
+2. **Gestion des ressources** : Permet de concentrer les efforts sur les éléments les plus critiques, optimisant ainsi l'utilisation des ressources.
     
-    3. **Flexibilité** : Facilite les ajustements en cours de projet en permettant d’identifier rapidement ce qui peut être abandonné ou ajusté.
+3. **Flexibilité** : Facilite les ajustements en cours de projet en permettant d’identifier rapidement ce qui peut être abandonné ou ajusté.
     
-    4. **Communication** : Favorise une meilleure communication entre les équipes et les parties prenantes en rendant les priorités explicites.
+4. **Communication** : Favorise une meilleure communication entre les équipes et les parties prenantes en rendant les priorités explicites.
 
 Cette méthode est particulièrement **utile dans un contexte Agile**, où les besoins peuvent évoluer rapidement.
 ___
@@ -1593,47 +1596,64 @@ La méthodologie MVP, ou **Minimum Viable Product**, est une approche utilisée 
 
 ###Objectifs de la méthodologie MVP :
 
-    1. **Valider une idée** : Tester une hypothèse de produit avec un **minimum de ressources** avant de développer davantage.
+1. **Valider une idée** : Tester une hypothèse de produit avec un **minimum de ressources** avant de développer davantage.
     
-    2. **Réduire les risques** : **Minimiser les investissements initiaux et les risques** associés à un produit qui pourrait ne pas rencontrer le succès.
+2. **Réduire les risques** : **Minimiser les investissements initiaux et les risques** associés à un produit qui pourrait ne pas rencontrer le succès.
     
-    3. **Recueillir des retours** : Obtenir **rapidement des feedbacks** des utilisateurs pour améliorer le produit.
+3. **Recueillir des retours** : Obtenir **rapidement des feedbacks** des utilisateurs pour améliorer le produit.
 
 ###Caractéristiques clés de la méthodologie MVP :
 
-    1. **Fonctionnalités minimales** : Se concentrer sur les **fonctionnalités essentielles** qui répondent aux besoins des utilisateurs cibles.
+1. **Fonctionnalités minimales** : Se concentrer sur les **fonctionnalités essentielles** qui répondent aux besoins des utilisateurs cibles.
     
-    2. **Lancement rapide** : Développer et lancer le produit **sur le marché rapidement** pour valider les hypothèses.
+2. **Lancement rapide** : Développer et lancer le produit **sur le marché rapidement** pour valider les hypothèses.
     
-    3. **Apprentissage continu** : Recueillir **des données et des retours d'expérience** pour guider les futures améliorations et évolutions du produit.
+3. **Apprentissage continu** : Recueillir **des données et des retours d'expérience** pour guider les futures améliorations et évolutions du produit.
     
-    4. **Adaptabilité** : Être prêt à itérer sur le produit en fonction des feedbacks reçus et des changements dans le marché.
+4. **Adaptabilité** : Être prêt à itérer sur le produit en fonction des feedbacks reçus et des changements dans le marché.
 
 L'approche MVP permet donc de **tester des idées rapidement et efficacement**, tout en restant orienté vers les besoins des utilisateurs.
 ___
 
 131.	Qu’est-ce que la planification itérative ?
 
-La planification itérative est une approche de gestion de projet qui consiste à diviser le travail en petites étapes ou itérations, permettant ainsi une planification, une exécution et une révision continues. Contrairement à une planification linéaire, où toutes les phases du projet sont définies dès le départ, la planification itérative permet de s'adapter aux changements et d'ajuster les priorités au fur et à mesure de l’avancement du projet.
+La planification itérative est une approche de gestion de projet qui consiste à **diviser le travail en petites étapes ou itérations**, permettant ainsi une planification, une exécution et une révision continues. Contrairement à une planification linéaire, où toutes les phases du projet sont définies dès le départ, la planification itérative permet de **s'adapter aux changements et d'ajuster les priorités** au fur et à mesure de l’avancement du projet.
 
 ###Caractéristiques de la planification itérative :
 
-    1.Cycles courts : Les projets sont divisés en itérations (ou sprints) qui durent généralement de quelques jours à quelques semaines.
-    2.Feedback régulier : À la fin de chaque itération, des retours sont recueillis, permettant d'ajuster les fonctionnalités ou les priorités en fonction des besoins réels des utilisateurs.
-    3.**Amélioration continue** : Chaque itération permet d’apprendre et d’améliorer le produit, ce qui peut conduire à des ajustements significatifs en cours de route.
-    4. **Flexibilité** : La planification itérative permet de s’adapter facilement aux changements, qu’ils proviennent des besoins des utilisateurs ou de nouvelles contraintes de marché.
+1.**Cycles courts** : Les projets sont divisés en itérations (ou **sprints**) qui durent généralement de quelques jours à quelques semaines.
+
+2.**Feedback régulier** : À la fin de chaque itération, des retours sont recueillis, permettant d'ajuster les fonctionnalités ou les priorités en fonction des besoins réels des utilisateurs.
+
+3.**Amélioration continue** : Chaque itération permet d’apprendre et d’améliorer le produit, ce qui peut conduire à des ajustements significatifs en cours de route.
+
+4. **Flexibilité** : La planification itérative permet de **s’adapter facilement aux changements**, qu’ils proviennent des besoins des utilisateurs ou de nouvelles contraintes de marché.
 
 ###Avantages de la planification itérative :
 
-    - Réduction des risques : En validant régulièrement le travail effectué, on peut identifier rapidement les problèmes potentiels.
-    - Meilleure qualité : Les itérations permettent d’intégrer des améliorations basées sur les retours d’expérience, ce qui augmente la qualité finale du produit.
-    - Satisfaction accrue des utilisateurs : En impliquant les utilisateurs dans le processus et en tenant compte de leurs retours, le produit final est plus susceptible de répondre à leurs attentes.
+- **Réduction des risques** : En validant régulièrement le travail effectué, on peut identifier rapidement les problèmes potentiels.
 
-Cette méthode est particulièrement efficace dans des environnements complexes et changeants, comme le développement logiciel.
+- **Meilleure qualité** : Les itérations permettent d’intégrer des améliorations basées sur les retours d’expérience, ce qui augmente la qualité finale du produit.
+
+- **Satisfaction accrue des utilisateurs** : En impliquant les utilisateurs dans le processus et en tenant compte de leurs retours, le produit final est plus susceptible de répondre à leurs attentes.
+
+Cette méthode est particulièrement **efficace dans des environnements complexes et changeants**, comme le développement logiciel.
 ___
 
 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique.
 
+Voici **trois méthodes Agiles** couramment utilisées dans le cadre de projets informatiques :
+
+1. **Scrum** :
+        - Scrum est un cadre qui organise le travail en sprints (itérations de 1 à 4 semaines). Il implique des rôles définis (Scrum Master, Product Owner, équipe de développement) et des événements réguliers (réunions de planification, revues et rétrospectives) pour favoriser la collaboration et l'adaptabilité.
+
+2. **Kanban** :
+        - Kanban est une méthode visuelle qui utilise un tableau (physique ou numérique) pour représenter le flux de travail. Les tâches sont organisées en colonnes (par exemple, "À faire", "En cours", "Terminé") et la méthode met l'accent sur la limitation du travail en cours (WIP) pour améliorer l'efficacité et la fluidité.
+
+3. **Extreme Programming (XP)** :
+        - XP est une méthode qui se concentre sur l'amélioration de la qualité du logiciel et la réactivité au changement. Elle inclut des pratiques telles que le développement piloté par les tests (TDD), la programmation en binôme, et des cycles de développement courts pour favoriser une collaboration étroite avec le client.
+
+Chacune de ces méthodes offre des approches différentes pour gérer le développement de projets informatiques tout en restant **flexible et réactive aux besoins changeants des utilisateurs**.
 ___
 
 133.	Qu’est-ce qu’une réunion de revue de projet ?
