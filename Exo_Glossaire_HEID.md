@@ -1983,7 +1983,7 @@ ___
 
 7)	What does NoSQL stand for ?  
 a.	Not Only SQL.  <--
-b.	Non-Structured Query Language.  
+b.	Non-Structured Query Language.   
 c.	New Object-Oriented Language.  
 
 **a. Not Only SQL.**
