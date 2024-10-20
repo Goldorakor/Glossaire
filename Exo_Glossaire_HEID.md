@@ -1191,9 +1191,9 @@ ___
 ### Caractéristiques de l'encapsulation :
 
 1. **Visibilité des propriétés** : en PHP, tu peux utiliser des modificateurs d'accès pour définir la visibilité des propriétés et des méthodes d'une classe :
-    - public : accessible de partout.
-    - protected : accessible uniquement à la classe elle-même et aux classes dérivées.
-    - private : accessible uniquement à la classe elle-même.
+ - public : accessible de partout.
+ - protected : accessible uniquement à la classe elle-même et aux classes dérivées.
+ - private : accessible uniquement à la classe elle-même.
 
 2. **Méthodes d'accès** : pour interagir avec les propriétés d'une classe, on utilise généralement des méthodes appelées "getters" et "setters". Ces méthodes permettent de lire ou de modifier les valeurs des propriétés tout en contrôlant l'accès.
 
