@@ -1236,9 +1236,9 @@ echo $compte->getSolde(); // Affiche 150
 
 ### Avantages de l'encapsulation :
 
-- Protection des données : les propriétés privées ne peuvent pas être modifiées directement, ce qui préserve l'intégrité des données.
-- Facilité de maintenance : les modifications des détails d'implémentation n'affectent pas le code qui utilise la classe, tant que l'interface (les méthodes publiques) reste inchangée.
-- Contrôle d'accès : les méthodes permettent d'ajouter des validations ou des logiques supplémentaires lors de l'accès ou de la modification des données.
+- **Protection des données** : les propriétés privées ne peuvent pas être modifiées directement, ce qui préserve l'intégrité des données.
+- **Facilité de maintenance** : les modifications des détails d'implémentation n'affectent pas le code qui utilise la classe, tant que l'interface (les méthodes publiques) reste inchangée.
+- **Contrôle d'accès** : les méthodes permettent d'ajouter des validations ou des logiques supplémentaires lors de l'accès ou de la modification des données.
 
 ___
 
