@@ -1420,7 +1420,8 @@ echo ChildClass::parentMethod(); // Affiche "Méthode de la classe parente."
 
 L'opérateur de résolution de portée `::` est un outil puissant en PHP qui permet d'accéder facilement aux membres statiques, aux constantes de classe et aux méthodes surchargées, tout en favorisant une structure de code organisée et claire.
   
-    
+  
+  
 ### Membres statiques, c'est quoi ? (on répond en avance à la question 52)
 
 
