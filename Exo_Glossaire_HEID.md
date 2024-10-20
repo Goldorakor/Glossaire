@@ -925,21 +925,21 @@ Le **mobile first design** est une approche de conception web qui consiste à cr
 
 #### Principes du mobile first design :
 
-1. **Priorité au contenu essentiel** : En concevant d'abord pour les petits écrans, les designers sont forcés de se concentrer sur les fonctionnalités et le contenu les plus importants, éliminant le superflu.
+1. **Priorité au contenu essentiel** : en concevant d'abord pour les petits écrans, les designers sont forcés de se concentrer sur les fonctionnalités et le contenu les plus importants, éliminant le superflu.
 
-2. **Responsive design** : Après avoir conçu la version mobile, on adapte progressivement le design pour les écrans plus grands, en ajoutant des éléments et des fonctionnalités supplémentaires au fur et à mesure.
+2. **Responsive design** : après avoir conçu la version mobile, on adapte progressivement le design pour les écrans plus grands, en ajoutant des éléments et des fonctionnalités supplémentaires au fur et à mesure.
 
-3. **Performance optimisée** : Les sites conçus en mobile first sont généralement plus légers et plus rapides, car ils doivent fonctionner efficacement sur des appareils avec des ressources limitées.
+3. **Performance optimisée** : les sites conçus en mobile first sont généralement plus légers et plus rapides, car ils doivent fonctionner efficacement sur des appareils avec des ressources limitées.
 
-4. **Expérience utilisateur améliorée** : En se concentrant d'abord sur les besoins des utilisateurs mobiles, cette approche garantit une expérience fluide et intuitive, quel que soit l'appareil utilisé.
+4. **Expérience utilisateur améliorée** : en se concentrant d'abord sur les besoins des utilisateurs mobiles, cette approche garantit une expérience fluide et intuitive, quel que soit l'appareil utilisé.
 
 #### Avantages du mobile first design :
 
-- **Adaptation à la réalité actuelle** : Avec une part croissante du trafic web provenant des appareils mobiles, cette approche répond aux besoins des utilisateurs modernes.
+- **Adaptation à la réalité actuelle** : avec une part croissante du trafic web provenant des appareils mobiles, cette approche répond aux besoins des utilisateurs modernes.
 
-- **Meilleure accessibilité** : Les utilisateurs mobiles peuvent accéder au contenu plus facilement et rapidement, ce qui peut améliorer l'engagement.
+- **Meilleure accessibilité** : les utilisateurs mobiles peuvent accéder au contenu plus facilement et rapidement, ce qui peut améliorer l'engagement.
 
-- **Optimisation pour le SEO** : Les moteurs de recherche favorisent souvent les sites conçus en mobile first, ce qui peut améliorer leur classement dans les résultats de recherche.
+- **Optimisation pour le SEO** : les moteurs de recherche favorisent souvent les sites conçus en mobile first, ce qui peut améliorer leur classement dans les résultats de recherche.
 
 #### Conclusion
 
@@ -984,13 +984,13 @@ Chaque paradigme a ses avantages et ses inconvénients, et le choix d'un paradig
 
 En PHP, tu as la liberté d'utiliser plusieurs paradigmes de programmation, ce qui en fait un langage polyvalent. Voici comment les principaux paradigmes peuvent être appliqués :
 
-1. Programmation impérative : Tu peux écrire du code de manière impérative en utilisant des instructions séquentielles, des boucles et des conditions. C’est le style le plus courant et accessible.
+1. **Programmation impérative** : tu peux écrire du code de manière impérative en utilisant des instructions séquentielles, des boucles et des conditions. C’est le style le plus courant et accessible.
 
-2. Programmation orientée objet (POO) : PHP prend en charge la POO depuis sa version 5, te permettant de créer des classes, des objets, d'utiliser l'héritage, l'encapsulation et le polymorphisme. Cela te permet d'organiser ton code de manière modulaire et réutilisable.
+2. **Programmation orientée objet (POO)** : PHP prend en charge la POO depuis sa version 5, te permettant de créer des classes, des objets, d'utiliser l'héritage, l'encapsulation et le polymorphisme. Cela te permet d'organiser ton code de manière modulaire et réutilisable.
 
-3. Programmation fonctionnelle : Bien que PHP ne soit pas un langage fonctionnel pur, il supporte certaines fonctionnalités de la programmation fonctionnelle, comme les fonctions anonymes (closures) et des fonctions de manipulation de tableaux comme array_map, array_filter, etc.
+3. **Programmation fonctionnelle** : bien que PHP ne soit pas un langage fonctionnel pur, il supporte certaines fonctionnalités de la programmation fonctionnelle, comme les fonctions anonymes (closures) et des fonctions de manipulation de tableaux comme array_map, array_filter, etc.
 
-4. Programmation déclarative : PHP ne se concentre pas spécifiquement sur la programmation déclarative, mais tu peux utiliser des bibliothèques ou des frameworks qui adoptent ce style, notamment pour des requêtes SQL ou des configurations.
+4. **Programmation déclarative** : PHP ne se concentre pas spécifiquement sur la programmation déclarative, mais tu peux utiliser des bibliothèques ou des frameworks qui adoptent ce style, notamment pour des requêtes SQL ou des configurations.
 
 En résumé, **PHP permet de mélanger ces paradigmes selon les besoins du projet**, ce qui donne beaucoup de flexibilité dans la façon de coder.
 
