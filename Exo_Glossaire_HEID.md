@@ -1645,13 +1645,13 @@ ___
 Voici **trois méthodes Agiles** couramment utilisées dans le cadre de projets informatiques :
 
 1. **Scrum** :
-        - Scrum est un cadre qui organise le travail en sprints (itérations de 1 à 4 semaines). Il implique des rôles définis (Scrum Master, Product Owner, équipe de développement) et des événements réguliers (réunions de planification, revues et rétrospectives) pour favoriser la collaboration et l'adaptabilité.
+- Scrum est un cadre qui organise le travail en sprints (itérations de 1 à 4 semaines). Il implique des rôles définis (Scrum Master, Product Owner, équipe de développement) et des événements réguliers (réunions de planification, revues et rétrospectives) pour favoriser la collaboration et l'adaptabilité.
 
 2. **Kanban** :
-        - Kanban est une méthode visuelle qui utilise un tableau (physique ou numérique) pour représenter le flux de travail. Les tâches sont organisées en colonnes (par exemple, "À faire", "En cours", "Terminé") et la méthode met l'accent sur la limitation du travail en cours (WIP) pour améliorer l'efficacité et la fluidité.
+- Kanban est une méthode visuelle qui utilise un tableau (physique ou numérique) pour représenter le flux de travail. Les tâches sont organisées en colonnes (par exemple, "À faire", "En cours", "Terminé") et la méthode met l'accent sur la limitation du travail en cours (WIP) pour améliorer l'efficacité et la fluidité.
 
 3. **Extreme Programming (XP)** :
-        - XP est une méthode qui se concentre sur l'amélioration de la qualité du logiciel et la réactivité au changement. Elle inclut des pratiques telles que le développement piloté par les tests (TDD), la programmation en binôme, et des cycles de développement courts pour favoriser une collaboration étroite avec le client.
+- XP est une méthode qui se concentre sur l'amélioration de la qualité du logiciel et la réactivité au changement. Elle inclut des pratiques telles que le développement piloté par les tests (TDD), la programmation en binôme, et des cycles de développement courts pour favoriser une collaboration étroite avec le client.
 
 Chacune de ces méthodes offre des approches différentes pour gérer le développement de projets informatiques tout en restant **flexible et réactive aux besoins changeants des utilisateurs**.
 ___
