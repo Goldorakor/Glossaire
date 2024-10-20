@@ -1422,9 +1422,187 @@ L'opérateur de résolution de portée `::` est un outil puissant en PHP qui per
   
   
   
-### Membres statiques, c'est quoi ? (on répond en avance à la question 52)
+## Membres statiques, c'est quoi ? (on répond en avance à la question 52)
+
+Les membres statiques d'une classe en PHP sont des propriétés et des méthodes qui appartiennent à la classe elle-même plutôt qu'à une instance particulière de cette classe. Cela signifie qu'on peut accéder à ces membres sans avoir besoin de créer un objet de cette classe.
+
+### Caractéristiques des membres statiques :
+
+1. **Partage entre instances** : les membres statiques sont partagés entre toutes les instances de la classe. Si une instance modifie une propriété statique, cette modification est visible par toutes les autres instances.
+
+2. **Accès direct** : on peut accéder aux membres statiques en utilisant l'opérateur de résolution de portée `::`, sans avoir besoin d'instancier la classe.
+
+3. **Utilisation courante** : les membres statiques sont souvent utilisés pour des constantes, des paramètres globaux ou des utilitaires qui ne nécessitent pas d'état spécifique à une instance.
+
+### Exemple de membres statiques :
+
+```
+class Compteur {
+    public static $nombreInstances = 0;
+
+    public function __construct() {
+        self::$nombreInstances++; // Incrémente le compteur à chaque nouvelle instance
+    }
+
+    public static function getNombreInstances() {
+        return self::$nombreInstances;
+    }
+}
+
+// Créer plusieurs instances
+$instance1 = new Compteur();
+$instance2 = new Compteur();
+
+echo Compteur::getNombreInstances(); // Affiche 2
+```
 
 
+### Pourquoi sont-ils statiques ?
+
+**Indépendance de l'instance** : les membres statiques ne dépendent pas de l'état d'une instance spécifique. Ils existent au niveau de la classe. Cela les rend utiles pour des fonctionnalités qui doivent être communes à toutes les instances ou qui ne nécessitent pas d'informations spécifiques à une instance.
+
+**Efficacité** : l'utilisation de membres statiques peut parfois être plus efficace, car tu n'as pas besoin de créer un objet pour accéder à certaines fonctionnalités ou données.
+
+### Limites des membres statiques :
+
+**Pas de** `$this` : dans une méthode statique, tu ne peux pas utiliser `$this`, car `$this` fait référence à une instance de la classe. Pour accéder à d'autres membres (non statiques), tu dois créer une instance de la classe.
+
+**Risque de conflits** : comme les membres statiques sont partagés entre toutes les instances, des modifications inattendues peuvent survenir si différentes parties du code accèdent et modifient les mêmes membres statiques.
+
+En résumé, les membres statiques offrent une manière efficace et centralisée d'accéder à des données ou des fonctionnalités qui ne dépendent pas de l'état d'une instance spécifique.
+
+
+
+## Constantes de classe, c'est quoi ?
+
+
+Les **constantes de classe en PHP** sont des valeurs qui ne peuvent pas être modifiées après leur définition. Elles sont liées à la classe elle-même et non à des instances spécifiques de cette classe. Les constantes sont souvent utilisées pour définir des valeurs fixes qui doivent rester constantes tout au long de l'exécution du programme.
+
+### Caractéristiques des constantes de classe :
+
+- **Déclaration** : les constantes sont déclarées avec le mot-clé `const`. Elles doivent être initialisées lors de leur déclaration et ne peuvent pas être modifiées par la suite.
+
+- **Accès** : on peut accéder aux constantes de classe en utilisant l'opérateur de résolution de portée `::`, similaire aux membres statiques.
+
+- **Visibilité** : les constantes de classe sont toujours `public` par défaut, ce qui signifie qu'elles peuvent être accessibles de l'extérieur de la classe.
+
+### Exemple de constantes de classe :
+
+Voici un exemple de définition et d'utilisation de constantes de classe :
+
+```
+class Configuration {
+    const VERSION = "1.0";
+    const NOM_APPLICATION = "Mon Application";
+
+    public static function afficherInfo() {
+        echo "Version: " . self::VERSION . "\n";
+        echo "Nom de l'application: " . self::NOM_APPLICATION . "\n";
+    }
+}
+
+// Accéder aux constantes de classe
+echo Configuration::VERSION; // Affiche "1.0"
+echo Configuration::NOM_APPLICATION; // Affiche "Mon Application"
+
+// Utiliser une méthode pour afficher les informations
+Configuration::afficherInfo();
+```
+
+### Avantages des constantes de classe :
+
+- **Immutabilité** : une fois définies, les constantes ne peuvent pas être modifiées, ce qui garantit que les valeurs restent fixes pendant l'exécution du programme.
+
+- **Clarté et organisation** : utiliser des constantes de classe permet de centraliser les valeurs importantes liées à une classe, rendant le code plus lisible et maintenable.
+
+- **Accessibilité** : les constantes de classe peuvent être facilement accessibles à partir de n'importe quelle méthode de la classe, ainsi que depuis l'extérieur de la classe en utilisant l'opérateur `::`.
+
+### Utilisations courantes :
+
+- **Configuration** : les constantes de classe sont souvent utilisées pour stocker des valeurs de configuration, comme les chemins de fichiers, les clés API, les versions, etc.
+
+- **Codes d'erreur** : elles peuvent également être utilisées pour définir des codes d'erreur constants dans des applications.
+
+### Conclusion
+
+Les constantes de classe en PHP sont un **outil puissant pour gérer des valeurs fixes qui sont liées à une classe**. Elles améliorent la clarté du code et **garantissent que les valeurs critiques ne seront pas modifiées accidentellement**.
+
+
+## Que se passerait-il si on choisissait que les constantes de classes soient déclarées avec le modificateur d'accès `private` ?
+
+Si on déclare une constante de classe en utilisant le modificateur d'accès `private`, cela signifie que cette constante ne sera accessible qu'à l'intérieur de la classe elle-même. **Les instances de cette classe ou les classes dérivées ne pourront pas y accéder directement.** (même les instances de classes, c'est à dire les objets créés à partir de cette classe !)
+
+### Exemple avec une constante privée :
+
+Voici un exemple pour illustrer cela :
+
+```
+class Configuration {
+    private const VERSION = "1.0";
+    
+    public static function afficherVersion() {
+        return self::VERSION; // Accessible ici, dans la classe
+    }
+}
+
+// Accéder à la constante depuis la classe
+echo Configuration::afficherVersion(); // Affiche "1.0"
+
+// Essayer d'accéder directement à la constante depuis l'extérieur
+// echo Configuration::VERSION; // Cela entraînerait une erreur
+```
+
+### Ce qui se passe :
+
+1. **Accessibilité** : dans cet exemple, `VERSION` est déclarée comme `private`. Cela signifie qu'elle peut être utilisée à l'intérieur de la méthode `afficherVersion()` de la classe `Configuration`, mais si tu essaies d'accéder à `VERSION` directement en dehors de la classe (comme dans la ligne commentée), cela entraînera une erreur.
+
+2. **Protection des données** : utiliser `private` pour les constantes peut être utile si tu veux protéger des valeurs qui ne doivent pas être accessibles ou modifiées par le code extérieur, ce qui renforce l'encapsulation.
+
+### Conclusion :
+
+En résumé, déclarer une constante de classe comme `private` protège la constante des accès non autorisés, ce qui peut être utile pour maintenir l'intégrité des données ou pour cacher les détails d'implémentation. Cependant, cela signifie aussi que tu dois fournir des méthodes publiques (ou protégées) pour accéder à ces constantes si tu souhaites les utiliser en dehors de la classe.
+
+
+## si je déclare la propriété d'une classe comme private, cette propriété ne sera pas accessible en dehors de cette classe. Mais sera-t-elle accessible dans une instance de cette classe ou pas non plus ?
+
+Si tu déclares une propriété d'une classe comme `private`, cette propriété **ne sera pas accessible en dehors de la classe, même à partir d'une instance de cette classe**. Cela signifie que les objets de cette classe ne peuvent pas accéder directement à cette propriété.
+
+### Exemple :
+
+Voici un exemple pour illustrer cela :
+
+```
+class Voiture {
+    private $couleur;
+
+    public function __construct($couleur) {
+        $this->couleur = $couleur; // Accessible à l'intérieur de la classe
+    }
+
+    public function afficherCouleur() {
+        return $this->couleur; // Accessible à l'intérieur de la classe
+    }
+}
+
+// Création d'une instance de la classe Voiture
+$maVoiture = new Voiture("rouge");
+
+// Essayer d'accéder à la propriété depuis l'extérieur de la classe
+// echo $maVoiture->couleur; // Cela entraînerait une erreur
+
+// Accéder à la couleur via une méthode publique
+echo $maVoiture->afficherCouleur(); // Affiche "rouge"
+```
+
+### Ce qui se passe :
+
+1. **Propriété privée** : la propriété `$couleur` est déclarée comme `private`. Cela signifie qu'elle ne peut être accédée directement que dans la classe `Voiture`.
+
+2. **Méthodes publiques** : pour accéder à la valeur de la propriété, tu dois utiliser une méthode publique (comme `afficherCouleur()`) qui est autorisée à accéder à cette propriété.
+
+### Conclusion :
+
+Les propriétés privées sont utilisées pour encapsuler les données et empêcher les accès non autorisés, ce qui favorise la sécurité et l'intégrité des données. Si tu as besoin d'accéder à ces propriétés depuis l'extérieur de la classe, tu devras créer des méthodes publiques (ou protégées) qui le permettent. Si tu as d'autres questions, n'hésite pas à demander !
 
 ___
 
