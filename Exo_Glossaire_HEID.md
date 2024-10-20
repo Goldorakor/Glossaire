@@ -1949,7 +1949,7 @@ ___
 4)	What is the difference between GET and POST methods in HTTP ?  
 a.	GET retrieves data from a server, while POST submits data to a server.  <--  
 b.	GET submits data to a server, while POST retrieves data from a server.  
-c.	GET and POST methods are interchangeable.
+c.	GET and POST methods are interchangeable.  
 
 **a. GET retrieves data from a server, while POST submits data to a server.**
 
@@ -1968,14 +1968,14 @@ c.	GET and POST methods are interchangeable.
 ___
 
 5)	What is the purpose of version control systems (e.g., Git) in web development ?  
-a.	To track changes and manage collaborative development.  <--
+a.	To track changes and manage collaborative development.  <--  
 b.	To optimize website loading speed.  
 c.	To handle server-side scripting.  
 
 ___
 
 6)	What is the purpose of a framework in web development ?  
-a.	To provide a structured environment for building web applications.  <--
+a.	To provide a structured environment for building web applications.  <--  
 b.	To handle network protocols and data transfer.  
 c.	To create visual designs and layouts for websites.  
 
@@ -2001,7 +2001,7 @@ ___
 8)	Which of the following is a characteristic of NoSQL databases ?  
 a.	Strict schema enforcement.  
 b.	Support for complex transactions.  
-c.	Scalability and flexible data models.  <--
+c.	Scalability and flexible data models.  <--  
 
 **c. Scalability and flexible data models.**
 
