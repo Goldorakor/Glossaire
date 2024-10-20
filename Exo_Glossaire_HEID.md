@@ -1191,9 +1191,9 @@ ___
 ### Caractéristiques de l'encapsulation :
 
 1. **Visibilité des propriétés** : en PHP, tu peux utiliser des modificateurs d'accès pour définir la visibilité des propriétés et des méthodes d'une classe :
-- public : accessible de partout.
-- protected : accessible uniquement à la classe elle-même et aux classes dérivées.
-- private : accessible uniquement à la classe elle-même.
+- **public** : accessible de partout.
+- **protected** : accessible uniquement à la classe elle-même et aux classes dérivées.
+- **private** : accessible uniquement à la classe elle-même.
 
 2. **Méthodes d'accès** : pour interagir avec les propriétés d'une classe, on utilise généralement des méthodes appelées "getters" et "setters". Ces méthodes permettent de lire ou de modifier les valeurs des propriétés tout en contrôlant l'accès.
 
@@ -1236,16 +1236,66 @@ echo $compte->getSolde(); // Affiche 150
 
 ### Avantages de l'encapsulation :
 
-- Protection des données : Les propriétés privées ne peuvent pas être modifiées directement, ce qui préserve l'intégrité des données.
-- Facilité de maintenance : Les modifications des détails d'implémentation n'affectent pas le code qui utilise la classe, tant que l'interface (les méthodes publiques) reste inchangée.
-- Contrôle d'accès : Les méthodes permettent d'ajouter des validations ou des logiques supplémentaires lors de l'accès ou de la modification des données.
-
+- Protection des données : les propriétés privées ne peuvent pas être modifiées directement, ce qui préserve l'intégrité des données.
+- Facilité de maintenance : les modifications des détails d'implémentation n'affectent pas le code qui utilise la classe, tant que l'interface (les méthodes publiques) reste inchangée.
+- Contrôle d'accès : les méthodes permettent d'ajouter des validations ou des logiques supplémentaires lors de l'accès ou de la modification des données.
 
 ___
 
 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple.
 
+**Étendre une classe** en programmation orientée objet signifie créer une nouvelle classe (appelée **classe dérivée** ou **sous-classe**) qui hérite des propriétés et des méthodes d'une classe existante (appelée **classe parente** ou **superclasse**). Ce processus permet de réutiliser le code existant tout en ajoutant ou en modifiant des fonctionnalités spécifiques à la sous-classe.
 
+###Concept clé : Héritage
+
+L'héritage est le concept clé mis en œuvre lorsque l'on étend une classe. Il permet à **une sous-classe d'hériter des caractéristiques (propriétés et méthodes) de la superclasse**, facilitant ainsi la réutilisation du code et la création de hiérarchies de classes.
+
+### Exemple en PHP :
+
+Voici un exemple simple :
+
+```
+// Classe parente
+class Animal {
+    public function parler() {
+        return "L'animal fait un bruit.";
+    }
+}
+
+// Classe dérivée
+class Chien extends Animal {
+    public function parler() {
+        return "Le chien aboie.";
+    }
+}
+
+// Classe dérivée
+class Chat extends Animal {
+    public function parler() {
+        return "Le chat miaule.";
+    }
+}
+
+// Utilisation des classes
+$monChien = new Chien();
+echo $monChien->parler(); // Affiche "Le chien aboie."
+
+$monChat = new Chat();
+echo $monChat->parler(); // Affiche "Le chat miaule."
+```
+
+
+### Explication :
+
+- La classe `Animal` est la classe parente, avec une méthode `parler()`.
+- Les classes `Chien` et `Chat` étendent la classe `Animal`, héritant ainsi de la méthode `parler()`.
+- Chaque sous-classe redéfinit (ou surcharge) la méthode `parler()` pour fournir un comportement spécifique.
+
+### Avantages de l'héritage :
+
+- **Réutilisation du code** : les sous-classes peuvent utiliser le code de la superclasse sans le réécrire.
+- **Extension des fonctionnalités** : les sous-classes peuvent ajouter des méthodes et des propriétés supplémentaires.
+- **Polymorphisme** : les sous-classes peuvent être traitées comme des instances de leur superclasse, ce qui facilite le travail avec des collections d'objets de différentes classes. (notions à éclaircir !)
 
 ___
 
