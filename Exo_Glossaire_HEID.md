@@ -3,7 +3,7 @@
 - [Général](#général)
 - [Front-end](#front-end)
 - [UX / UI](#ux-ui)
-- [Programmation orientée objet](#programmation-orientée-objet)
+- [Programmation orientée objet](#programmation-orientée-objet-poo)
 - [Architecture](#architecture)
 - [Modélisation / Base de données](#modélisation---base-de-données)
 - [Symfony](#symfony)
