@@ -1158,7 +1158,29 @@ ___
 
 48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
 
+La méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe en PHP est **le constructeur**. En PHP, le constructeur est une méthode spéciale nommée `__construct()`.
 
+### Exemple :
+
+Voici un exemple simple :
+
+```
+class Voiture {
+    public $marque;
+    public $modele;
+
+    // Constructeur
+    public function __construct($marque, $modele) {
+        $this->marque = $marque;
+        $this->modele = $modele;
+    }
+}
+
+// Création d'un nouvel objet
+$maVoiture = new Voiture("Toyota", "Corolla");
+```
+
+Dans cet exemple, lorsque tu crées un nouvel objet `Voiture`, le constructeur `__construct()` est appelé, et les propriétés `marque` et `modele` sont initialisées avec les valeurs fournies.
 
 ___
 
