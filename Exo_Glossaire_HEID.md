@@ -1186,7 +1186,60 @@ ___
 
 49.	Qu’est-ce que l’encapsulation ?
 
- 
+ L'encapsulation est un principe fondamental de la programmation orientée objet (POO) qui consiste à restreindre l'accès direct aux données d'un objet et à n'autoriser l'interaction avec ces données qu'à travers des méthodes spécifiques. Cela permet de protéger l'intégrité des données et de cacher les détails d'implémentation.
+
+### Caractéristiques de l'encapsulation :
+
+1. **Visibilité des propriétés** : en PHP, tu peux utiliser des modificateurs d'accès pour définir la visibilité des propriétés et des méthodes d'une classe :
+    - public : accessible de partout.
+    - protected : accessible uniquement à la classe elle-même et aux classes dérivées.
+    - private : accessible uniquement à la classe elle-même.
+
+2. **Méthodes d'accès** : pour interagir avec les propriétés d'une classe, on utilise généralement des méthodes appelées "getters" et "setters". Ces méthodes permettent de lire ou de modifier les valeurs des propriétés tout en contrôlant l'accès.
+
+### Exemple :
+
+Voici un exemple d'encapsulation en PHP :
+
+```
+class CompteBancaire {
+    private $solde;
+
+    public function __construct($soldeInitial) {
+        $this->solde = $soldeInitial;
+    }
+
+    // Getter
+    public function getSolde() {
+        return $this->solde;
+    }
+
+    // Setter
+    public function deposer($montant) {
+        if ($montant > 0) {
+            $this->solde += $montant;
+        }
+    }
+
+    public function retirer($montant) {
+        if ($montant > 0 && $montant <= $this->solde) {
+            $this->solde -= $montant;
+        }
+    }
+}
+
+// Utilisation de la classe
+$compte = new CompteBancaire(100);
+$compte->deposer(50);
+echo $compte->getSolde(); // Affiche 150
+```
+
+### Avantages de l'encapsulation :
+
+    Protection des données : Les propriétés privées ne peuvent pas être modifiées directement, ce qui préserve l'intégrité des données.
+    Facilité de maintenance : Les modifications des détails d'implémentation n'affectent pas le code qui utilise la classe, tant que l'interface (les méthodes publiques) reste inchangée.
+    Contrôle d'accès : Les méthodes permettent d'ajouter des validations ou des logiques supplémentaires lors de l'accès ou de la modification des données.
+
 
 ___
 
