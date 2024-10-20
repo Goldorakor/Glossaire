@@ -1946,7 +1946,7 @@ c.	To manage databases.
 
 ___
 
-4)	What is the difference between GET and POST methods in HTTP ?  
+4)	What is the difference between GET and POST methods in HTTP ?  <--
 a.	GET retrieves data from a server, while POST submits data to a server.  
 b.	GET submits data to a server, while POST retrieves data from a server.  
 c.	GET and POST methods are interchangeable.
