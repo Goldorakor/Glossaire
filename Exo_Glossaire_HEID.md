@@ -1666,6 +1666,55 @@ En résumé, les **méthodes et propriétés statiques en PHP offrent une maniè
 
 
 ## A propos du mot-clé `self` 
+
+
+Le mot-clé `self` en PHP est utilisé pour faire référence à la classe actuelle à l'intérieur de la classe elle-même. Il est particulièrement utile lorsque tu veux accéder à des membres statiques (propriétés ou méthodes) de la classe dans laquelle tu te trouves.
+
+
+
+### Caractéristiques du mot-clé `self` :
+
+1. **Accès aux membres statiques** : `self` te permet d'accéder aux propriétés et méthodes statiques de la classe sans avoir besoin de créer une instance de cette classe.
+
+2. **Scope de la classe** : `self` fait référence à la classe où il est utilisé, et non à une instance spécifique de la classe. Cela signifie qu'il est utilisé uniquement pour accéder à des membres qui ne dépendent pas d'une instance.
+
+3. **Pas d'héritage** : lorsque tu utilises `self`, il fait référence à la classe dans laquelle il est défini, même si tu es dans une sous-classe. Pour accéder aux membres d'une classe parente, tu devrais utiliser le mot-clé `parent`.
+
+
+### Exemple d'utilisation de `self` :
+
+Voici un exemple pour illustrer l'utilisation de self :
+
+```
+class Compteur {
+    public static $nombreInstances = 0;
+
+    public function __construct() {
+        self::$nombreInstances++; // Incrémente à chaque nouvelle instance
+    }
+
+    public static function getNombreInstances() {
+        return self::$nombreInstances; // Accès à la propriété statique
+    }
+}
+
+// Créer des instances
+$instance1 = new Compteur();
+$instance2 = new Compteur();
+
+echo Compteur::getNombreInstances(); // Affiche 2
+```
+
+### Explication de l'exemple :
+
+- `self::$nombreInstances` : dans le constructeur, nous utilisons `self` pour accéder à la propriété statique `$nombreInstances`. Cela nous permet de l'incrémenter à chaque fois qu'une nouvelle instance de Compteur est créée.
+
+- `self::getNombreInstances()` : dans la méthode statique `getNombreInstances()`, nous accédons également à la propriété statique en utilisant `self`.
+
+### Conclusion
+
+Le mot-clé `self` est un outil puissant pour accéder à des membres statiques dans une classe sans avoir besoin d'instancier la classe. Cela permet de garder le code organisé et d'utiliser efficacement des propriétés et méthodes partagées.
+
 ___
 
 53.	Définir le polymorphisme en POO.
