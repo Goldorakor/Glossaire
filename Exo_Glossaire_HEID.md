@@ -1949,34 +1949,71 @@ ___
 4)	What is the difference between GET and POST methods in HTTP ?  
 a.	GET retrieves data from a server, while POST submits data to a server.  
 b.	GET submits data to a server, while POST retrieves data from a server.  
-c.	GET and POST methods are interchangeable.  
+c.	GET and POST methods are interchangeable.
+
+**a. GET retrieves data from a server, while POST submits data to a server.**
+
+### Explanation:
+
+- **GET** is used to request data from a specified resource. It appends data to the URL as query parameters.
+- **POST** is used to send data to the server to create or update a resource. It includes the data in the body of the request, which is not visible in the URL.
+
+**a. GET récupère des données d'un serveur, tandis que POST soumet des données à un serveur.**
+
+### Explication :
+
+- **GET** est utilisé pour demander des données à une ressource spécifiée. Il ajoute des données à l'URL sous forme de paramètres de requête.
+- **POST** est utilisé pour envoyer des données au serveur afin de créer ou de mettre à jour une ressource. Il inclut les données dans le corps de la requête, ce qui n'est pas visible dans l'URL.
 
 ___
 
 5)	What is the purpose of version control systems (e.g., Git) in web development ?  
-a.	To track changes and manage collaborative development.  
+a.	To track changes and manage collaborative development.  <--
 b.	To optimize website loading speed.  
 c.	To handle server-side scripting.  
 
 ___
 
 6)	What is the purpose of a framework in web development ?  
-a.	To provide a structured environment for building web applications.  
+a.	To provide a structured environment for building web applications.  <--
 b.	To handle network protocols and data transfer.  
 c.	To create visual designs and layouts for websites.  
 
 ___
 
 7)	What does NoSQL stand for ?  
-a.	Not Only SQL.  
+a.	Not Only SQL.  <--
 b.	Non-Structured Query Language.  
 c.	New Object-Oriented Language.  
+
+**a. Not Only SQL.**
+### Explanation:
+
+NoSQL refers to a category of database management systems that do not use the traditional SQL (Structured Query Language) for data manipulation. It emphasizes flexibility, scalability, and the ability to handle various data formats, including unstructured and semi-structured data.
+
+**a. Not Only SQL.**
+### Explication :
+
+NoSQL fait référence à une catégorie de systèmes de gestion de bases de données qui n'utilisent pas le SQL (Structured Query Language) traditionnel pour la manipulation des données. Cela met l'accent sur la flexibilité, la scalabilité et la capacité à gérer divers formats de données, y compris les données non structurées et semi-structurées.
 
 ___
 
 8)	Which of the following is a characteristic of NoSQL databases ?  
 a.	Strict schema enforcement.  
 b.	Support for complex transactions.  
-c.	Scalability and flexible data models.  
+c.	Scalability and flexible data models.  <--
+
+**c. Scalability and flexible data models.**
+
+### Explanation:
+
+NoSQL databases are designed to be scalable and can handle a variety of data models, including key-value, document, column-family, and graph formats. They often allow for flexible schemas, making it easier to adapt to changing data requirements. In contrast, strict schema enforcement and complex transactions are more characteristic of traditional relational databases.
+
+**c. Scalabilité et modèles de données flexibles.**
+
+### Explication :
+
+Les bases de données NoSQL sont conçues pour être scalables et peuvent gérer une variété de modèles de données, y compris les formats clé-valeur, document, colonne et graphe. Elles permettent souvent des schémas flexibles, ce qui facilite l'adaptation aux évolutions des exigences de données. En revanche, l'application stricte des schémas et les transactions complexes sont davantage caractéristiques des bases de données relationnelles traditionnelles.
+
 
 ___
