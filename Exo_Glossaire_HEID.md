@@ -1529,7 +1529,6 @@ ___
 
 ## Gestion de projets - DevOps
 
-___
 
 127.	Qu’est-ce que la gestion de projet ?
 
