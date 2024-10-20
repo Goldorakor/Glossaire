@@ -1648,16 +1648,34 @@ Voici **trois méthodes Agiles** couramment utilisées dans le cadre de projets 
 - Scrum est un cadre qui organise le travail en sprints (itérations de 1 à 4 semaines). Il implique des rôles définis (Scrum Master, Product Owner, équipe de développement) et des événements réguliers (réunions de planification, revues et rétrospectives) pour favoriser la collaboration et l'adaptabilité.
 
 2. **Kanban** :
- - Kanban est une méthode visuelle qui utilise un tableau (physique ou numérique) pour représenter le flux de travail. Les tâches sont organisées en colonnes (par exemple, "À faire", "En cours", "Terminé") et la méthode met l'accent sur la limitation du travail en cours (WIP) pour améliorer l'efficacité et la fluidité.
+- Kanban est une méthode visuelle qui utilise un tableau (physique ou numérique) pour représenter le flux de travail. Les tâches sont organisées en colonnes (par exemple, "À faire", "En cours", "Terminé") et la méthode met l'accent sur la limitation du travail en cours (**WIP** - Work In Progress) pour améliorer l'efficacité et la fluidité.
 
 3. **Extreme Programming (XP)** :
-  - XP est une méthode qui se concentre sur l'amélioration de la qualité du logiciel et la réactivité au changement. Elle inclut des pratiques telles que le développement piloté par les tests (TDD), la programmation en binôme, et des cycles de développement courts pour favoriser une collaboration étroite avec le client.
+- XP est une méthode qui se concentre sur l'amélioration de la qualité du logiciel et la réactivité au changement. Elle inclut des pratiques telles que le développement piloté par les tests (**TDD** Test-Driven Development - développement piloté par les tests), la programmation en binôme, et des cycles de développement courts pour favoriser une collaboration étroite avec le client.
 
 Chacune de ces méthodes offre des approches différentes pour gérer le développement de projets informatiques tout en restant **flexible et réactive aux besoins changeants des utilisateurs**.
 ___
 
 133.	Qu’est-ce qu’une réunion de revue de projet ?
 
+Une **réunion de revue de projet** est un rassemblement organisé à des moments clés du cycle de vie d'un projet pour évaluer son avancement, ses résultats et prendre des décisions sur les prochaines étapes. Ces réunions sont essentielles pour assurer la transparence et la communication entre les membres de l'équipe et les parties prenantes.
+
+###Objectifs de la réunion de revue de projet :
+
+1. Évaluation de l'avancement : Examiner les progrès réalisés par rapport aux objectifs fixés, aux délais et aux budgets.
+2. Identification des problèmes : Discuter des obstacles rencontrés et des risques potentiels, et proposer des solutions.
+3. Recueil de retours : Obtenir des retours d'expérience des membres de l'équipe et des parties prenantes sur ce qui fonctionne bien et ce qui pourrait être amélioré.
+
+5. Ajustement des plans : Adapter le plan de projet si nécessaire, en tenant compte des retours et des résultats de l'évaluation.
+
+6. Renforcement de la collaboration : Favoriser la communication entre les équipes et les parties prenantes, en s'assurant que tout le monde est aligné sur les objectifs et les attentes.
+
+###Fréquence et participants :
+
+- Ces réunions peuvent avoir lieu à intervalles réguliers (par exemple, toutes les deux semaines) ou à des moments spécifiques, comme à la fin d'une phase ou d'une itération.
+- Les participants incluent généralement les membres de l'équipe de projet, les chefs de projet, les parties prenantes et parfois des clients ou des utilisateurs.
+
+En résumé, la réunion de revue de projet est un outil important pour garantir que le projet reste sur la bonne voie, pour résoudre les problèmes et pour s'assurer que toutes les parties sont alignées sur les objectifs.
 ___
 
 134.	Qu’est-ce qu’un livrable dans un projet ? 
