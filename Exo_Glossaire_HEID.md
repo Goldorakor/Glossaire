@@ -1246,7 +1246,7 @@ ___
 
 **Étendre une classe** en programmation orientée objet signifie créer une nouvelle classe (appelée **classe dérivée** ou **sous-classe**) qui hérite des propriétés et des méthodes d'une classe existante (appelée **classe parente** ou **superclasse**). Ce processus permet de réutiliser le code existant tout en ajoutant ou en modifiant des fonctionnalités spécifiques à la sous-classe.
 
-###Concept clé : Héritage
+### Concept clé : Héritage
 
 L'héritage est le concept clé mis en œuvre lorsque l'on étend une classe. Il permet à **une sous-classe d'hériter des caractéristiques (propriétés et méthodes) de la superclasse**, facilitant ainsi la réutilisation du code et la création de hiérarchies de classes.
 
@@ -1296,10 +1296,132 @@ echo $monChat->parler(); // Affiche "Le chat miaule."
 - **Réutilisation du code** : les sous-classes peuvent utiliser le code de la superclasse sans le réécrire.
 - **Extension des fonctionnalités** : les sous-classes peuvent ajouter des méthodes et des propriétés supplémentaires.
 - **Polymorphisme** : les sous-classes peuvent être traitées comme des instances de leur superclasse, ce qui facilite le travail avec des collections d'objets de différentes classes. (notions à éclaircir !)
+  
+  
+## Ajouts d'explications sur le polymorphisme :
+
+Le polymorphisme est un **concept fondamental en programmation orientée objet** (**POO**) qui permet à des objets de différentes classes d'être traités de manière uniforme via une interface commune. Il se manifeste souvent **par le biais de l'héritage et de la redéfinition de méthodes**.
+
+### Types de polymorphisme :
+
+1. **Polymorphisme de substitution (ou d'héritage)** : cela se produit lorsque des classes dérivées remplacent ou étendent les méthodes d'une classe parente. Tu peux traiter les objets des classes dérivées comme s'ils étaient des objets de la classe parente.
+
+2. **Polymorphisme paramétrique** : cela se produit lorsque des fonctions ou des méthodes peuvent accepter des arguments de différents types, comme dans les génériques (ceci est plus courant dans d'autres langages, comme Java ou C#).
+
+### Exemple de polymorphisme de substitution en PHP :
+
+Reprenons l'exemple précédent :
+
+```
+// Classe parente
+class Animal {
+    public function parler() {
+        return "L'animal fait un bruit.";
+    }
+}
+
+// Classe dérivée
+class Chien extends Animal {
+    public function parler() {
+        return "Le chien aboie.";
+    }
+}
+
+// Classe dérivée
+class Chat extends Animal {
+    public function parler() {
+        return "Le chat miaule.";
+    }
+}
+
+// Fonction qui utilise le polymorphisme
+function faireParler(Animal $animal) {
+    echo $animal->parler();
+}
+
+// Utilisation des classes
+$monChien = new Chien();
+$monChat = new Chat();
+
+faireParler($monChien); // Affiche "Le chien aboie."
+faireParler($monChat);  // Affiche "Le chat miaule."
+```
+
+### Explication :
+
+- La fonction `faireParler()` prend un paramètre de type `Animal`. Grâce au polymorphisme, elle peut accepter des objets de n'importe quelle classe qui hérite d'`Animal`, comme `Chien` ou `Chat`.
+- Quand tu appelles `faireParler($monChien)`, cela exécute la méthode `parler()` de la classe `Chien`.
+- Quand tu appelles `faireParler($monChat)`, cela exécute la méthode `parler()` de la classe `Chat`.
+- Le même code peut fonctionner avec des types d'objets différents, ce qui rend le code plus flexible et extensible.
+
+### Avantages du polymorphisme :
+
+- **Flexibilité** : tu peux écrire du code qui fonctionne avec différents types d'objets sans connaître leurs classes spécifiques.
+- **Extensibilité** : tu peux ajouter de nouvelles classes sans modifier le code existant, tant qu'elles respectent l'interface de la classe parente.
+- **Réduction de la duplication de code** : les comportements communs peuvent être centralisés dans la classe parente.
 
 ___
 
 51.	Définir l’opérateur de résolution de portée.
+
+L'**opérateur de résolution de portée en PHP** est représenté par les doubles deux-points `::`. Cet opérateur est utilisé pour accéder aux membres statiques d'une classe (propriétés et méthodes), ainsi qu'aux constantes de classe et aux méthodes surchargées.
+
+### Utilisations principales :
+
+1. **Accéder aux membres statiques** : les membres statiques d'une classe peuvent être appelés **sans avoir besoin d'instancier la classe**. Par exemple :
+
+```
+class Exemple {
+    public static $maPropriete = "Valeur statique";
+
+    public static function maMethode() {
+        return "Ceci est une méthode statique.";
+    }
+}
+
+// Accès à la propriété et à la méthode statiques
+echo Exemple::$maPropriete; // Affiche "Valeur statique"
+echo Exemple::maMethode();   // Affiche "Ceci est une méthode statique."
+```
+
+2. **Accéder aux constantes de classe** : les constantes définies dans une classe peuvent également être accédées via l'opérateur de résolution de portée :
+
+```
+class Constantes {
+    const MA_CONSTANTE = "Valeur constante";
+}
+
+echo Constantes::MA_CONSTANTE; // Affiche "Valeur constante"
+```
+
+3. **Accéder aux méthodes surchargées** : l'opérateur peut aussi être utilisé pour appeler une méthode de la classe parente depuis une classe dérivée :
+
+```
+class ParentClass {
+    public static function method() {
+        return "Méthode de la classe parente.";
+    }
+}
+
+class ChildClass extends ParentClass {
+    public static function method() {
+        return "Méthode de la classe enfant.";
+    }
+
+    public static function parentMethod() {
+        return parent::method(); // Appel à la méthode de la classe parente
+    }
+}
+
+echo ChildClass::parentMethod(); // Affiche "Méthode de la classe parente."
+```
+
+### Conclusion
+
+L'opérateur de résolution de portée `::` est un outil puissant en PHP qui permet d'accéder facilement aux membres statiques, aux constantes de classe et aux méthodes surchargées, tout en favorisant une structure de code organisée et claire.
+  
+    
+### Membres statiques, c'est quoi ? (on répond en avance à la question 52)
 
 
 
