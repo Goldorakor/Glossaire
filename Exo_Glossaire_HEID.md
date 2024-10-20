@@ -1594,7 +1594,7 @@ ___
 
 La méthodologie MVP, ou **Minimum Viable Product**, est une approche utilisée dans le développement de produits, notamment dans le domaine des startups et des technologies. Son objectif est de **créer un produit avec les fonctionnalités essentielles** qui répondent **aux besoins de base des utilisateurs**, afin de **tester une idée** sur le marché **le plus rapidement possible**.
 
-###Objectifs de la méthodologie MVP :
+### Objectifs de la méthodologie MVP :
 
 1. **Valider une idée** : Tester une hypothèse de produit avec un **minimum de ressources** avant de développer davantage.
     
@@ -1602,7 +1602,7 @@ La méthodologie MVP, ou **Minimum Viable Product**, est une approche utilisée 
     
 3. **Recueillir des retours** : Obtenir **rapidement des feedbacks** des utilisateurs pour améliorer le produit.
 
-###Caractéristiques clés de la méthodologie MVP :
+### Caractéristiques clés de la méthodologie MVP :
 
 1. **Fonctionnalités minimales** : Se concentrer sur les **fonctionnalités essentielles** qui répondent aux besoins des utilisateurs cibles.
     
@@ -1619,7 +1619,7 @@ ___
 
 La planification itérative est une approche de gestion de projet qui consiste à **diviser le travail en petites étapes ou itérations**, permettant ainsi une planification, une exécution et une révision continues. Contrairement à une planification linéaire, où toutes les phases du projet sont définies dès le départ, la planification itérative permet de **s'adapter aux changements et d'ajuster les priorités** au fur et à mesure de l’avancement du projet.
 
-###Caractéristiques de la planification itérative :
+### Caractéristiques de la planification itérative :
 
 1.**Cycles courts** : Les projets sont divisés en itérations (ou **sprints**) qui durent généralement de quelques jours à quelques semaines.
 
@@ -1629,7 +1629,7 @@ La planification itérative est une approche de gestion de projet qui consiste �
 
 4. **Flexibilité** : La planification itérative permet de **s’adapter facilement aux changements**, qu’ils proviennent des besoins des utilisateurs ou de nouvelles contraintes de marché.
 
-###Avantages de la planification itérative :
+### Avantages de la planification itérative :
 
 - **Réduction des risques** : En validant régulièrement le travail effectué, on peut identifier rapidement les problèmes potentiels.
 
@@ -1660,19 +1660,22 @@ ___
 
 Une **réunion de revue de projet** est un rassemblement organisé à des moments clés du cycle de vie d'un projet pour évaluer son avancement, ses résultats et prendre des décisions sur les prochaines étapes. Ces réunions sont essentielles pour assurer la transparence et la communication entre les membres de l'équipe et les parties prenantes.
 
-###Objectifs de la réunion de revue de projet :
+### Objectifs de la réunion de revue de projet :
 
 1. Évaluation de l'avancement : Examiner les progrès réalisés par rapport aux objectifs fixés, aux délais et aux budgets.
+
 2. Identification des problèmes : Discuter des obstacles rencontrés et des risques potentiels, et proposer des solutions.
+
 3. Recueil de retours : Obtenir des retours d'expérience des membres de l'équipe et des parties prenantes sur ce qui fonctionne bien et ce qui pourrait être amélioré.
 
-5. Ajustement des plans : Adapter le plan de projet si nécessaire, en tenant compte des retours et des résultats de l'évaluation.
+4. Ajustement des plans : Adapter le plan de projet si nécessaire, en tenant compte des retours et des résultats de l'évaluation.
 
-6. Renforcement de la collaboration : Favoriser la communication entre les équipes et les parties prenantes, en s'assurant que tout le monde est aligné sur les objectifs et les attentes.
+5. Renforcement de la collaboration : Favoriser la communication entre les équipes et les parties prenantes, en s'assurant que tout le monde est aligné sur les objectifs et les attentes.
 
-###Fréquence et participants :
+### Fréquence et participants :
 
 - Ces réunions peuvent avoir lieu à intervalles réguliers (par exemple, toutes les deux semaines) ou à des moments spécifiques, comme à la fin d'une phase ou d'une itération.
+
 - Les participants incluent généralement les membres de l'équipe de projet, les chefs de projet, les parties prenantes et parfois des clients ou des utilisateurs.
 
 En résumé, la réunion de revue de projet est un outil important pour garantir que le projet reste sur la bonne voie, pour résoudre les problèmes et pour s'assurer que toutes les parties sont alignées sur les objectifs.
