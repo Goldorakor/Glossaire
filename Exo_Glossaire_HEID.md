@@ -1921,6 +1921,7 @@ Dans cet exemple, l'assertion `assert result == 5` valide que la fonction `add` 
 En résumé, les assertions sont des éléments fondamentaux des tests unitaires, car elles permettent de vérifier le comportement attendu du code et d'assurer sa qualité.
 
 ___
+___
 
 ## English
 
