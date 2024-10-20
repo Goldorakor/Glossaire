@@ -1982,7 +1982,7 @@ c.	To create visual designs and layouts for websites.
 ___
 
 7)	What does NoSQL stand for ?  
-a.	Not Only SQL.  <--
+a.	Not Only SQL.  <--  
 b.	Non-Structured Query Language.   
 c.	New Object-Oriented Language.  
 
