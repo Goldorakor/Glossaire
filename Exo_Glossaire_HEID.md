@@ -1,16 +1,16 @@
 # GLOSSAIRE
 
 - [Général](#général) [questions 1 à 17]
-- [Front-end](#front-end) [questions 1 à 17]
-- [UX / UI](#ux-ui) [questions 1 à 17]
-- [Programmation orientée objet](#programmation-orientée-objet-poo) [questions 1 à 17]
-- [Architecture](#architecture) [questions 1 à 17]
-- [Modélisation / Base de données](#modélisation---base-de-données) [questions 1 à 17]
-- [Symfony](#symfony) [questions 1 à 17]
-- [Sécurité](#sécurité) [questions 1 à 17]
-- [RGPD](#rgpd) [questions 1 à 17]
-- [SEO](#seo) [questions 1 à 17]
-- [Gestion de projets / DevOps](#gestion-de-projets---devops) [questions 1 à 17]
+- [Front-end](#front-end) [questions 18 à 34]
+- [UX / UI](#ux-ui) [questions 35 à 42]
+- [Programmation orientée objet](#programmation-orientée-objet-poo) [questions 43 à 59]
+- [Architecture](#architecture) [questions 60 à 66]
+- [Modélisation / Base de données](#modélisation---base-de-données) [questions 67 à 83]
+- [Symfony](#symfony) [questions 84 à 93]
+- [Sécurité](#sécurité) [questions 94 à 103]
+- [RGPD](#rgpd) [questions 104 à 113]
+- [SEO](#seo) [questions 114 à 126]
+- [Gestion de projets / DevOps](#gestion-de-projets---devops) [questions 127 à 142]
 - [English](#english)
 
 ___
