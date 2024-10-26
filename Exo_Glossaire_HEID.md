@@ -44,13 +44,13 @@ En PHP, une variable est **préfixée par le symbole $**.
 
 ___
 
-4.	Qu’est-ce que la portée d’une variable ?
+## 4.	Qu’est-ce que la portée d’une variable ?
 
 La portée d'une variable détermine **où elle est accessible dans le code**. Une variable définie à l'intérieur d'une fonction n'est en général pas accessible en dehors de cette fonction. 
 
 ___
 
-5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
+## 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
 
 Une constante est une valeur qui, une fois définie, ne sera plus jamais modifiée au cours de l'exécution d'un programme.
 
@@ -61,7 +61,7 @@ Les différences sont :
 
 ___
 
-6.	Qu’est-ce qu’une superglobale, combien en existe-t-il ? Donner un exemple d’utilisation.
+## 6.	Qu’est-ce qu’une superglobale, combien en existe-t-il ? Donner un exemple d’utilisation.
 
 Une superglobale est **une variable (variable prédéfinie) qui est toujours accessible, peu importe le contexte dans lequel elle est utilisée**. Contrairement aux variables normales, qui ont une portée limitée, les superglobales sont **accessibles de n'importe où dans le script**.
 
@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ___
 
-7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
+## 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur).
 
 Les différents types que l'on peut associer à une variable en PHP sont :
 - une **chaine de caracères (string)**. Exemple : $chaine = "Bonjour"
@@ -176,7 +176,7 @@ class Voiture {
 
 ___
 
-8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
+## 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
 Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux associatifs et les tableaux multidimensionnels.
 
@@ -186,7 +186,7 @@ Il existe trois types de tableaux, à savoir les tableaux indexés, les tableaux
 
 ___
 
-9.	Quelles sont les différentes structures de contrôle qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles.
+## 9.	Quelles sont les différentes structures de contrôle qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles.
 
 #### Il y a les structures conditionnelles qui permettent de prendre des décisions basées sur des conditions.
 
@@ -282,14 +282,14 @@ fin fonction
 
 ___
 
-10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
+## 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
 La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : **strlen ()**. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
 *ATTENTION* : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction **mb_strlen()**.
 
 ___
 
-11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP.
+## 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP.
 
 Une session en PHP est un mécanisme qui permet de stocker des données "utilisateur" sur le serveur afin de les conserver entre différentes requêtes HTTP. 
 La **fonction session_start()** permet de démarrer une session en PHP.
@@ -298,11 +298,11 @@ Sur un site marchand, la session permet de conserver le contenu du panier d'acha
 
 ___
 
-12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP.
+## 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP.
 
 ___
 
-13.	Quelle est la différence entre les instructions «require» et «include» en PHP ?
+## 13.	Quelle est la différence entre les instructions «require» et «include» en PHP ?
 
 Ces instructions sont utilisées **pour inclure le contenu d'un fichier dans un autre fichier**. Mais elles présentent des différences en terme de comportement et d'utilisation.
 
@@ -314,11 +314,11 @@ En résumé, choisissez **require** lorsque le fichier est indispensable au fonc
 
 ___
 
-14.	Comment effectuer une redirection en PHP ?
+## 14.	Comment effectuer une redirection en PHP ?
 
 ___
 
-15.	Définir la partie « front-end » et « back-end » d’une application.
+## 15.	Définir la partie « front-end » et « back-end » d’une application.
 
 La partie **front-end** d'une application contient toute la partie visible par l'utilisateur. Elle contient donc **la partie "contenu informatif du site" et la partie "mise en forme du site"**. Les langages associés à cette partie sont le **HTML** et le **CSS**.
 
@@ -335,7 +335,7 @@ La partie **back-end** d'une application contient toute la machinerie cachée qu
 
 ___
 
-16.	Définir le contrôle de version ? Qu’est-ce que Git ?
+## 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
 Le **contrôle de version** est un système qui **enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet**. 
 - On sait quelle modification a été faite, qui a fait la modification et quand elle a été faite.
@@ -348,7 +348,7 @@ Git est un logiciel de contrôle de version très populaire, utilisé pour la ge
 
 ___
 
-17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
+## 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
 
 Un CMS (**Content Management System**), aussi appelé **système de gestion de contenu**, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
@@ -359,16 +359,16 @@ Deux exemples de CMS :
 ___
 ___
 
-## Front-end
+# Front-end
 
     
-18.	Définir HTML.
+## 18.	Définir HTML.
 
 HTML (**HyperText Markup Language**) est un langage de balisage qui permet d'**ajouter du contenu et** de **le structurer**, pour la création d'une page web. Il permet entre autres de **créer des liens hypertextes** qui relient différentes pages web entre elles. Il s'utilise avec d'autres langages informatiques.
 
 ___
 
-19.	Définir CSS.
+## 19.	Définir CSS.
 
 CSS (**Cascading Style Sheets**) est un langage informatique utilisé **pour contrôler l'apparence visuelle d'une page web**. Il permet de bien contrôler la disposition des éléments sur une page et le design de chaque élément. C'est vraiment le langage **pour styliser et mettre en forme sa page web**. Il s'utilise avec d'autres langages informatiques.
 
@@ -379,21 +379,21 @@ C'est la méthode la plus propre pour faire interagir du code CSS et du code HTM
 
 ___
 
-20.	Définir Javascript.
+## 20.	Définir Javascript.
 
 Je n'utilise pas encore ce langage informatique. C'est l'un des 3 piliers du développement web, avec HMTL et CSS. 
 
 ___
 
-21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
+## 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
 
 ___
 
-22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+## 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
 
 ___
 
-23.	Qu’est-ce qu’un sélecteur CSS ?
+## 23.	Qu’est-ce qu’un sélecteur CSS ?
 
 Un **sélecteur CSS** est un élément qui permet de cibler des éléments HTML spécifiques pour leur appliquer des styles. Les sélecteurs CSS sont des outils puissants qui permettent de cibler des éléments HTML pour appliquer des styles de manière précise et flexible.  
   
@@ -449,7 +449,7 @@ p::first-line {
 
 ___
 
-24.	Quelle balise HTML permet de créer un lien hypertexte ?
+## 24.	Quelle balise HTML permet de créer un lien hypertexte ?
 
 La balise qui permet de créer un lien hypertexte est la balise `<a></a>`.
 Exemple : `<a href="https://www.example.com">Visitez notre site</a>`
@@ -473,7 +473,7 @@ Exemple de code pour une balise `<a>` avec un attribut download :
 
 ___
 
-25.	Qu’est-ce qu’une requête AJAX ? (je ne maitrise pas cet outil)
+## 25.	Qu’est-ce qu’une requête AJAX ? (je ne maitrise pas cet outil)
 
 Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui permet de communiquer avec un serveur sans recharger la page web. Cela permet d'**échanger des données en arrière-plan** et de mettre à jour des parties de la page sans interrompre l'expérience utilisateur.
 
@@ -502,7 +502,7 @@ Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui pe
 
 ___
 
-26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ? (déjà répondu à la question 23)
+## 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ? (déjà répondu à la question 23)
 
 Le premier s'appelle le **sélecteur de classe** qui cible tous les éléments ayant une classe spécifique, **préfixée par un point (.)**.
 ```
@@ -520,13 +520,13 @@ Le deuxième s'appelle le **sélecteur d'identifiant** qui cible un élément un
 
 ___
 
-27.	Définir le responsive design
+## 27.	Définir le responsive design
 
 Le **responsive design** est une approche de conception web qui vise à créer des sites et des applications capables de s'adapter à une variété de tailles d'écran.
 
 ___
 
-28.	Qu’est-ce que le templating ?
+## 28.	Qu’est-ce que le templating ?
 
 **Le templating est une technique** utilisée dans le développement web pour générer du contenu HTML dynamique à partir de **modèles** (ou **templates** en anglais). Ces modèles contiennent généralement des espaces réservés (**placeholders** en anglais) qui sont remplacés par des données réelles au moment de l'exécution. Cela permet de séparer la logique de l'application de la présentation, rendant le code plus organisé et maintenable. Le templating est essentiel pour créer des applications web dynamiques et modernes.
 
@@ -566,11 +566,11 @@ En résumé, un framework est un outil puissant qui aide à structurer et à acc
 **Le templating est souvent une composante essentielle des frameworks**, permettant de générer des interfaces utilisateur dynamiques et de maintenir une bonne organisation du code. **Les deux concepts se renforcent mutuellement**, rendant le développement d'applications plus fluide et structuré.
 ___
 
-29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
+## 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
 
 ___
 
-30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+## 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
 
 La méthode JavaScript utilisée pour ajouter un élément à la fin d'un tableau est **push()**.
 
@@ -596,7 +596,7 @@ console.log(fruits); // Affiche : ['pomme', 'banane', 'orange', 'kiwi', 'fraise'
 
 ___
 
-31.	Qu’est-ce qu’un « media query » ?
+## 31.	Qu’est-ce qu’un « media query » ?
 
 Une instruction pour appliquer des styles différents en fonction des caractéristiques du dispositif, telles que la largeur de l'écran, la résolution, ou l'orientation (portrait ou paysage).
 ```
@@ -609,7 +609,7 @@ Une instruction pour appliquer des styles différents en fonction des caractéri
 
 ___
 
-32.	Qu’est-ce qu’un pseudo-élément en CSS ?
+## 32.	Qu’est-ce qu’un pseudo-élément en CSS ?
 
 En langage CSS, **un pseudo-élément est un mot-clé** (before, after, first-line, first-letter, etc) qui permet de sélectionner et de styliser une partie spécifique d'un élément HTML. Il ne cible pas des éléments entiers comme les sélecteurs classiques le font mais il applique des styles à des sous-éléments virtuels sans avoir à ajouter des éléments HTML supplémentaires. Les **pseudo-éléments sont préfixés par deux deux-points (::)**, ce qui les distingue des pseudo-classes (comme :hover ou :focus, qui utilisent un seul deux-points). En conclusion, les pseudo-éléments sont un outil puissant en CSS pour styliser des parties spécifiques d'un élément sans modifier le HTML.
 
@@ -646,7 +646,7 @@ p::first-letter {
 
 ___
 
-33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalents.
+## 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalents.
 
 Bootstrap est **un framework front-end open-source** conçu pour faciliter le développement d'interfaces web réactives et attrayantes. Il fournit une collection de composants CSS et JavaScript préconstruits, permettant aux développeurs de créer rapidement des sites web modernes et adaptatifs.
 
@@ -666,7 +666,7 @@ Pour commencer à utiliser Bootstrap, il suffit d'inclure les fichiers CSS et Ja
 
 ___
 
-34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes.
+## 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes.
 
 Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être associées sont GET et POST. Voici une explication des deux méthodes et leurs différences.
 
@@ -718,10 +718,10 @@ Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être a
 ___
 ___
 
-## UX UI
+# UX UI
 
 
-35.	Quelle est la différence entre UX Design et UI Design ?
+## 35.	Quelle est la différence entre UX Design et UI Design ?
 
 UX Design (User Experience Design) et UI Design (User Interface Design) sont deux concepts distincts mais complémentaires dans le processus de création d'interfaces numériques.
 
@@ -731,7 +731,7 @@ UX Design (User Experience Design) et UI Design (User Interface Design) sont deu
 
 ___
 
-36.	Qu’est-ce qu’un wireframe ?
+## 36.	Qu’est-ce qu’un wireframe ?
 
 Un **wireframe** est une **représentation visuelle simplifiée** d'une interface utilisateur, généralement utilisée dans les phases de conception d'un produit numérique (site web, application, etc.). Il sert de plan ou de maquette qui montre la structure, la disposition et les fonctionnalités de l'interface **sans se soucier des détails esthétiques**.
 
@@ -747,7 +747,7 @@ Un **wireframe** est une **représentation visuelle simplifiée** d'une interfac
 
 ___
 
-37.	Qu’est-ce qu’un prototype ? 
+## 37.	Qu’est-ce qu’un prototype ? 
 
 
 Un **prototype** est une **version préliminaire** d'un produit ou d'un système, utilisée pour tester et valider des concepts, des fonctionnalités et des designs avant la production finale. Dans le domaine du design, notamment en UX/UI, **un prototype permet de simuler l'interaction avec une interface** sans avoir à construire le produit complet.
@@ -770,7 +770,7 @@ Un **prototype** est une **version préliminaire** d'un produit ou d'un système
 
 ___
 
-38.	Qu’est-ce que la hiérarchie visuelle en UI Design ?
+## 38.	Qu’est-ce que la hiérarchie visuelle en UI Design ?
 
 La hiérarchie visuelle en UI Design est un principe qui organise les éléments d'une interface de manière à guider l'utilisateur à travers le contenu et à mettre en avant les informations les plus importantes. Elle utilise des techniques visuelles pour créer un ordre de priorité et aider à la compréhension et à la navigation.
 
@@ -802,7 +802,7 @@ En résumé, la hiérarchie visuelle est un outil essentiel en UI Design pour or
 
 ___
 
-39.	Qu’est-ce que l’accessibilité en UX Design ? 
+## 39.	Qu’est-ce que l’accessibilité en UX Design ? 
 
 L'accessibilité en UX Design fait référence à la conception d'interfaces et d'expériences utilisateur qui peuvent être utilisées par tous, y compris les personnes ayant des handicaps ou des limitations. Cela inclut des considérations pour les personnes ayant des problèmes de vision, d'audition, de motricité ou de cognition.
 
@@ -842,7 +842,7 @@ En résumé, l'accessibilité en UX Design est **essentielle pour créer des exp
 
 ___
 
-40.	Qu’est-ce qu’une grille de mise en page ?
+## 40.	Qu’est-ce qu’une grille de mise en page ?
 
 Une grille de mise en page (ou **grid layout** en anglais) est un système de lignes et de colonnes utilisé en design graphique et en design d'interface pour organiser et structurer le contenu de manière cohérente et esthétique. Elle aide à aligner les éléments visuels et à créer une hiérarchie visuelle, facilitant ainsi la lecture et la navigation.
 
@@ -880,7 +880,7 @@ En résumé, une grille de mise en page est un outil essentiel en design qui **a
 
 ___
 
-41.	Qu’est-ce que la notion d’affordance en UX Design ?
+## 41.	Qu’est-ce que la notion d’affordance en UX Design ?
 
 #### définitions 
 
@@ -919,7 +919,7 @@ En résumé, l'affordance en UX Design est essentielle pour créer des interface
 
 ___
 
-42.	Qu’est-ce qu’un « mobile first design » ?
+## 42.	Qu’est-ce qu’un « mobile first design » ?
 
 Le **mobile first design** est une approche de conception web qui consiste à créer des sites et des applications **en partant d'abord de la version mobile**, avant de s'adapter aux écrans plus grands, comme ceux des tablettes et des ordinateurs de bureau. Cette méthode est devenue populaire avec l'augmentation de l'utilisation des appareils mobiles pour naviguer sur Internet.
 
@@ -948,9 +948,9 @@ En résumé, le mobile first design est une approche stratégique qui met l'acce
 ___
 ___
 
-## Programmation orientée objet (POO)
+### Programmation orientée objet (POO)
 
-43.	Donner une définition de la programmation orientée objet.   
+## 43.	Donner une définition de la programmation orientée objet.   
 
 La programmation orientée objet (POO) est un paradigme de programmation qui organise le code autour d'objets, qui sont des instances de classes. Ces objets regroupent des données (attributs) et des comportements (méthodes) associés. La POO repose sur quatre concepts principaux :
 
@@ -996,7 +996,7 @@ En résumé, **PHP permet de mélanger ces paradigmes selon les besoins du proje
 
 ___
 
-44.	Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
+## 44.	Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
 
 En programmation orientée objet (POO), une classe est un modèle ou un plan qui définit les propriétés (attributs) et les comportements (méthodes) que les objets créés à partir de cette classe auront. En d'autres termes, **une classe sert de structure pour créer des objets**.
 
@@ -1028,7 +1028,7 @@ Dans cet exemple, `Voiture` est une classe qui définit les attributs et les mé
 
 ___
 
-45.	Qu’est-ce qu’un objet ?
+## 45.	Qu’est-ce qu’un objet ?
 
 En programmation orientée objet (POO), un objet est une instance d'une classe. Il représente une entité concrète qui combine des données (attributs) et des comportements (méthodes) définis par la classe dont il est issu.
 
@@ -1063,7 +1063,7 @@ En résumé, **un objet est une instance concrète d'une classe**, combinant ét
 
 ___
 
-46.	Définir la notion de propriété / attribut / méthode
+## 46.	Définir la notion de propriété / attribut / méthode
 
 En programmation orientée objet (POO), les notions de propriété, d'attribut et de méthode sont essentielles pour comprendre comment fonctionnent les classes et les objets. Voici une définition pour chacune de ces notions :
 
@@ -1119,7 +1119,7 @@ class Voiture {
 
 ___
 
-47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité.
+## 47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité.
 
 La visibilité d’une propriété ou d’une méthode en programmation orientée objet (POO) détermine l'accessibilité de ces éléments depuis d'autres parties du code, notamment d'autres classes ou objets. En PHP, il existe trois types de visibilité :
 
@@ -1156,7 +1156,7 @@ Voici un exemple illustrant ces différents niveaux de visibilité :
 
 ___
 
-48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
+## 48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
 
 La méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe en PHP est **le constructeur**. En PHP, le constructeur est une méthode spéciale nommée `__construct()`.
 
@@ -1184,7 +1184,7 @@ Dans cet exemple, lorsque tu crées un nouvel objet `Voiture`, le constructeur `
 
 ___
 
-49.	Qu’est-ce que l’encapsulation ?
+## 49.	Qu’est-ce que l’encapsulation ?
 
  L'encapsulation est un principe fondamental de la programmation orientée objet (POO) qui consiste à restreindre l'accès direct aux données d'un objet et à n'autoriser l'interaction avec ces données qu'à travers des méthodes spécifiques. Cela permet de protéger l'intégrité des données et de cacher les détails d'implémentation.
 
@@ -1242,7 +1242,7 @@ echo $compte->getSolde(); // Affiche 150
 
 ___
 
-50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple.
+## 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple.
 
 **Étendre une classe** en programmation orientée objet signifie créer une nouvelle classe (appelée **classe dérivée** ou **sous-classe**) qui hérite des propriétés et des méthodes d'une classe existante (appelée **classe parente** ou **superclasse**). Ce processus permet de réutiliser le code existant tout en ajoutant ou en modifiant des fonctionnalités spécifiques à la sous-classe.
 
@@ -1298,17 +1298,17 @@ echo $monChat->parler(); // Affiche "Le chat miaule."
 - **Polymorphisme** : les sous-classes peuvent être traitées comme des instances de leur superclasse, ce qui facilite le travail avec des collections d'objets de différentes classes. (notions à éclaircir !)
   
   
-## Ajouts d'explications sur le polymorphisme :
+### Ajouts d'explications sur le polymorphisme :
 
 Le polymorphisme est un **concept fondamental en programmation orientée objet** (**POO**) qui permet à des objets de différentes classes d'être traités de manière uniforme via une interface commune. Il se manifeste souvent **par le biais de l'héritage et de la redéfinition de méthodes**.
 
-### Types de polymorphisme :
+#### Types de polymorphisme :
 
 1. **Polymorphisme de substitution (ou d'héritage)** : cela se produit lorsque des classes dérivées remplacent ou étendent les méthodes d'une classe parente. Tu peux traiter les objets des classes dérivées comme s'ils étaient des objets de la classe parente.
 
 2. **Polymorphisme paramétrique** : cela se produit lorsque des fonctions ou des méthodes peuvent accepter des arguments de différents types, comme dans les génériques (ceci est plus courant dans d'autres langages, comme Java ou C#).
 
-### Exemple de polymorphisme de substitution en PHP :
+#### Exemple de polymorphisme de substitution en PHP :
 
 Reprenons l'exemple précédent :
 
@@ -1347,14 +1347,14 @@ faireParler($monChien); // Affiche "Le chien aboie."
 faireParler($monChat);  // Affiche "Le chat miaule."
 ```
 
-### Explication :
+#### Explication :
 
 - La fonction `faireParler()` prend un paramètre de type `Animal`. Grâce au polymorphisme, elle peut accepter des objets de n'importe quelle classe qui hérite d'`Animal`, comme `Chien` ou `Chat`.
 - Quand tu appelles `faireParler($monChien)`, cela exécute la méthode `parler()` de la classe `Chien`.
 - Quand tu appelles `faireParler($monChat)`, cela exécute la méthode `parler()` de la classe `Chat`.
 - Le même code peut fonctionner avec des types d'objets différents, ce qui rend le code plus flexible et extensible.
 
-### Avantages du polymorphisme :
+#### Avantages du polymorphisme :
 
 - **Flexibilité** : tu peux écrire du code qui fonctionne avec différents types d'objets sans connaître leurs classes spécifiques.
 - **Extensibilité** : tu peux ajouter de nouvelles classes sans modifier le code existant, tant qu'elles respectent l'interface de la classe parente.
@@ -1362,7 +1362,7 @@ faireParler($monChat);  // Affiche "Le chat miaule."
 
 ___
 
-51.	Définir l’opérateur de résolution de portée.
+## 51.	Définir l’opérateur de résolution de portée.
 
 L'**opérateur de résolution de portée en PHP** est représenté par les doubles deux-points `::`. Cet opérateur est utilisé pour accéder aux membres statiques d'une classe (propriétés et méthodes), ainsi qu'aux constantes de classe et aux méthodes surchargées.
 
@@ -1422,11 +1422,11 @@ L'opérateur de résolution de portée `::` est un outil puissant en PHP qui per
   
   
   
-## Membres statiques, c'est quoi ? (on répond en avance à la question 52)
+### Membres statiques, c'est quoi ? (on répond en avance à la question 52)
 
 Les membres statiques d'une classe en PHP sont des propriétés et des méthodes qui appartiennent à la classe elle-même plutôt qu'à une instance particulière de cette classe. Cela signifie qu'on peut accéder à ces membres sans avoir besoin de créer un objet de cette classe.
 
-### Caractéristiques des membres statiques :
+#### Caractéristiques des membres statiques :
 
 1. **Partage entre instances** : les membres statiques sont partagés entre toutes les instances de la classe. Si une instance modifie une propriété statique, cette modification est visible par toutes les autres instances.
 
@@ -1434,7 +1434,7 @@ Les membres statiques d'une classe en PHP sont des propriétés et des méthodes
 
 3. **Utilisation courante** : les membres statiques sont souvent utilisés pour des constantes, des paramètres globaux ou des utilitaires qui ne nécessitent pas d'état spécifique à une instance.
 
-### Exemple de membres statiques :
+#### Exemple de membres statiques :
 
 ```
 class Compteur {
@@ -1457,13 +1457,13 @@ echo Compteur::getNombreInstances(); // Affiche 2
 ```
 
 
-### Pourquoi sont-ils statiques ?
+#### Pourquoi sont-ils statiques ?
 
 **Indépendance de l'instance** : les membres statiques ne dépendent pas de l'état d'une instance spécifique. Ils existent au niveau de la classe. Cela les rend utiles pour des fonctionnalités qui doivent être communes à toutes les instances ou qui ne nécessitent pas d'informations spécifiques à une instance.
 
 **Efficacité** : l'utilisation de membres statiques peut parfois être plus efficace, car tu n'as pas besoin de créer un objet pour accéder à certaines fonctionnalités ou données.
 
-### Limites des membres statiques :
+#### Limites des membres statiques :
 
 **Pas de** `$this` : dans une méthode statique, tu ne peux pas utiliser `$this`, car `$this` fait référence à une instance de la classe. Pour accéder à d'autres membres (non statiques), tu dois créer une instance de la classe.
 
@@ -1473,11 +1473,11 @@ En résumé, les membres statiques offrent une manière efficace et centralisée
 
 
 
-## Constantes de classe, c'est quoi ?
+### Constantes de classe, c'est quoi ?
 
 Les **constantes de classe en PHP** sont des valeurs qui ne peuvent pas être modifiées après leur définition. Elles sont liées à la classe elle-même et non à des instances spécifiques de cette classe. Les constantes sont souvent utilisées pour définir des valeurs fixes qui doivent rester constantes tout au long de l'exécution du programme.
 
-### Caractéristiques des constantes de classe :
+#### Caractéristiques des constantes de classe :
 
 - **Déclaration** : les constantes sont déclarées avec le mot-clé `const`. Elles doivent être initialisées lors de leur déclaration et ne peuvent pas être modifiées par la suite.
 
@@ -1485,7 +1485,7 @@ Les **constantes de classe en PHP** sont des valeurs qui ne peuvent pas être mo
 
 - **Visibilité** : les constantes de classe sont toujours `public` par défaut, ce qui signifie qu'elles peuvent être accessibles de l'extérieur de la classe.
 
-### Exemple de constantes de classe :
+#### Exemple de constantes de classe :
 
 Voici un exemple de définition et d'utilisation de constantes de classe :
 
@@ -1508,7 +1508,7 @@ echo Configuration::NOM_APPLICATION; // Affiche "Mon Application"
 Configuration::afficherInfo();
 ```
 
-### Avantages des constantes de classe :
+#### Avantages des constantes de classe :
 
 - **Immutabilité** : une fois définies, les constantes ne peuvent pas être modifiées, ce qui garantit que les valeurs restent fixes pendant l'exécution du programme.
 
@@ -1516,22 +1516,22 @@ Configuration::afficherInfo();
 
 - **Accessibilité** : les constantes de classe peuvent être facilement accessibles à partir de n'importe quelle méthode de la classe, ainsi que depuis l'extérieur de la classe en utilisant l'opérateur `::`.
 
-### Utilisations courantes :
+#### Utilisations courantes :
 
 - **Configuration** : les constantes de classe sont souvent utilisées pour stocker des valeurs de configuration, comme les chemins de fichiers, les clés API, les versions, etc.
 
 - **Codes d'erreur** : elles peuvent également être utilisées pour définir des codes d'erreur constants dans des applications.
 
-### Conclusion
+#### Conclusion
 
 Les constantes de classe en PHP sont un **outil puissant pour gérer des valeurs fixes qui sont liées à une classe**. Elles améliorent la clarté du code et **garantissent que les valeurs critiques ne seront pas modifiées accidentellement**.
 
 
-## Que se passerait-il si on choisissait que les constantes de classes soient déclarées avec le modificateur d'accès `private` ?
+### Que se passerait-il si on choisissait que les constantes de classes soient déclarées avec le modificateur d'accès `private` ?
 
 Si on déclare une constante de classe en utilisant le modificateur d'accès `private`, cela signifie que cette constante ne sera accessible qu'à l'intérieur de la classe elle-même. **Les instances de cette classe ou les classes dérivées ne pourront pas y accéder directement.** (même les instances de classes, c'est à dire les objets créés à partir de cette classe !)
 
-### Exemple avec une constante privée :
+#### Exemple avec une constante privée :
 
 Voici un exemple pour illustrer cela :
 
@@ -1551,22 +1551,22 @@ echo Configuration::afficherVersion(); // Affiche "1.0"
 // echo Configuration::VERSION; // Cela entraînerait une erreur
 ```
 
-### Ce qui se passe :
+#### Ce qui se passe :
 
 1. **Accessibilité** : dans cet exemple, `VERSION` est déclarée comme `private`. Cela signifie qu'elle peut être utilisée à l'intérieur de la méthode `afficherVersion()` de la classe `Configuration`, mais si tu essaies d'accéder à `VERSION` directement en dehors de la classe (comme dans la ligne commentée), cela entraînera une erreur.
 
 2. **Protection des données** : utiliser `private` pour les constantes peut être utile si tu veux protéger des valeurs qui ne doivent pas être accessibles ou modifiées par le code extérieur, ce qui renforce l'encapsulation.
 
-### Conclusion :
+#### Conclusion :
 
 En résumé, déclarer une constante de classe comme `private` protège la constante des accès non autorisés, ce qui peut être utile pour maintenir l'intégrité des données ou pour cacher les détails d'implémentation. Cependant, cela signifie aussi que tu dois fournir des méthodes publiques (ou protégées) pour accéder à ces constantes si tu souhaites les utiliser en dehors de la classe.
 
 
-## si on déclare la propriété d'une classe comme private, cette propriété ne sera pas accessible en dehors de cette classe. Mais sera-t-elle accessible dans une instance de cette classe ou pas non plus ?
+### si on déclare la propriété d'une classe comme private, cette propriété ne sera pas accessible en dehors de cette classe. Mais sera-t-elle accessible dans une instance de cette classe ou pas non plus ?
 
 Si on déclares une propriété d'une classe comme `private`, cette propriété **ne sera pas accessible en dehors de la classe, même à partir d'une instance de cette classe**. Cela signifie que les objets de cette classe ne peuvent pas accéder directement à cette propriété.
 
-### Exemple :
+#### Exemple :
 
 Voici un exemple pour illustrer cela :
 
@@ -1593,19 +1593,19 @@ $maVoiture = new Voiture("rouge");
 echo $maVoiture->afficherCouleur(); // Affiche "rouge"
 ```
 
-### Ce qui se passe :
+#### Ce qui se passe :
 
 1. **Propriété privée** : la propriété `$couleur` est déclarée comme `private`. Cela signifie qu'elle ne peut être accédée directement que dans la classe `Voiture`.
 
 2. **Méthodes publiques** : pour accéder à la valeur de la propriété, tu dois utiliser une méthode publique (comme `afficherCouleur()`) qui est autorisée à accéder à cette propriété.
 
-### Conclusion :
+#### Conclusion :
 
 Les propriétés privées sont utilisées pour encapsuler les données et empêcher les accès non autorisés, ce qui favorise la sécurité et l'intégrité des données. Si tu as besoin d'accéder à ces propriétés depuis l'extérieur de la classe, tu devras créer des méthodes publiques (ou protégées) qui le permettent. Si tu as d'autres questions, n'hésite pas à demander !
 
 ___
 
-52.	Définir une méthode / propriété statique.
+## 52.	Définir une méthode / propriété statique.
 
 Une **méthode statique** et une **propriété statique** en PHP sont des **membres d'une classe qui appartiennent à la classe elle-même plutôt qu'à des instances spécifiques de cette classe**. Cela signifie qu'**on peut accéder à ces membres sans avoir à créer un objet de cette classe**.
 
@@ -1665,14 +1665,14 @@ echo Utilitaire::direBonjour(); // Affiche "Bonjour !"
 En résumé, les **méthodes et propriétés statiques en PHP offrent une manière efficace de gérer des données et des fonctionnalités qui ne dépendent pas d'une instance spécifique de la classe**.
 
 
-## A propos du mot-clé `self` 
+### A propos du mot-clé `self` 
 
 
 Le mot-clé `self` en PHP est utilisé pour faire référence à la classe actuelle à l'intérieur de la classe elle-même. Il est particulièrement utile lorsque tu veux accéder à des membres statiques (propriétés ou méthodes) de la classe dans laquelle tu te trouves.
 
 
 
-### Caractéristiques du mot-clé `self` :
+#### Caractéristiques du mot-clé `self` :
 
 1. **Accès aux membres statiques** : `self` te permet d'accéder aux propriétés et méthodes statiques de la classe sans avoir besoin de créer une instance de cette classe.
 
@@ -1681,7 +1681,7 @@ Le mot-clé `self` en PHP est utilisé pour faire référence à la classe actue
 3. **Pas d'héritage** : lorsque tu utilises `self`, il fait référence à la classe dans laquelle il est défini, même si tu es dans une sous-classe. Pour accéder aux membres d'une classe parente, tu devrais utiliser le mot-clé `parent`.
 
 
-### Exemple d'utilisation de `self` :
+#### Exemple d'utilisation de `self` :
 
 Voici un exemple pour illustrer l'utilisation de self :
 
@@ -1705,266 +1705,266 @@ $instance2 = new Compteur();
 echo Compteur::getNombreInstances(); // Affiche 2
 ```
 
-### Explication de l'exemple :
+#### Explication de l'exemple :
 
 - `self::$nombreInstances` : dans le constructeur, nous utilisons `self` pour accéder à la propriété statique `$nombreInstances`. Cela nous permet de l'incrémenter à chaque fois qu'une nouvelle instance de Compteur est créée.
 
 - `self::getNombreInstances()` : dans la méthode statique `getNombreInstances()`, nous accédons également à la propriété statique en utilisant `self`.
 
-### Conclusion
+#### Conclusion
 
 Le mot-clé `self` est un outil puissant pour accéder à des membres statiques dans une classe sans avoir besoin d'instancier la classe. Cela permet de garder le code organisé et d'utiliser efficacement des propriétés et méthodes partagées.
 
 ___
 
-53.	Définir le polymorphisme en POO.
+## 53.	Définir le polymorphisme en POO.
 
 
 
 ___
 
-54.	Définir une méthode / classe abstraite ?
+## 54.	Définir une méthode / classe abstraite ?
 
 
 
 ___
 
-55.	Définir le chaînage de méthodes.
+## 55.	Définir le chaînage de méthodes.
 
 
 
 ___
 
-56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques » ?
+## 56.	Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques » ?
 
 
 
 ___
 
-57.	Qu’est-ce qu’un « autoload » ?
+## 57.	Qu’est-ce qu’un « autoload » ?
 
 
 
 ___
 
-58.	Comment appelle-t-on en français les « getters » et les « setters » ?
+## 58.	Comment appelle-t-on en français les « getters » et les « setters » ?
 
 
 
 ___
 
-59.	Qu’est-ce que la sérialisation en PHP ? 
+## 59.	Qu’est-ce que la sérialisation en PHP ? 
 
 
 
 ___
 ___
 
-## Architecture 
+# Architecture 
 
-60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence.
-
-___
-
-61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern.
+## 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence.
 
 ___
 
-62.	Qu’est-ce que l’architecture MVC ?
+## 61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern.
 
 ___
 
-63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
+## 62.	Qu’est-ce que l’architecture MVC ?
 
 ___
 
-64.	Quels sont les avantages de l’architecture MVC ?
+## 63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
 
 ___
 
-65.	Existe-t-il des variantes à l’architecture MVC ?
+## 64.	Quels sont les avantages de l’architecture MVC ?
 
 ___
 
-66.	Qu’est-ce qu’une API ? Définir l’architecture REST.
+## 65.	Existe-t-il des variantes à l’architecture MVC ?
 
 ___
 
-## Modélisation - Base de données
-
-67.	Qu’est-ce que la modélisation de données ? Définir la méthode Merise.
+## 66.	Qu’est-ce qu’une API ? Définir l’architecture REST.
 
 ___
 
-68.	Quelles sont les 3 étapes principales de la méthode Merise ?  
-a.	Analyse, conception et réalisation  
-b.	Planification, exécution et contrôle  
-c.	Création, modification et suppression  
+# Modélisation - Base de données
+
+## 67.	Qu’est-ce que la modélisation de données ? Définir la méthode Merise.
 
 ___
 
-69.	Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
+## 68.	Quelles sont les 3 étapes principales de la méthode Merise ?  
+### a.	Analyse, conception et réalisation  
+### b.	Planification, exécution et contrôle  
+### c.	Création, modification et suppression  
 
 ___
 
-70.	Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
+## 69.	Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
 
 ___
 
-71.	Donner la définition des mots suivants :  
-a.	Entité  
-b.	Relation  
-c.	Cardinalité  
-d.	Clé primaire / clé étrangère  
+## 70.	Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
 
 ___
 
-72.	Que devient une relation de type « Many To Many » dans le modèle logique de données ?
+## 71.	Donner la définition des mots suivants :  
+### a.	Entité  
+### b.	Relation  
+### c.	Cardinalité  
+### d.	Clé primaire / clé étrangère  
 
 ___
 
-73.	Qu’est-ce qu’une base de données ?
+## 72.	Que devient une relation de type « Many To Many » dans le modèle logique de données ?
 
 ___
 
-74.	Définir les notions suivantes :  
-a.	SQL  
-b.	MySQL  
-c.	SGBD (donner 2 exemples de SGBD)  
+## 73.	Qu’est-ce qu’une base de données ?
 
 ___
 
-75.	Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___.
+## 74.	Définir les notions suivantes :  
+### a.	SQL  
+### b.	MySQL  
+### c.	SGBD (donner 2 exemples de SGBD)  
 
 ___
 
-76.	Quelle est la différence entre une base de données relationnelle et non relationnelle ?
+## 75.	Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___.
 
 ___
 
-77.	Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
+## 76.	Quelle est la différence entre une base de données relationnelle et non relationnelle ?
 
 ___
 
-78.	A quoi sert une vue dans une base de données ?
+## 77.	Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
 
 ___
 
-79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
+## 78.	A quoi sert une vue dans une base de données ?
 
 ___
 
-80.	Quelles sont les fonctions d’agrégation en SQL ?
+## 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
 
 ___
 
-81.	Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
+## 80.	Quelles sont les fonctions d’agrégation en SQL ?
 
 ___
 
-82.	Quelles sont les clauses qui permettent de :  
-a.	Insérer un nouvel enregistrement dans une table  
-b.	Modifier un enregistrement dans une table  
-c.	Supprimer un enregistrement dans une table  
-d.	Supprimer la base de données  
-e.	Filtrer les résultats d’une requête SQL  
-f.	Trier les résultats d’une requête SELECT  
-g.	Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique  
-h.	Concaténer 2 chaînes de caractères  
+## 81.	Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
 
 ___
 
-83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
+## 82.	Quelles sont les clauses qui permettent de :  
+### a.	Insérer un nouvel enregistrement dans une table  
+### b.	Modifier un enregistrement dans une table  
+### c.	Supprimer un enregistrement dans une table  
+### d.	Supprimer la base de données  
+### e.	Filtrer les résultats d’une requête SQL  
+### f.	Trier les résultats d’une requête SELECT  
+### g.	Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique  
+### h.	Concaténer 2 chaînes de caractères  
 
 ___
 
-## Symfony
-
-84.	Qu’est-ce que Symfony ?
+## 83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
 
 ___
 
-85.	Sur quel langage de programmation et design pattern repose Symfony ?
+# Symfony
+
+## 84.	Qu’est-ce que Symfony ?
 
 ___
 
-86.	Quelle est la dernière version en date de Symfony ?
+## 85.	Sur quel langage de programmation et design pattern repose Symfony ?
 
 ___
 
-87.	Qu’est-ce qu’un bundle ?
+## 86.	Quelle est la dernière version en date de Symfony ?
 
 ___
 
-88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
+## 87.	Qu’est-ce qu’un bundle ?
 
 ___
 
-89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
+## 88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
 
 ___
 
-90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
+## 89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
 
 ___
 
-91.	Que permet le bundle Maker au sein de Symfony ? 
+## 90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
 
 ___
 
-92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
+## 91.	Que permet le bundle Maker au sein de Symfony ? 
 
 ___
 
-93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
+## 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
 
 ___
 
-## Sécurité
-
-94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
+## 93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
 
 ___
 
-95.	Qu’est-ce que la faille XSS ? Comment s’en prémunir ?
+# Sécurité
+
+## 94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
 
 ___
 
-96.	Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
+## 95.	Qu’est-ce que la faille XSS ? Comment s’en prémunir ?
 
 ___
 
-97.	Définir l’attaque par force brute et l’attaque par dictionnaire.
+## 96.	Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
 
 ___
 
-98. Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement.
+## 97.	Définir l’attaque par force brute et l’attaque par dictionnaire.
 
 ___
 
-99. A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
+## 98. Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement.
 
 ___
 
-100.    Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
+## 99. A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
 
 ___
 
-101.	Qu’est-ce qu’une politique de mots de passe forts ?
+## 100.    Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
 
 ___
 
-102.	Qu’est-ce que l’hameçonnage ?
+## 101.	Qu’est-ce qu’une politique de mots de passe forts ?
 
 ___
 
-103.	Définir la « validation des entrées ».
+## 102.	Qu’est-ce que l’hameçonnage ?
 
 ___
 
-## RGPD
+## 103.	Définir la « validation des entrées ».
 
-104.	Qu’est-ce que le RGPD ?
+___
+
+# RGPD
+
+## 104.	Qu’est-ce que le RGPD ?
 
 Le **RGPD** (**Règlement Général sur la Protection des Données**) est une législation de l'Union européenne qui a été **mise en vigueur le 25 mai 2018**. Son objectif principal est de renforcer et d'harmoniser la protection des données personnelles au sein de l'UE. Voici les éléments clés à savoir :
 
@@ -2004,25 +2004,25 @@ Le RGPD représente **un cadre essentiel pour la protection des données personn
 
 ___
 
-105.	Quel est son objectif principal ?
+## 105.	Quel est son objectif principal ?
 
 Son objectif principal est de **renforcer et** d'**harmoniser la protection des données personnelles au sein de l'UE**.
 
 ___
 
-106.	Quelle est la date d’entrée en vigueur du RGPD ?
+## 106.	Quelle est la date d’entrée en vigueur du RGPD ?
 
 Une législation de l'Union européenne mise en vigueur le **25 mai 2018**.
 
 ___
 
-107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
+## 107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
 
 Le non-respect du RGPD peut entraîner des amendes sévères, pouvant atteindre jusqu'à 20 millions d'euros ou 4 % du chiffre d'affaires mondial de l'entreprise, selon le montant le plus élevé.
 
 ___
 
-108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
+## 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
 
 En France, l'autorité administrative chargée de faire appliquer le RGPD est la **Commission Nationale de l'Informatique et des Libertés** (**CNIL**).
 
@@ -2044,7 +2044,7 @@ La CNIL **joue un rôle clé dans la mise en œuvre et le respect des règles de
 
 ___
 
-109.	Quel est le consentement valide selon le RPGD ?
+## 109.	Quel est le consentement valide selon le RPGD ?
 
 Selon le RGPD, le consentement valide **doit répondre à plusieurs critères spécifiques** pour être considéré comme légal et valable. Voici les principales exigences :
 
@@ -2078,7 +2078,7 @@ En respectant ces exigences, les organisations peuvent s'assurer que le consente
 
 ___
 
-110.	Qu’est-ce qu’une politique de confidentialité ?
+## 110.	Qu’est-ce qu’une politique de confidentialité ?
 
 Une **politique de confidentialité** est un **document qui explique comment une organisation collecte, utilise, stocke, et protège les données personnelles des utilisateurs**. Elle est essentielle pour informer les utilisateurs sur leurs droits et sur la manière dont leurs informations sont traitées. Voici les éléments clés d'une politique de confidentialité :
 
@@ -2128,13 +2128,13 @@ Une politique de confidentialité est **essentielle pour la transparence et la c
 
 ___
 
-111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
+## 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
 
 Les données personnelles ne peuvent être conservées indéfiniment : une durée de conservation doit être déterminée par le responsable de traitement en fonction de l’objectif ayant conduit à la collecte de ces données. Ce principe de conservation limitée des données personnelles est prévu par le RGPD et la loi Informatique et Libertés.
 
 ___
 
-112.	Quels sont les droits des utilisateurs selon le RGPD ?
+## 112.	Quels sont les droits des utilisateurs selon le RGPD ?
 
 Selon le RGPD, **les utilisateurs disposent de plusieurs droits** concernant leurs données personnelles. Voici les principaux droits que le règlement garantit :
 
@@ -2172,7 +2172,7 @@ Ces droits visent à renforcer la protection des données personnelles et à don
 
 ___
 
-113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
+## 113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
 
 Le **principe de minimisation des données** est l'un des principes fondamentaux du RGPD. Il stipule que les données personnelles collectées et traitées doivent être limitées à ce qui est nécessaire au regard des finalités pour lesquelles elles sont traitées. Voici les points clés à retenir concernant ce principe :
 
@@ -2202,9 +2202,9 @@ Le principe de minimisation des données est crucial pour garantir une gestion r
 
 ___
 
-## SEO
+# SEO
 
-114.	Qu’est-ce que le SEO ? 
+## 114.	Qu’est-ce que le SEO ? 
 
 Le SEO, ou **Search Engine Optimization** (**optimisation pour les moteurs de recherche**), désigne l'ensemble des techniques et des pratiques visant à améliorer la visibilité et le classement d'un site web dans les résultats des moteurs de recherche comme Google.
 
@@ -2226,7 +2226,7 @@ Le SEO est un **processus continu et évolutif**, car les algorithmes des moteur
 
 ___
 
-115.	Quel est l’objectif principal du SEO ?
+## 115.	Quel est l’objectif principal du SEO ?
 
 L’objectif principal du SEO (Search Engine Optimization) est d'**augmenter la visibilité d'un site web dans les résultats des moteurs de recherche** afin d'attirer davantage de trafic organique. Plus précisément, voici quelques objectifs clés :
 
@@ -2244,7 +2244,7 @@ En résumé, le SEO vise à optimiser la présence en ligne d'un site pour qu'il
 
 ___
 
-116.	Existe-t-il plusieurs types de référencement ? Lesquels ?
+## 116.	Existe-t-il plusieurs types de référencement ? Lesquels ?
 
 Oui, il existe plusieurs types de référencement, chacun ayant ses propres caractéristiques et objectifs. Voici les principaux types de référencement :
 
@@ -2272,7 +2272,7 @@ Chaque type de référencement peut **jouer un rôle complémentaire** dans une 
 
 ___
 
-117.	Qu’est-ce que la densité de mots-clés en SEO ?
+## 117.	Qu’est-ce que la densité de mots-clés en SEO ?
 
 La **densité de mots-clés** en SEO fait référence au pourcentage de fois qu'un mot-clé spécifique apparaît dans un texte par rapport au nombre total de mots. C'est un indicateur utilisé pour déterminer si le contenu est pertinent pour un mot-clé donné.
 
@@ -2294,7 +2294,7 @@ En résumé, la densité de mots-clés est un élément à prendre en compte, ma
 
 ___
 
-118.	Qu’est-ce qu’une balise « alt » ?
+## 118.	Qu’est-ce qu’une balise « alt » ?
 
 Une balise **« alt »** (ou **attribut alt**) est utilisée dans le code HTML pour fournir une description textuelle d'une image. Son but principal est d'améliorer l'accessibilité et le référencement des pages web. Voici quelques points clés à propos des balises « alt » :
 
@@ -2320,7 +2320,7 @@ En résumé, la balise « alt » est **un élément essentiel pour l'accessibili
 
 ___
 
-119.	Qu’est-ce que la balise « meta description » ?
+## 119.	Qu’est-ce que la balise « meta description » ?
 
 La **balise « meta description »** est un élément HTML utilisé pour fournir un résumé concis du contenu d'une page web. Elle est incluse dans la section `<head>` du code HTML et sert plusieurs objectifs importants :
 
@@ -2347,7 +2347,7 @@ En résumé, la balise « meta description » joue un rôle crucial dans la pré
 
 ___
 
-120.	Qu’est-ce que le « nofollow » en SEO ?
+## 120.	Qu’est-ce que le « nofollow » en SEO ?
 
 Le terme **« nofollow »** désigne un attribut HTML qui peut être ajouté à un lien (anchor tag) pour indiquer aux moteurs de recherche de ne pas suivre ce lien ni d'en tenir compte dans le calcul de l'autorité du site lié. Voici quelques points importants à propos du « nofollow » :
 
@@ -2376,7 +2376,7 @@ Le « nofollow » est un outil utile dans le référencement pour **gérer la qu
 
 ___
 
-121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
+## 121.	Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
 
 Le contenu de qualité est crucial pour le référencement (SEO) d'un site web pour plusieurs raisons :
 
@@ -2414,7 +2414,7 @@ En résumé, le contenu de qualité est fondamental pour le référencement, car
 
 ___
 
-122.	Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
+## 122.	Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
 
 L'utilisation structurée des balises de titre (comme `<h1>`, `<h2>`, `<h3>`, etc.) est essentielle pour plusieurs raisons :
 
@@ -2448,7 +2448,7 @@ En résumé, utiliser des balises de titre de manière structurée est important
 
 ___
 
-123.	Quelle est la recommandation pour les URL d'un site web bien référencé ?
+## 123.	Quelle est la recommandation pour les URL d'un site web bien référencé ?
 
 Pour que les URL d'un site web soient bien référencées et optimisées pour le SEO, voici quelques recommandations importantes :
 
@@ -2486,7 +2486,7 @@ En suivant ces recommandations, tu peux **améliorer la structure des URL de ton
 
 ___
 
-124.	Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?
+## 124.	Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?
 
 Le **maillage interne** désigne la pratique de créer des **liens entre les différentes pages d'un même site web**. C'est une stratégie importante en SEO pour plusieurs raisons :
 
@@ -2520,7 +2520,7 @@ En résumé, le maillage interne est essentiel pour améliorer l'expérience uti
 
 ___
 
-125.	Qu'est-ce que l'optimisation des images pour le référencement ?
+## 125.	Qu'est-ce que l'optimisation des images pour le référencement ?
 
 L'**optimisation des images** pour le référencement (SEO) fait référence à un ensemble de pratiques visant à améliorer la visibilité et le chargement des images sur un site web, tout en garantissant qu'elles contribuent positivement au référencement. Voici quelques éléments clés de cette optimisation :
 
@@ -2562,7 +2562,7 @@ L'optimisation des images est essentielle pour améliorer le temps de chargement
 
 ___
 
-126.	Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
+## 126.	Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
 
 Un **plan de site** (ou **sitemap**) est un fichier qui liste toutes les pages d'un site web, facilitant leur indexation par les moteurs de recherche. Voici les éléments clés à connaître à propos des sitemaps et leur importance pour le référencement :
 
@@ -2602,10 +2602,10 @@ En résumé, un plan de site est un **outil essentiel pour améliorer l'indexati
 ___
 ___
 
-## Gestion de projets - DevOps
+# Gestion de projets - DevOps
 
 
-127.	Qu’est-ce que la gestion de projet ?
+## 127.	Qu’est-ce que la gestion de projet ?
 
 La **gestion de projet** est l’ensemble des pratiques et des techniques utilisées pour planifier, exécuter et finaliser un projet dans les délais et les budgets impartis. Elle implique plusieurs étapes clés :  
 
@@ -2622,7 +2622,7 @@ La **gestion de projet** est l’ensemble des pratiques et des techniques utilis
 La gestion de projet vise à atteindre des résultats spécifiques tout en respectant les contraintes de temps, de coût et de qualité.
 ___
 
-128.	Qu’est-ce qu’une méthode Agile de gestion de projet ? 
+## 128.	Qu’est-ce qu’une méthode Agile de gestion de projet ? 
 
 La méthode Agile est une approche de gestion de projet qui privilégie la flexibilité, la collaboration et l'adaptabilité face aux changements. Elle est particulièrement populaire dans le développement logiciel, mais peut être appliquée à divers types de projets. Voici quelques caractéristiques clés :
 
@@ -2639,7 +2639,7 @@ La méthode Agile est une approche de gestion de projet qui privilégie la flexi
 Les méthodes Agile, comme Scrum et Kanban, sont conçues pour répondre rapidement aux besoins changeants des clients et pour améliorer la qualité du produit final.
 ___
 
-129.	Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages.
+## 129.	Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages.
 
 La méthode MoSCoW est une **technique de priorisation utilisée dans la gestion de projet** pour aider à classer les exigences en fonction de leur importance. MoSCoW est un acronyme qui signifie :
 
@@ -2664,7 +2664,7 @@ La méthode MoSCoW est une **technique de priorisation utilisée dans la gestion
 Cette méthode est particulièrement **utile dans un contexte Agile**, où les besoins peuvent évoluer rapidement.
 ___
 
-130.	A quoi sert la méthodologie MVP ? Citer les caractéristiques clés.
+## 130.	A quoi sert la méthodologie MVP ? Citer les caractéristiques clés.
 
 La méthodologie MVP, ou **Minimum Viable Product**, est une approche utilisée dans le développement de produits, notamment dans le domaine des startups et des technologies. Son objectif est de **créer un produit avec les fonctionnalités essentielles** qui répondent **aux besoins de base des utilisateurs**, afin de **tester une idée** sur le marché **le plus rapidement possible**.
 
@@ -2689,7 +2689,7 @@ La méthodologie MVP, ou **Minimum Viable Product**, est une approche utilisée 
 L'approche MVP permet donc de **tester des idées rapidement et efficacement**, tout en restant orienté vers les besoins des utilisateurs.
 ___
 
-131.	Qu’est-ce que la planification itérative ?
+## 131.	Qu’est-ce que la planification itérative ?
 
 La planification itérative est une approche de gestion de projet qui consiste à **diviser le travail en petites étapes ou itérations**, permettant ainsi une planification, une exécution et une révision continues. Contrairement à une planification linéaire, où toutes les phases du projet sont définies dès le départ, la planification itérative permet de **s'adapter aux changements et d'ajuster les priorités** au fur et à mesure de l’avancement du projet.
 
@@ -2714,7 +2714,7 @@ La planification itérative est une approche de gestion de projet qui consiste �
 Cette méthode est particulièrement **efficace dans des environnements complexes et changeants**, comme le développement logiciel.
 ___
 
-132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique.
+## 132.	Citer 3 méthodes Agiles dans le cadre d’un projet informatique.
 
 Voici **trois méthodes Agiles** couramment utilisées dans le cadre de projets informatiques :
 
@@ -2730,7 +2730,7 @@ Voici **trois méthodes Agiles** couramment utilisées dans le cadre de projets 
 Chacune de ces méthodes offre des approches différentes pour gérer le développement de projets informatiques tout en restant **flexible et réactive aux besoins changeants des utilisateurs**.
 ___
 
-133.	Qu’est-ce qu’une réunion de revue de projet ?
+## 133.	Qu’est-ce qu’une réunion de revue de projet ?
 
 Une **réunion de revue de projet** est un rassemblement organisé à des moments clés du cycle de vie d'un projet pour évaluer son avancement, ses résultats et prendre des décisions sur les prochaines étapes. Ces réunions sont essentielles pour assurer la transparence et la communication entre les membres de l'équipe et les parties prenantes.
 
@@ -2755,7 +2755,7 @@ Une **réunion de revue de projet** est un rassemblement organisé à des moment
 En résumé, la réunion de revue de projet est un outil important pour garantir que le projet reste sur la bonne voie, pour résoudre les problèmes et pour s'assurer que toutes les parties sont alignées sur les objectifs.
 ___
 
-134.	Qu’est-ce qu’un livrable dans un projet ? 
+## 134.	Qu’est-ce qu’un livrable dans un projet ? 
 
 Un **livrable** dans un projet est tout produit, service ou résultat concret qui est remis à une partie prenante à la fin d'une phase ou d'une tâche du projet. Les livrables peuvent prendre différentes formes selon la nature du projet et ses objectifs.
 
@@ -2780,7 +2780,7 @@ Un **livrable** dans un projet est tout produit, service ou résultat concret qu
 En résumé, les livrables sont des éléments essentiels qui permettent de **suivre l'avancement du projet** et de **s'assurer que les attentes des parties prenantes sont satisfaites**. Ils sont souvent utilisés comme **critères d'achèvement** pour valider que le projet progresse conformément aux plans.
 ___
 
-135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux.
+## 135.	Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux.
 
 Les trois piliers de Scrum sont **la transparence, l'inspection et l'adaptation**. Chacun de ces piliers joue un rôle crucial dans le succès de la méthode Scrum et dans la gestion efficace des projets Agile.
 
@@ -2805,7 +2805,7 @@ Les trois piliers de Scrum sont **la transparence, l'inspection et l'adaptation*
 Ces trois piliers sont interconnectés et renforcent la dynamique Agile de Scrum, permettant aux équipes de rester flexibles, réactives et concentrées sur la livraison de valeur.
 ___
 
-136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
+## 136.	Qu’est-ce que le DevOps et quel est son objectif principal ?
 
 DevOps est une approche qui **combine le développement (*Dev*) et les opérations (*Ops*)** pour améliorer la collaboration et l'efficacité entre les équipes de développement logiciel et les équipes d'exploitation informatique. Il s'agit d'une culture, d'une philosophie et d'un ensemble de pratiques qui visent à réduire le temps entre le développement d'une fonctionnalité et sa mise en production.
 Objectif principal du DevOps :
@@ -2823,7 +2823,7 @@ Le principal objectif de DevOps est d'accélérer le cycle de vie du développem
 En résumé, DevOps vise à améliorer la productivité des équipes, à réduire le temps de mise sur le marché et à augmenter la satisfaction des clients grâce à des livraisons de logiciels plus rapides et de meilleure qualité.
 ___
 
-137.	Qu’est-ce que l’intégration continue ? 
+## 137.	Qu’est-ce que l’intégration continue ? 
 
 L'intégration continue (**CI**, pour **Continuous Integration**) est une pratique de développement logiciel qui consiste à intégrer régulièrement les modifications de code dans un référentiel partagé. L'objectif est d'assurer que le code est toujours dans un état déployable, en automatisant le processus de test et d'intégration.
 
@@ -2850,7 +2850,7 @@ L'intégration continue (**CI**, pour **Continuous Integration**) est une pratiq
 En résumé, l'intégration continue est une **pratique essentielle dans le développement Agile et DevOps**, favorisant une approche proactive pour gérer le code et assurer la qualité des livrables.
 ___
 
-138.	Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
+## 138.	Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
 
 **Docker** est une plateforme de virtualisation légère qui permet de créer, déployer et exécuter des applications dans des conteneurs. Un conteneur est une unité standardisée qui regroupe tout ce dont une application a besoin pour fonctionner, y compris le code, les bibliothèques, les dépendances et les configurations.
 
@@ -2877,7 +2877,7 @@ ___
 En résumé, Docker est un outil puissant qui facilite le développement, le déploiement et la gestion des applications dans un environnement DevOps, en promouvant l'agilité, la collaboration et l'efficacité.
 ___
 
-139.	Qu’est-ce qu’un test unitaire ? 
+## 139.	Qu’est-ce qu’un test unitaire ? 
 
 Un **test unitaire** est une méthode de test logiciel qui consiste à vérifier le fonctionnement d'une petite unité de code, généralement une fonction ou une méthode, de manière isolée. L'objectif principal est de s'assurer que chaque unité fonctionne comme prévu.
 
@@ -2902,7 +2902,7 @@ Un **test unitaire** est une méthode de test logiciel qui consiste à vérifier
 En résumé, les tests unitaires sont une pratique essentielle dans le développement logiciel, particulièrement dans les méthodologies Agile et DevOps, car ils garantissent la qualité et la fiabilité du code tout au long du cycle de développement.
 ___
 
-140.	Quelle est l'unité de code testée lors d'un test unitaire ?
+## 140.	Quelle est l'unité de code testée lors d'un test unitaire ?
 
 Lors d'un test unitaire, l'unité de code testée est généralement une **fonction**, une **méthode** ou un **module** spécifique. Cela peut également inclure des classes ou des composants isolés dans le cadre d'un logiciel. L'idée est de **vérifier le comportement d'une petite partie du code de manière isolée, sans dépendances extérieures**.
 
@@ -2917,7 +2917,7 @@ Lors d'un test unitaire, l'unité de code testée est généralement une **fonct
 En se concentrant sur des unités de code spécifiques, les tests unitaires permettent d'identifier rapidement les problèmes et de garantir que chaque composant fonctionne correctement dans le cadre global de l'application.
 ___
 
-141.	Quelles sont les caractéristiques d'un bon test unitaire ?
+## 141.	Quelles sont les caractéristiques d'un bon test unitaire ?
 
 Un bon test unitaire doit posséder plusieurs caractéristiques clés pour être efficace et utile. Voici les principales :
 
@@ -2960,7 +2960,7 @@ Un bon test unitaire doit posséder plusieurs caractéristiques clés pour être
 En intégrant ces caractéristiques, un bon test unitaire contribue à améliorer la qualité du code, facilite la maintenance et réduit le risque d'introduire des bogues lors des modifications.
 ___
 
-142.	Qu'est-ce qu'une assertion dans un test unitaire ?
+## 142.	Qu'est-ce qu'une assertion dans un test unitaire ?
 
  Une **assertion** dans un test unitaire est une instruction qui vérifie si une condition spécifiée est vraie. Elle est utilisée pour valider que le comportement d'une unité de code (comme une fonction ou une méthode) est conforme aux attentes. Si l'assertion échoue, cela signifie qu'il y a un problème avec le code testé.
 
@@ -2997,7 +2997,7 @@ En résumé, les assertions sont des éléments fondamentaux des tests unitaires
 ___
 ___
 
-## English
+# English
 
 1)	What does JavaScript enable you to do on a website ?  
 a.	Add interactive behavior and dynamic content. <--  
