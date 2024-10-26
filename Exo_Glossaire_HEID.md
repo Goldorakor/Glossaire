@@ -16,10 +16,10 @@
 ___
 ___
 
-## Général
+# Général
   
   
-1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
+## 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 logiciels permettant ce contexte.
 
 Il faut installer un **serveur local** sur son ordinateur, qui pourra **interpréter le code PHP** car le navigateur n'en est pas capable.
 Précisément, il faut un serveur web (Apache est un choix fréquent), un interpréteur PHP (on choisit la dernière version stable de PHP) et une base de données si notre script interagit avec une base de données (un choix fréquent est MySQL).
@@ -30,13 +30,13 @@ XAMPP permet également de créer un environnement de développement local pour 
 
 ___
 
-2.	Qu’est-ce qu’un algorithme ?
+## 2.	Qu’est-ce qu’un algorithme ?
 
 Un algorithme est une **succession finie d'instructions claires et de règles bien définies**, à réaliser pour **résoudre un problème ou effectuer une tâche complexe**. On doit garder en mémoire qu'il doit **être efficace** (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
 
 ___
 
-3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
+## 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
 
 Une variable est un **emplacement mémoire qui associe un nom à une valeur**. Elle peut être de différents types : nombre entier, nombre à virgule, booléen, chaine de caractères, tableau, etc.  
 
