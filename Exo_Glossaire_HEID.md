@@ -2011,33 +2011,277 @@ ___
 
 ## 96.	Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
 
+La **faille CSRF** (**Cross-Site Request Forgery**), ou falsification de requête intersites, est une vulnérabilité de sécurité qui permet à un attaquant de tromper un utilisateur authentifié pour qu'il effectue des actions non désirées sur une application web où il est connecté. Voici un aperçu plus détaillé :
+
+### 1. Comment cela fonctionne :
+
+- Lorsqu'un utilisateur est connecté à une application web (par exemple, un compte bancaire), un attaquant peut inciter l'utilisateur à visiter une page malveillante. Cette page peut contenir du code qui envoie des requêtes HTTP à l'application, en utilisant l'identité de l'utilisateur authentifié (par exemple, en profitant des cookies de session).
+
+### 2. Conséquences potentielles :
+
+- Actions non autorisées : Modifier des paramètres, transférer de l'argent, changer le mot de passe, etc., sans le consentement de l'utilisateur.
+- Compromission de comptes : L'attaquant peut exploiter la session de l'utilisateur pour exécuter des actions malveillantes.
+
+### Comment se prémunir contre les failles CSRF :
+
+1. **Token CSRF** :
+  - Utilise des tokens CSRF uniques pour chaque session ou chaque requête. Ces tokens doivent être inclus dans les formulaires et les requêtes AJAX. L'application vérifie ensuite que le token reçu correspond à celui attendu.
+
+2. **Vérification des entêtes** :
+  - Implémente une vérification des en-têtes HTTP pour s'assurer que les requêtes proviennent de sources de confiance. Par exemple, en vérifiant l'en-tête Referer ou Origin.
+
+3. **Utilisation de cookies SameSite** :
+  - Configure les cookies de session avec l'attribut SameSite, ce qui limite l'envoi des cookies dans les requêtes intersites.
+
+4. **Authentification renforcée** :
+  - Pour les actions sensibles (comme les transferts d'argent), envisage d'utiliser une authentification supplémentaire, comme la vérification par e-mail ou SMS.
+
+5. **Éducation des utilisateurs** :
+  - Informer les utilisateurs des risques liés aux liens malveillants et aux comportements suspects. Encourage les bonnes pratiques, comme ne pas cliquer sur des liens dans des e-mails non sollicités.
+
+6. **Surveillance et journalisation** :
+  - Mets en place des systèmes de surveillance pour détecter des comportements suspects ou des tentatives d'attaque.
+
+### Conclusion :
+
+La protection contre les failles CSRF est essentielle pour garantir la sécurité des utilisateurs et l'intégrité des applications web. En mettant en œuvre ces pratiques de sécurité, tu peux réduire considérablement le risque d'attaques CSRF.
+
 ___
 
 ## 97.	Définir l’attaque par force brute et l’attaque par dictionnaire.
+
+### Attaque par force brute
+
+Une **attaque par force brute** est une méthode utilisée par des attaquants pour déchiffrer des mots de passe, des clés de cryptage ou d'autres types d'informations en testant systématiquement toutes les combinaisons possibles jusqu'à trouver la bonne. Voici quelques caractéristiques :
+
+- **Processus** : l'attaquant utilise des outils automatisés pour tenter chaque combinaison, ce qui peut prendre beaucoup de temps, surtout si le mot de passe est long et complexe.
+- **Objectif** : le but est généralement d'accéder à des comptes ou des systèmes protégés par un mot de passe.
+- **Efficacité** : l'efficacité d'une attaque par force brute dépend de la puissance de calcul de l'attaquant et de la complexité du mot de passe. Des mots de passe plus longs et plus complexes rendent les attaques beaucoup plus difficiles.
+- **Protection** : des mesures comme le verrouillage de compte après un certain nombre d'échecs de connexion, l'utilisation de captchas, et la mise en œuvre de mots de passe robustes peuvent aider à prévenir ces attaques.
+
+### Attaque par dictionnaire
+
+Une **attaque par dictionnaire** est une technique similaire, mais au lieu de tester toutes les combinaisons possibles, l'attaquant utilise une liste prédéfinie de mots de passe courants ou de phrases (le "dictionnaire"). Voici quelques détails :
+
+- **Processus** : l'attaquant utilise un fichier contenant des mots de passe fréquemment utilisés, des phrases courantes, et d'autres combinaisons qui sont plus susceptibles d'être choisies par des utilisateurs.
+- **Objectif** : comme avec l'attaque par force brute, le but est d'accéder à des comptes ou des systèmes, mais cette méthode est généralement plus rapide car elle se concentre sur des mots de passe connus.
+- **Efficacité** : les attaques par dictionnaire peuvent être très efficaces contre des utilisateurs qui choisissent des mots de passe simples ou prévisibles.
+- **Protection** : pour se défendre contre ce type d'attaque, il est conseillé d'utiliser des mots de passe longs, complexes, et de ne pas utiliser de mots de passe courants ou facilement devinables.
+
+### Conclusion
+
+Les attaques par force brute et par dictionnaire sont deux techniques courantes utilisées pour compromettre la sécurité des systèmes protégés par des mots de passe. Il est essentiel d'adopter de bonnes pratiques de gestion des mots de passe pour se protéger contre ces types d'attaques.
 
 ___
 
 ## 98. Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement.
 
+Oui, il existe plusieurs autres failles de sécurité courantes en informatique. Voici quelques-unes des plus notables, avec une explication simple de leur comportement :
+
+### 1. Remote Code Execution (RCE) :
+
+**Comportement** : permet à un attaquant d'exécuter du code à distance sur un serveur ou un appareil cible, ce qui peut conduire à un contrôle total sur le système.
+
+### 2. Inclusion de fichiers (File Inclusion) :
+
+**Comportement** : permet à un attaquant d'inclure des fichiers sur le serveur, ce qui peut entraîner l'exécution de code malveillant ou l'accès à des fichiers sensibles.
+
+### 3. Déni de Service (DoS) :
+
+**Comportement** : surcharge un système, un serveur ou un réseau en envoyant un volume excessif de requêtes, rendant le service indisponible pour les utilisateurs légitimes.
+
+### 4. Man-in-the-Middle (MitM) :
+
+**Comportement** : un attaquant intercepte et éventuellement modifie les communications entre deux parties sans qu'elles le sachent, ce qui peut conduire à des vols de données ou à des manipulations de données.
+
+### 5. Phishing :
+
+**Comportement** : Une méthode d'ingénierie sociale où un attaquant se fait passer pour une entité de confiance pour inciter des utilisateurs à révéler des informations sensibles, comme des mots de passe ou des informations de carte de crédit.
+
+### 6. Exploitation de vulnérabilités :
+
+**Comportement** : les attaquants tirent parti de failles connues dans des logiciels ou des systèmes pour obtenir un accès non autorisé ou pour exécuter des actions non souhaitées.
+
+### 7. Ransomware :
+
+**Comportement** : un type de malware qui chiffre les fichiers d'un utilisateur ou d'une organisation et exige une rançon pour fournir la clé de déchiffrement.
+
+### Conclusion
+
+Ces failles de sécurité illustrent **la diversité des menaces auxquelles les systèmes informatiques sont confrontés**. La mise en œuvre de bonnes pratiques de sécurité, ainsi que la sensibilisation des utilisateurs, est essentielle pour se protéger contre ces types d'attaques.
+
 ___
 
 ## 99. A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
+
+L'**authentification** et l'**autorisation** sont deux concepts fondamentaux en matière de sécurité des applications web, mais ils ont des rôles distincts :
+
+### 1. Authentification
+
+- **Définition** : L'authentification est le processus par lequel une application vérifie l'identité d'un utilisateur. Cela implique généralement la vérification d'informations d'identification, comme un nom d'utilisateur et un mot de passe.
+
+- **Fonction** : Son but est de s'assurer que l'utilisateur est bien qui il prétend être. Par exemple, lorsqu'un utilisateur se connecte à son compte, l'application doit s'assurer qu'il possède les bonnes informations d'identification.
+
+- **Méthodes courantes** :
+  - Mots de passe.
+  - Authentification à deux facteurs (2FA).
+  - Biométrie (comme les empreintes digitales).
+  - Tokens (comme les tokens JWT).
+
+### 2. Autorisation
+
+- **Définition** : L'autorisation est le processus qui détermine les actions qu'un utilisateur authentifié peut effectuer sur l'application. Elle gère les permissions et l'accès aux ressources.
+
+- **Fonction** : Après qu'un utilisateur a été authentifié, l'autorisation détermine ce qu'il peut voir ou faire dans l'application. Par exemple, un administrateur peut avoir accès à des fonctionnalités que les utilisateurs réguliers n'ont pas.
+
+- **Méthodes courantes** :
+  - Rôles (par exemple, utilisateur, administrateur, modérateur).
+  - Permissions (par exemple, lire, écrire, modifier des données).
+  - Listes de contrôle d'accès (ACL).
+
+### Conclusion
+
+En résumé, l'authentification et l'autorisation sont cruciales pour la sécurité des applications web :
+
+**Authentification** : vérifie l'identité de l'utilisateur.
+**Autorisation** : détermine les actions que cet utilisateur peut effectuer.
+
+Ces deux processus travaillent ensemble pour garantir que seuls les utilisateurs appropriés peuvent accéder à des informations sensibles ou exécuter des actions critiques dans une application.
 
 ___
 
 ## 100. Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
 
+Le **hachage d'un mot de passe** est une technique de sécurité utilisée pour protéger les mots de passe des utilisateurs en les transformant en une chaîne de caractères fixe, souvent appelée "empreinte". Ce processus permet de stocker les mots de passe de manière sécurisée sans conserver le mot de passe en clair. Voici les éléments clés :
+
+### 1. Processus de Hachage :
+
+- Un mot de passe est passé à travers une fonction de hachage qui génère une empreinte unique. Cette empreinte est généralement de longueur fixe, peu importe la longueur du mot de passe d'origine.
+- Les fonctions de hachage sont conçues pour être unidirectionnelles, ce qui signifie qu'il est pratiquement impossible de revenir au mot de passe original à partir de l'empreinte.
+
+### 2. Sécurité :
+
+- Même si deux utilisateurs ont le même mot de passe, les empreintes hachées peuvent être différentes si un sel (une valeur aléatoire ajoutée au mot de passe avant le hachage) est utilisé. Cela protège contre les attaques par tables de hachage pré-calculées (rainbow tables).
+- Les mots de passe hachés devraient être stockés avec un algorithme qui rend les attaques par force brute difficiles, ce qui implique l'utilisation de fonctions de hachage lentes et sécurisées.
+
+### 3. Algorithmes de Hachage :
+
+Voici quelques algorithmes de hachage couramment utilisés pour le stockage des mots de passe :
+
+- **bcrypt** : un algorithme de hachage adapté au stockage de mots de passe, qui utilise un sel et peut être configuré pour être lent, rendant les attaques par force brute plus difficiles.
+
+- **Argon2** : un algorithme de hachage moderne qui remporte le concours Password Hashing Competition. Il offre une grande sécurité et permet de régler la consommation de mémoire et le temps de calcul.
+
+- **PBKDF2** (Password-Based Key Derivation Function 2) : utilise un sel et un nombre configurable d'itérations pour ralentir le processus de hachage, augmentant ainsi la sécurité.
+
+- **scrypt** : un autre algorithme conçu pour être coûteux en mémoire, rendant les attaques de type brute force plus difficiles.
+
+### Conclusion
+
+Le hachage des mots de passe est une pratique essentielle pour protéger les données des utilisateurs. En utilisant des algorithmes de hachage sécurisés et en ajoutant un sel, les développeurs peuvent aider à protéger les mots de passe contre le vol et les attaques.
+
 ___
 
 ## 101. Qu’est-ce qu’une politique de mots de passe forts ?
+
+Une politique de mots de passe forts est un ensemble de règles et de recommandations visant à garantir que les utilisateurs choisissent des mots de passe difficiles à deviner ou à craquer. L'objectif est de renforcer la sécurité des comptes et de protéger les données sensibles. Voici les éléments clés d'une telle politique :
+
+### 1. Longueur minimale :
+
+- Les mots de passe doivent avoir une longueur minimale (par exemple, au moins 12 caractères) pour augmenter la complexité et le temps nécessaire pour les craquer.
+
+### 2. Complexité :
+
+- Les mots de passe doivent inclure une combinaison de caractères, tels que :
+  - Lettres majuscules et minuscules
+  - Chiffres
+  - Caractères spéciaux (par exemple, !, @, #, $)
+
+### 3. Pas de mots communs :
+
+- Interdiction d'utiliser des mots de passe évidents ou des phrases communes (comme "password", "123456", ou "qwerty"), qui sont souvent ciblés par des attaques par dictionnaire.
+
+### 4. Changement régulier :
+
+- Recommandation de changer les mots de passe à intervalles réguliers (par exemple, tous les 6 mois) pour réduire le risque en cas de fuite de données.
+
+### 5. Utilisation de mots de passe uniques :
+
+- Encouragement à utiliser des mots de passe différents pour chaque compte afin d'éviter qu'une compromission n'entraîne d'autres violations.
+
+### 6. Authentification à deux facteurs (2FA) :
+
+- Promotion de l'utilisation de 2FA pour ajouter une couche supplémentaire de sécurité, rendant l'accès aux comptes plus difficile même si un mot de passe est compromis.
+
+### 7. Éducation des utilisateurs :
+
+- Sensibilisation des utilisateurs à l'importance de choisir des mots de passe forts et à l'utilisation de gestionnaires de mots de passe pour aider à créer et stocker des mots de passe complexes.
+
+### Conclusion
+
+Une politique de mots de passe forts est essentielle pour protéger les comptes et les données des utilisateurs contre les accès non autorisés. En mettant en œuvre des règles strictes et en éduquant les utilisateurs, les organisations peuvent réduire le risque de compromission des comptes. Si tu as d'autres questions ou souhaites approfondir un aspect particulier, fais-le moi savoir !
 
 ___
 
 ## 102.	Qu’est-ce que l’hameçonnage ?
 
+L'**hameçonnage** (ou **phishing** en anglais) est une technique de fraude en ligne où un attaquant cherche à tromper des utilisateurs pour qu'ils révèlent des informations sensibles, telles que des mots de passe, des numéros de carte de crédit ou des informations personnelles. Voici un aperçu des principales caractéristiques de cette technique :
+
+### 1. Méthodes courantes :
+
+- **E-mails frauduleux** : l'attaquant envoie des e-mails qui semblent provenir de sources légitimes (banques, services en ligne, entreprises) pour inciter les utilisateurs à cliquer sur un lien ou à télécharger une pièce jointe.
+- **Sites web falsifiés** : les e-mails contiennent souvent des liens vers des sites web qui imitent l'apparence de sites légitimes. L'utilisateur peut être amené à entrer des informations sensibles sur ces sites.
+- **Messages texte et appels téléphoniques** : l'hameçonnage peut également se produire par SMS (smishing) ou par téléphone (vishing), où l'attaquant se fait passer pour un représentant d'une entreprise pour obtenir des informations.
+
+### 2. Objectifs :
+
+- **Vol de données** : récupérer des informations personnelles et financières pour un usage frauduleux.
+- **Accès non autorisé** : obtenir des identifiants de connexion pour accéder à des comptes en ligne.
+- **Propagation de malware** : inciter les utilisateurs à télécharger des logiciels malveillants qui peuvent compromettre leur appareil ou voler des données.
+
+### 3. Prévention :
+
+- **Sensibilisation** : éduquer les utilisateurs sur les techniques d'hameçonnage et les signes de messages frauduleux.
+- **Vérification des liens** : conseiller de survoler les liens pour voir l'URL réelle avant de cliquer, et de taper manuellement l'adresse d'un site dans le navigateur.
+- **Utilisation de logiciels de sécurité** : installer des antivirus et des filtres anti-hameçonnage qui peuvent détecter et bloquer les contenus malveillants.
+- **Vérification des expéditeurs** : toujours vérifier l'adresse e-mail de l'expéditeur et se méfier des communications qui demandent des informations sensibles.
+
+### Conclusion
+
+L'hameçonnage est une menace sérieuse qui peut avoir des conséquences financières et personnelles importantes pour les victimes. **La sensibilisation et l'éducation des utilisateurs sont essentielles** pour réduire le risque d'attaques d'hameçonnage.
+
 ___
 
 ## 103.	Définir la « validation des entrées ».
+
+La **validation des entrées** est un processus de sécurité essentiel dans le développement d'applications web, qui consiste à vérifier et à nettoyer les données fournies par les utilisateurs avant de les traiter ou de les stocker. Voici les principaux aspects de la validation des entrées :
+
+### 1. Objectifs :
+
+- **Sécurité** : protéger l'application contre les attaques, comme l'injection SQL, le Cross-Site Scripting (XSS), et d'autres formes de manipulation des données.
+- **Intégrité des données** : s'assurer que les données reçues sont conformes aux attentes et respectent le format requis, réduisant ainsi le risque d'erreurs ou de comportements imprévus.
+- **Expérience utilisateur** : aider les utilisateurs à fournir des données valides en fournissant des messages d'erreur clairs et en guidant leurs entrées.
+
+### 2. Types de validation :
+
+- **Validation côté client** : se produit dans le navigateur, généralement via JavaScript. Bien qu'elle améliore l'expérience utilisateur en fournissant des retours rapides, elle ne remplace pas la validation côté serveur, car elle peut être contournée.
+
+- **Validation côté serveur** : se produit sur le serveur, après que les données ont été envoyées par le client. C'est la méthode la plus fiable, car elle assure que les données ne sont pas manipulées avant leur traitement.
+
+### 3. Techniques de validation :
+
+- **Validation de type** : vérifier que les données sont du bon type (par exemple, s'assurer qu'un champ numérique contient effectivement un nombre).
+- **Validation de format** : vérifier que les données respectent un format spécifique (par exemple, une adresse e-mail, un numéro de téléphone, etc.).
+- **Validation de plage** : vérifier que les valeurs numériques se situent dans une plage acceptable (par exemple, une note entre 0 et 100).
+- **Validation de longueur** : s'assurer que les chaînes de caractères (comme les mots de passe) respectent une longueur minimale et maximale.
+
+### 4. Importance :
+
+La validation des entrées est cruciale pour prévenir les vulnérabilités et garantir que l'application fonctionne comme prévu. Elle contribue à la sécurité globale, à la qualité des données et à la satisfaction des utilisateurs.
+
+### Conclusion
+
+En résumé, la validation des entrées est un élément clé de la sécurité et de la robustesse des applications web. En s'assurant que seules des données valides et sécurisées sont traitées, les développeurs peuvent protéger leurs applications contre de nombreuses menaces.
 
 ___
 
