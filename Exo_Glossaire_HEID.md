@@ -1719,7 +1719,32 @@ ___
 
 ## 53.	Définir le polymorphisme en POO.
 
+Le polymorphisme en programmation orientée objet (POO) est un concept qui permet à des objets de différentes classes d'être traités comme des instances de la même classe parente. Cela signifie que le même nom de méthode peut être utilisé pour différentes implémentations, selon le type d'objet qui appelle la méthode. Voici les principaux aspects du polymorphisme :
 
+### 1. Types de polymorphisme :
+a. Polymorphisme de sous-typage (ou d'héritage) :
+
+  - Ce type se produit lorsque des sous-classes redéfinissent (ou "surchargent") des méthodes d'une super-classe.
+  - Par exemple, si une classe `Animal` a une méthode `faireDuBruit()`, les sous-classes `Chien` et `Chat` peuvent fournir leurs propres implémentations de cette méthode :
+    - `Chien` pourrait retourner "Aboyer".
+    - `Chat` pourrait retourner "Miauler".
+
+Cela permet d'appeler la méthode `faireDuBruit()` sur un objet de type `Animal`, peu importe qu'il s'agisse d'un `Chien` ou d'un `Chat`, et d'obtenir le comportement approprié.
+
+b. Polymorphisme paramétrique :
+
+  - Cela se produit lorsqu'une méthode peut être utilisée avec différents types d'objets sans que l'implémentation de la méthode ne change. Cela est souvent réalisé grâce à des générics en langages comme Java ou C#.
+  - Par exemple, une méthode de tri pourrait être écrite pour accepter une liste d'objets de n'importe quel type, tant qu'ils implémentent une interface commune.
+
+### 2. Avantages du polymorphisme :
+
+- Flexibilité et réutilisabilité : permet de coder de manière plus flexible, en permettant d'écrire des fonctions et des méthodes qui peuvent fonctionner avec différents types d'objets.
+- Simplicité : facilite l'utilisation de structures de données complexes, car un même code peut gérer des objets de différentes classes de manière uniforme.
+- Maintenance : simplifie la maintenance du code en permettant d'ajouter de nouveaux types sans avoir à modifier le code existant.
+
+### Conclusion
+
+Le polymorphisme est un concept clé en POO qui favorise la flexibilité, la réutilisation du code et la simplification de la maintenance. Il permet de traiter différents types d'objets de manière uniforme, ce qui est essentiel pour construire des systèmes logiciels modulaires et extensibles.
 
 ___
 
@@ -1764,29 +1789,43 @@ ___
 
 ## 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence.
 
+
+
 ___
 
 ## 61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern.
+
+
 
 ___
 
 ## 62.	Qu’est-ce que l’architecture MVC ?
 
+
+
 ___
 
 ## 63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
+
+
 
 ___
 
 ## 64.	Quels sont les avantages de l’architecture MVC ?
 
+
+
 ___
 
 ## 65.	Existe-t-il des variantes à l’architecture MVC ?
 
+
+
 ___
 
 ## 66.	Qu’est-ce qu’une API ? Définir l’architecture REST.
+
+
 
 ___
 
