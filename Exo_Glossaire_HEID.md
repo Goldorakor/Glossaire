@@ -1924,9 +1924,88 @@ ___
 
 ## 94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
 
+L'**injection SQL** est une technique d'attaque qui consiste à insérer ou "injecter" du code SQL malveillant dans une requête SQL, exploitant des failles de sécurité dans une application web. Cela peut permettre à un attaquant d'accéder, de manipuler ou de détruire des données dans une base de données. Voici un aperçu plus détaillé :
+
+### 1. Comment cela fonctionne :
+
+- L'injection SQL se produit lorsque des entrées utilisateur ne sont pas correctement validées et sont directement intégrées dans des requêtes SQL. Par exemple, si une application utilise une entrée utilisateur pour construire une requête SQL sans échappement adéquat, un attaquant peut injecter du code SQL.
+
+### 2. Conséquences potentielles :
+
+- Accès non autorisé à des données sensibles.
+- Modifications ou suppressions de données.
+- Exécution de commandes administratives sur la base de données.
+- Accès à d'autres parties du système d'information.
+
+### Comment se prémunir contre l'injection SQL :
+
+**1. Utilisation de requêtes préparées :**
+  - Les requêtes préparées (ou requêtes paramétrées) séparent le code SQL des données, ce qui empêche l'injection. La plupart des langages de programmation modernes et des bibliothèques de base de données prennent en charge cette fonctionnalité.
+
+**2. Validation des entrées :**
+  - Valide et nettoie toutes les entrées utilisateur. Assure-toi qu'elles respectent les formats attendus (par exemple, les adresses e-mail, les numéros de téléphone).
+
+**3. Échappement des caractères :**
+- Utilise des fonctions d'échappement appropriées pour gérer les caractères spéciaux dans les chaînes de requêtes SQL.
+
+**4. Moins de privilèges :**
+  - Applique le principe du moindre privilège en veillant à ce que les comptes de base de données utilisés par l'application aient uniquement les autorisations nécessaires.
+
+**5. Utilisation de pare-feu d'application web (WAF) :**
+  - Un WAF peut détecter et bloquer les tentatives d'injection SQL en analysant le trafic entrant.
+
+**6. Surveillance et journalisation :**
+  - Mets en place une surveillance pour détecter les comportements suspects ou les requêtes anormales dans les journaux des serveurs.
+
+**7. Mises à jour et correctifs :**
+  - Maintiens le logiciel de l'application, le serveur web et les bases de données à jour avec les derniers correctifs de sécurité.
+
+### Conclusion :
+
+L'injection SQL est une vulnérabilité sérieuse qui peut avoir des conséquences graves sur la sécurité des données. En appliquant ces bonnes pratiques de développement et de sécurité, tu peux réduire considérablement le risque d'attaques par injection SQL.
+
 ___
 
 ## 95.	Qu’est-ce que la faille XSS ? Comment s’en prémunir ?
+
+La **faille XSS** (Cross-Site Scripting) est une vulnérabilité de sécurité qui permet à un attaquant d'injecter des scripts malveillants dans les pages web vues par d'autres utilisateurs. Ces scripts peuvent être exécutés dans le navigateur des utilisateurs, compromettant ainsi la confidentialité et l'intégrité des données. Voici un aperçu plus détaillé :
+
+### 1. Types de failles XSS :
+
+- **XSS réfléchi** : le script malveillant est renvoyé par le serveur en réponse à une requête, souvent par le biais d'un lien cliqué par l'utilisateur.
+- **XSS stocké** : le script est stocké sur le serveur (par exemple, dans une base de données) et est ensuite renvoyé à tous les utilisateurs qui accèdent à la page vulnérable.
+- **XSS DOM-based** : l'attaque est réalisée via la manipulation du DOM (Document Object Model) du côté client, sans interaction directe avec le serveur.
+
+### 2. Conséquences potentielles :
+
+- Vol de cookies de session, permettant à un attaquant de se faire passer pour un utilisateur.
+- Défaçage de sites web.
+- Redirection vers des sites malveillants.
+- Vol de données sensibles, telles que des informations de connexion.
+
+### Comment se prémunir contre les failles XSS :
+
+1. Validation et échappement des entrées :
+  - Valide et échappe toutes les données entrantes. Utilise des fonctions d'échappement adaptées au contexte (HTML, JavaScript, URL, etc.) pour empêcher l'exécution de scripts.
+
+2. Content Security Policy (CSP) :
+  - Implémente une politique de sécurité du contenu (CSP) qui limite les sources de contenu pouvant être chargées par la page, réduisant ainsi les possibilités d'exécution de scripts malveillants.
+
+3. Utilisation de bibliothèques de sécurisation :
+  - Utilise des bibliothèques et frameworks qui incluent des protections contre XSS (par exemple, React, Angular) et qui gèrent automatiquement l'échappement des données.
+
+4. Ne jamais faire confiance aux données externes :
+  - Assume que toutes les données provenant d'utilisateurs ou de sources externes peuvent être malveillantes et traite-les en conséquence.
+
+5. Sécurisation des cookies :
+  - Utilise les attributs HttpOnly et Secure pour les cookies, ce qui empêche l'accès aux cookies via JavaScript et assure qu'ils ne sont envoyés que sur des connexions HTTPS.
+
+6. Mises à jour et correctifs :
+  - Garde le logiciel de l'application et les dépendances à jour pour bénéficier des dernières corrections de sécurité.
+
+### Conclusion :
+
+Les failles XSS représentent **un risque sérieux** pour la sécurité des applications web. En appliquant des pratiques de développement sécurisé et en étant conscient des types d'attaques XSS, tu peux protéger ton application et ses utilisateurs contre ces vulnérabilités.
 
 ___
 
@@ -1946,11 +2025,11 @@ ___
 
 ___
 
-## 100.    Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
+## 100. Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage.
 
 ___
 
-## 101.	Qu’est-ce qu’une politique de mots de passe forts ?
+## 101. Qu’est-ce qu’une politique de mots de passe forts ?
 
 ___
 
