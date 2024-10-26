@@ -948,7 +948,7 @@ En résumé, le mobile first design est une approche stratégique qui met l'acce
 ___
 ___
 
-### Programmation orientée objet (POO)
+# Programmation orientée objet (POO)
 
 ## 43.	Donner une définition de la programmation orientée objet.   
 
@@ -2926,7 +2926,6 @@ ___
 ___
 
 # Gestion de projets - DevOps
-
 
 ## 127.	Qu’est-ce que la gestion de projet ?
 
