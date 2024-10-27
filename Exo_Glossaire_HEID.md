@@ -2108,18 +2108,103 @@ Pour les projets plus complexes, il est courant d'utiliser un gestionnaire de d�
 L'autoloading est un mécanisme puissant en PHP qui permet de rendre le développement plus fluide et organisé.
 
 
-
 ___
 
 ## 58.	Comment appelle-t-on en français les « getters » et les « setters » ?
 
+En français, les **getters** et **setters** sont souvent appelés respectivement **accesseurs** et **mutateurs**.
+
+- **Accesseurs (Getters)** : **méthodes utilisées pour accéder aux valeurs des propriétés d'une classe**. Elles permettent de lire les valeurs sans modifier l'état de l'objet.
+
+- **Mutateurs (Setters)** : **méthodes utilisées pour modifier les valeurs des propriétés d'une classe**. Elles permettent d'assigner de nouvelles valeurs tout en potentiellement validant ces valeurs.
+
+### Exemple en PHP
+
+Voici un exemple simple pour illustrer cela :
+
+```
+<?php
+class Personne {
+    private $nom;
+
+    // Accesseur
+    public function getNom() {
+        return $this->nom;
+    }
+
+    // Mutateur
+    public function setNom($nom) {
+        $this->nom = $nom;
+    }
+}
+
+// Utilisation
+$personne = new Personne();
+$personne->setNom('Alice'); // Appelle le mutateur
+echo $personne->getNom();   // Appelle l'accesseur, affiche "Alice"
+?>
+```
 
 
 ___
 
 ## 59.	Qu’est-ce que la sérialisation en PHP ? 
 
+La **sérialisation** en PHP est le processus de conversion d'un objet ou d'une structure de données en une chaîne de caractères, afin de pouvoir les stocker ou les transmettre facilement. Cela permet de sauvegarder l'état d'un objet ou d'une variable pour une utilisation ultérieure.
 
+### Pourquoi Sérialiser ?
+
+La sérialisation est utile dans plusieurs cas, tels que :
+
+1. **Stockage** : enregistrer des objets dans une base de données ou dans des fichiers.
+2. **Transmission** : envoyer des objets à travers des réseaux (par exemple, via des API).
+3. **Cache** : conserver des objets en mémoire pour améliorer les performances.
+
+### Fonctions de Sérialisation
+
+PHP fournit deux fonctions principales pour la sérialisation :
+
+1. `serialize()` : convertit un objet ou une structure de données en une chaîne sérialisée.
+2. `unserialize()` : convertit une chaîne sérialisée en un objet ou une structure de données.
+
+### Exemple de Sérialisation
+
+Voici un exemple simple pour illustrer la sérialisation :
+
+```
+<?php
+class Personne {
+    public $nom;
+    public $age;
+
+    public function __construct($nom, $age) {
+        $this->nom = $nom;
+        $this->age = $age;
+    }
+}
+
+// Création d'un objet
+$personne = new Personne('Alice', 30);
+
+// Sérialisation de l'objet
+$serialized = serialize($personne);
+echo "Objet sérialisé : " . $serialized . "\n";
+
+// Désérialisation de l'objet
+$deserialized = unserialize($serialized);
+echo "Nom : " . $deserialized->nom . ", Age : " . $deserialized->age . "\n";
+?>
+```
+
+
+### Points à Noter
+
+- La sérialisation ne fonctionne que pour les objets qui n'ont pas de propriétés non sérialisables, comme les ressources (fichiers, connexions de base de données, etc.).
+- Il est recommandé de faire attention aux problèmes de sécurité lors de la désérialisation, car cela peut potentiellement permettre l'exécution de code malveillant si des données non fiables sont désérialisées.
+
+### Conclusion
+
+La sérialisation est un outil puissant en PHP qui facilite le stockage et la transmission d'objets.
 
 ___
 ___
