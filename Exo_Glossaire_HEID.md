@@ -46,8 +46,86 @@ ___
 
 ## 4.	Qu’est-ce que la portée d’une variable ?
 
-La portée d'une variable détermine **où elle est accessible dans le code**. Une variable définie à l'intérieur d'une fonction n'est en général pas accessible en dehors de cette fonction. 
+La portée d'une variable en PHP définit la **zone dans laquelle une variable est accessible et utilisée**. Il existe plusieurs types de portée en PHP :
 
+### 1. Portée globale
+Les variables définies dans la portée globale sont accessibles partout dans le script, sauf dans les fonctions, où elles doivent être explicitement déclarées comme `global` pour être utilisées.
+
+```
+$variableGlobale = "Je suis global !";
+
+function afficherVariable() {
+    global $variableGlobale; // Déclaration de la variable globale
+    echo $variableGlobale;
+}
+
+afficherVariable(); // Affiche "Je suis global !"
+$variableGlobale = "Je suis global !";
+
+function afficherVariable() {
+    global $variableGlobale; // Déclaration de la variable globale
+    echo $variableGlobale;
+}
+
+afficherVariable(); // Affiche "Je suis global !"
+```
+
+### 2. Portée locale
+Les variables définies à l'intérieur d'une fonction sont locales à cette fonction. Elles ne peuvent pas être accédées à l'extérieur de celle-ci.
+
+```
+function maFonction() {
+    $variableLocale = "Je suis local !";
+    echo $variableLocale; // Accessible ici
+}
+
+maFonction(); // Affiche "Je suis local !"
+// echo $variableLocale; // Provoquera une erreur, car elle est hors de portée
+```
+
+### 3. Portée statique
+Les variables déclarées avec le mot-clé `static` à l'intérieur d'une fonction conservent leur valeur entre les appels de fonction, mais elles ne sont accessibles qu'à l'intérieur de cette fonction.
+
+```
+function compteur() {
+    static $compte = 0; // Initialisé une seule fois
+    $compte++;
+    echo $compte;
+}
+
+compteur(); // Affiche 1
+compteur(); // Affiche 2
+```
+
+### 4. Portée des classes (OOP)
+Dans la programmation orientée objet (OOP), les variables d'instance (propriétés de classe) ont une portée qui dépend de leur visibilité :
+
+- **Public** : accessible depuis n'importe où.
+- **Protected** : accessible depuis la classe et ses sous-classes.
+- **Private** : accessible uniquement depuis la classe elle-même.
+
+```
+class MaClasse {
+    public $publicVar = "Public";
+    protected $protectedVar = "Protected";
+    private $privateVar = "Private";
+
+    public function afficherVariables() {
+        echo $this->publicVar;    // Accessible
+        echo $this->protectedVar; // Accessible
+        echo $this->privateVar;   // Accessible
+    }
+}
+
+$obj = new MaClasse();
+$obj->afficherVariables();
+// echo $obj->protectedVar; // Provoquera une erreur
+// echo $obj->privateVar;   // Provoquera une erreur
+```
+
+
+### Conclusion
+La portée des variables en PHP est cruciale pour la gestion des données et la structure de ton code. Comprendre comment et où une variable peut être utilisée t'aide à éviter des erreurs et à écrire un code plus organisé.
 ___
 
 ## 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
@@ -299,6 +377,69 @@ Sur un site marchand, la session permet de conserver le contenu du panier d'acha
 ___
 
 ## 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP.
+
+Un **cookie** est un petit fichier de données stocké sur l'ordinateur de l'utilisateur par le navigateur web. Les cookies sont utilisés pour mémoriser des informations sur l'utilisateur, comme les préférences de session, les identifiants de connexion, ou d'autres données qui permettent de personnaliser l'expérience utilisateur sur un site web.
+
+
+### Caractéristiques des cookies
+
+- **Durée de vie** : les cookies peuvent être **temporaires** (disparaissent lorsque le navigateur est fermé) **ou persistants** (restent sur l'ordinateur jusqu'à une date d'expiration définie).
+- **Taille** : ils sont **limités en taille**, généralement autour de 4 Ko.
+- **Portée** : les cookies sont **associés à un domaine spécifique** et ne sont pas accessibles par d'autres domaines.
+
+
+### Exemple d'utilisation en PHP
+
+Voici comment créer et récupérer un cookie en PHP :
+
+1. **Création d'un cookie**
+Tu peux créer un cookie en utilisant la fonction setcookie() :
+
+```
+<?php
+// Crée un cookie qui expire dans 1 heure
+setcookie("nom_utilisateur", "Alice", time() + 3600, "/"); // "/" pour le rendre accessible sur tout le domaine
+
+echo "Cookie 'nom_utilisateur' a été créé.";
+?>
+```
+
+2. **Récupération d'un cookie**
+Pour récupérer la valeur d'un cookie, tu peux accéder à la superglobale $_COOKIE :
+
+```
+<?php
+if (isset($_COOKIE['nom_utilisateur'])) {
+    echo "Bonjour " . $_COOKIE['nom_utilisateur'] . "!";
+} else {
+    echo "Cookie non trouvé.";
+}
+?>
+```
+
+### Exemple complet
+Voici un exemple complet qui crée un cookie et l'affiche sur la page :
+
+```
+<?php
+// Création du cookie
+setcookie("nom_utilisateur", "Alice", time() + 3600, "/");
+
+// Récupération et affichage du cookie
+if (isset($_COOKIE['nom_utilisateur'])) {
+    echo "Bonjour " . $_COOKIE['nom_utilisateur'] . "!";
+} else {
+    echo "Cookie non trouvé.";
+}
+?>
+```
+
+
+### Notes importantes
+
+- **En-tête HTTP** : la fonction `setcookie()` doit être appelée avant tout envoi de sortie (c'est-à-dire avant d'envoyer du texte HTML ou des en-têtes). Si tu essaies de créer un cookie après l'envoi de contenu, cela déclenchera une erreur.
+- **Sécurité** : les **cookies peuvent contenir des informations sensibles**, il est donc important de les sécuriser, par exemple en utilisant le protocole HTTPS ou en configurant les options `HttpOnly` et `Secure`.
+
 
 ___
 
