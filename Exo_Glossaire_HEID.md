@@ -2453,14 +2453,84 @@ ___
 
 # Architecture 
 
-## 60.	Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence.
+## 60.	Qu’est-ce que l’architecture Client / Serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence.
+
+### Architecture Client/Serveur
+
+L'architecture **client/serveur** est un modèle de conception des applications où les tâches sont réparties entre des entités appelées **clients** et **serveurs**.
+
+- **Client** : c'est la partie de l'application qui fait des demandes de services ou de ressources. Les clients sont souvent des applications ou des dispositifs qui interagissent avec le serveur via un réseau.
+
+- **Serveur** : c'est la partie qui fournit des services, des ressources ou des données aux clients. Les serveurs peuvent gérer plusieurs requêtes simultanément et servent souvent plusieurs clients à la fois.
 
 
+### Types de requêtes
+Pour interroger le serveur, les clients utilisent généralement des requêtes HTTP (Hypertext Transfer Protocol). Cela permet de communiquer entre les clients et les serveurs web.
+
+#### Exemple de requête HTTP
+
+Les requêtes HTTP peuvent être de différents types, les plus courants étant :
+
+- **GET** : pour récupérer des données depuis le serveur.
+- **POST** : pour envoyer des données au serveur, souvent utilisé pour soumettre des formulaires.
+- **PUT** : pour mettre à jour des ressources existantes sur le serveur.
+- **DELETE** : pour supprimer des ressources sur le serveur.
+
+
+### Acronyme : HTTP
+
+**HTTP** signifie **Hypertext Transfer Protocol**. C'est le protocole utilisé pour transférer des données sur le web. Les navigateurs web (clients) envoient des requêtes HTTP aux serveurs pour obtenir des pages web, des images, et d'autres ressources.
+
+
+### Ajout d’un « S » : HTTPS
+
+Lorsque l'on ajoute un « S » à HTTP, cela donne **HTTPS**, qui signifie **Hypertext Transfer Protocol Secure**.
+
+
+#### Différences entre HTTP et HTTPS :
+
+- **Sécurité** : HTTPS **chiffre les données échangées entre le client et le serveur** grâce à des protocoles de sécurité comme **SSL (Secure Sockets Layer)** ou **TLS (Transport Layer Security)**. Cela protège les informations sensibles, comme les mots de passe et les données personnelles, lors de leur transmission.
+
+- **Authentification** : HTTPS permet de vérifier l'identité du serveur, réduisant ainsi le risque d'attaques de type **"man-in-the-middle"**, où un attaquant pourrait intercepter les communications.
+
+- **SEO et confiance** : les navigateurs modernes signalent les sites non sécurisés (HTTP) comme "non sécurisés", ce qui peut **affecter la confiance des utilisateurs et le référencement (SEO)** des sites web.
+
+
+### Conclusion
+
+L'architecture client/serveur est fondamentale dans le développement d'applications modernes, et les **protocoles HTTP et HTTPS** sont **essentiels pour la communication entre les clients et les serveurs**.
 
 ___
 
 ## 61.	Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern.
 
+Un **design pattern** (ou motif de conception) est une solution réutilisable à un problème courant dans le développement logiciel. Ces motifs fournissent une structure et des meilleures pratiques pour résoudre des problèmes de conception spécifiques, ce qui aide à créer des systèmes plus modulaires, flexibles et maintenables.
+
+
+### Exemples de design patterns
+
+Voici trois exemples courants de design patterns :
+
+1. **Singleton**
+
+- **Définition** : ce motif garantit qu'une classe n'a qu'une seule instance et fournit un point d'accès global à cette instance.
+- **Utilisation** : pratique pour gérer des ressources partagées, comme des connexions à une base de données ou des configurations d'application.
+
+
+2. **Observer**
+
+- **Définition** : ce motif définit une relation de dépendance entre objets, de sorte que lorsqu'un objet (le sujet) change d'état, tous ses objets dépendants (les observateurs) en sont informés et mis à jour automatiquement.
+- **Utilisation** : utilisé dans les systèmes de notification, comme les interfaces utilisateur réactives ou les systèmes de publication/abonnement.
+
+
+3. **Factory Method**
+
+- **Définition** : ce motif définit une interface pour créer des objets, mais laisse les sous-classes décider de la classe à instancier. Cela permet de créer des objets sans spécifier leur classe concrète.
+- **Utilisation** : pratique pour créer des objets de manière flexible et interchangeable, comme dans les systèmes de gestion des utilisateurs ou des formes graphiques.
+
+
+### Conclusion
+Les design patterns **facilitent la communication entre développeurs**, en fournissant un vocabulaire commun et des solutions éprouvées. Ils aident à rendre le **code plus compréhensible et adaptable aux changements**.
 
 
 ___
@@ -2468,30 +2538,164 @@ ___
 ## 62.	Qu’est-ce que l’architecture MVC ?
 
 
+L'architecture **MVC** (**Modèle-Vue-Contrôleur**) est un pattern architectural utilisé dans le développement d'applications pour **séparer les préoccupations** et **organiser le code de manière plus structurée**. Cette séparation facilite la maintenance, les tests et l'évolution des applications.
+
+### Composants de l'architecture MVC
+
+1. **Modèle** (**Model**) :
+
+  - **Rôle** : représente les données de l'application et la logique métier. Il gère l'accès aux données, que ce soit à partir d'une base de données, d'API, ou d'autres sources.
+  - **Fonctionnalités** : le modèle notifie la vue des changements de données pour que celle-ci puisse se mettre à jour.
+
+2. **Vue** (**View**) :
+
+  - **Rôle** : représente l'interface utilisateur. Elle est responsable de l'affichage des données fournies par le modèle.
+  - **Fonctionnalités** : la vue écoute les notifications du modèle et se met à jour en conséquence pour refléter l'état actuel des données.
+
+3. **Contrôleur** (**Controller**) :
+
+  - **Rôle** : agit comme un intermédiaire entre le modèle et la vue. Il reçoit les entrées de l'utilisateur (comme les clics ou les soumissions de formulaires) et détermine comment elles doivent être traitées.
+  - **Fonctionnalités** : le contrôleur met à jour le modèle en fonction des actions de l'utilisateur et peut également demander à la vue de se rafraîchir.
+
+### Avantages de l'architecture MVC
+
+- **Séparation des préoccupations** : en séparant le code en trois composants distincts, il est plus facile de gérer et de faire évoluer l'application.
+- **Testabilité** : les composants peuvent être testés indépendamment, ce qui facilite l'écriture de tests unitaires.
+- **Réutilisabilité** : les composants peuvent être réutilisés dans différentes parties de l'application ou dans d'autres projets.
+
+### Exemples d'utilisation
+L'architecture MVC est largement utilisée dans les frameworks web modernes, tels que :
+
+- Ruby on Rails
+- Laravel (PHP)
+- ASP.NET MVC (C#)
+- Angular (bien qu'il utilise une approche légèrement différente, il suit aussi le principe de séparation des préoccupations).
+
+### Conclusion
+
+L'architecture MVC est un modèle éprouvé qui aide à structurer les applications de manière claire et organisée. Cela facilite le développement, la maintenance et la collaboration entre les développeurs.
 
 ___
 
 ## 63.	Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
 
+### 1. **Rôle et fonctionnalités du Modèle** (**Model**) :
 
+  - **Rôle** : représente les données de l'application et la logique métier. Il gère l'accès aux données, que ce soit à partir d'une base de données, d'API, ou d'autres sources.
+  - **Fonctionnalités** : le modèle notifie la vue des changements de données pour que celle-ci puisse se mettre à jour.
+
+### 2. **Rôle et fonctionnalités de la Vue** (**View**) :
+
+  - **Rôle** : représente l'interface utilisateur. Elle est responsable de l'affichage des données fournies par le modèle.
+  - **Fonctionnalités** : la vue écoute les notifications du modèle et se met à jour en conséquence pour refléter l'état actuel des données.
+
+### 3. **Rôle et fonctionnalités du Contrôleur** (**Controller**) :
+
+  - **Rôle** : agit comme un intermédiaire entre le modèle et la vue. Il reçoit les entrées de l'utilisateur (comme les clics ou les soumissions de formulaires) et détermine comment elles doivent être traitées.
+  - **Fonctionnalités** : le contrôleur met à jour le modèle en fonction des actions de l'utilisateur et peut également demander à la vue de se rafraîchir.
+
+
+### Différence entre rôle et fonctionnalité :
+
+Les termes rôle et fonctionnalité ont des significations distinctes dans le contexte de l'architecture logicielle ou du développement d'applications.
+
+#### Rôle
+
+- **Définition** : le rôle se réfère à la position ou à la responsabilité d'un composant au sein d'un système. Il décrit ce que ce composant est censé faire dans le cadre plus large de l'architecture.
+- **Exemple** : dans l'architecture MVC, le modèle a pour rôle de gérer les données et la logique métier. La vue a pour rôle de présenter les données à l'utilisateur, et le contrôleur a pour rôle de gérer les interactions entre la vue et le modèle.
+
+
+#### Fonctionnalité
+
+- **Définition** : la fonctionnalité fait référence à des actions ou des comportements spécifiques que le composant peut réaliser. Elle décrit les capacités concrètes du composant.
+- **Exemple** : pour le modèle, une fonctionnalité pourrait être de récupérer des données d'une base de données ou d'effectuer des calculs. Pour la vue, une fonctionnalité pourrait être de rendre les données sous forme de tableau ou de graphique. Pour le contrôleur, une fonctionnalité pourrait être de traiter les entrées de l'utilisateur et de mettre à jour le modèle en conséquence.
+
+#### Résumé
+
+- **Rôle** : ce que le composant est censé faire dans le système (**sa responsabilité générale**).
+- **Fonctionnalité** : les actions spécifiques que le composant peut réaliser (**ses capacités concrètes**).
+
+Cette distinction aide à mieux comprendre comment chaque partie d'un système fonctionne et interagit avec les autres. 
 
 ___
 
 ## 64.	Quels sont les avantages de l’architecture MVC ?
 
+### Avantages de l'architecture MVC
+
+- **Séparation des préoccupations** : en séparant le code en trois composants distincts, il est plus facile de gérer et de faire évoluer l'application.
+- **Testabilité** : les composants peuvent être testés indépendamment, ce qui facilite l'écriture de tests unitaires.
+- **Réutilisabilité** : les composants peuvent être réutilisés dans différentes parties de l'application ou dans d'autres projets.
 
 
 ___
 
 ## 65.	Existe-t-il des variantes à l’architecture MVC ?
 
+Oui, il existe plusieurs variantes et extensions de l'architecture MVC qui s'adaptent à différents besoins et contextes de développement. Voici quelques-unes des variantes les plus connues :
 
+### 1. MVP (Model-View-Presenter)
+
+- **Description** : dans cette variante, le présentateur remplace le contrôleur. Le présentateur interagit avec la vue et le modèle, mais il ne dépend pas de la vue pour récupérer les données.
+- **Caractéristiques** : la vue est généralement plus passive et ne contient pas de logique métier. Le présentateur gère toute la logique de présentation.
+
+
+### 2. MVVM (Model-View-ViewModel)
+
+- **Description** : utilisé principalement dans le développement d'applications basées sur des interfaces graphiques (comme WPF et Xamarin). Dans MVVM, le ViewModel sert d'intermédiaire entre la vue et le modèle.
+- **Caractéristiques** : le ViewModel expose les données et les commandes que la vue peut lier directement, permettant une liaison de données bidirectionnelle. Cela réduit le besoin de code de gestion des événements dans la vue.
+
+
+### 3. MVC Frameworks avec des architectures réactives
+
+- **Exemples** : dans des frameworks comme Angular ou React, le concept de "composants" est utilisé, où chaque composant gère sa propre vue et logique. Ces architectures adoptent souvent des principes similaires à ceux de MVC, mais avec des variations adaptées aux besoins des applications modernes.
+
+
+### 4. Flux / Redux
+
+- **Description** : ces architectures, souvent utilisées avec React, introduisent un modèle unidirectionnel de gestion des données. Au lieu de séparer strictement le modèle, la vue et le contrôleur, Flux centralise l'état de l'application dans un store, avec des actions qui décrivent des modifications de l'état.
+- **Caractéristiques** : cela permet de mieux gérer l'état et de rendre les flux de données plus prévisibles.
+
+
+### 5. Clean Architecture
+
+- **Description** : proposée par Robert C. Martin, cette architecture vise à séparer les préoccupations tout en favorisant la testabilité et l'indépendance des frameworks. Elle propose plusieurs couches (par exemple, interface utilisateur, cas d'utilisation, infrastructure).
+- **Caractéristiques** : chaque couche dépend uniquement des couches intérieures, ce qui permet de changer les détails d'implémentation sans affecter le reste du système.
+
+
+### Conclusion
+
+Ces variantes de l'architecture MVC offrent des **approches différentes pour structurer les applications**, en s'adaptant à des exigences spécifiques et à des paradigmes de développement modernes. Chacune a ses avantages et ses inconvénients, et **le choix dépend souvent des besoins du projet et des préférences des développeurs**.
 
 ___
 
 ## 66.	Qu’est-ce qu’une API ? Définir l’architecture REST.
 
+Une **API** (**Application Programming Interface**) est un ensemble de règles et de protocoles permettant à différentes applications de communiquer entre elles. Elle définit les méthodes et les formats de données que les développeurs peuvent utiliser pour interagir avec une application, un service ou un système.
 
+### Architecture REST
+**REST** (**Representational State Transfer**) est un style architectural pour concevoir des services web. Voici les caractéristiques principales de l'architecture REST :
+
+1. **Stateless** : chaque requête du client au serveur doit contenir toutes les informations nécessaires pour comprendre la requête. Le serveur ne doit pas stocker l'état de la session entre les requêtes.
+
+2. **Ressources** : tout est considéré comme une ressource (par exemple, un utilisateur, un article, etc.) identifiée par une URI (**Uniform Resource Identifier**).
+
+3. **Méthodes HTTP** : REST utilise les méthodes HTTP pour manipuler les ressources. Les méthodes les plus courantes sont :
+
+  - **GET** : **récupérer** une ressource.
+  - **POST** : **créer** une nouvelle ressource.
+  - **PUT** : **mettre à jour** une ressource existante.
+  - **DELETE** : **supprimer** une ressource.
+
+4. **Représentations** : les ressources peuvent être représentées sous différents formats, notamment JSON, XML, ou HTML. Les clients peuvent demander une représentation spécifique via les en-têtes HTTP.
+
+5. **Cachabilité** : les réponses doivent indiquer si elles peuvent être mises en cache pour améliorer les performances.
+
+6. **Uniformité de l'interface** : l'interface doit être uniforme, ce qui simplifie l'architecture globale en réduisant le nombre de règles de communication.
+
+7. **Architecture en couches** : un client ne doit pas savoir s'il interagit directement avec le serveur final ou avec un intermédiaire, ce qui permet de déployer des systèmes plus évolutifs.
+
+REST est largement utilisé dans le développement d'API pour des applications web et mobiles, en raison de sa simplicité et de sa flexibilité.
 
 ___
 
