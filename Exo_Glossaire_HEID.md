@@ -808,7 +808,7 @@ ___
 
 En langage CSS, **un pseudo-élément est un mot-clé** (before, after, first-line, first-letter, etc) qui permet de sélectionner et de styliser une partie spécifique d'un élément HTML. Il ne cible pas des éléments entiers comme les sélecteurs classiques le font mais il applique des styles à des sous-éléments virtuels sans avoir à ajouter des éléments HTML supplémentaires. Les **pseudo-éléments sont préfixés par deux deux-points (::)**, ce qui les distingue des pseudo-classes (comme :hover ou :focus, qui utilisent un seul deux-points). En conclusion, les pseudo-éléments sont un outil puissant en CSS pour styliser des parties spécifiques d'un élément sans modifier le HTML.
 
-Exemple 01 : ::before, qui insère du contenu avant le contenu d'un élément sélectionné.
+Exemple 01 : **::before**, qui insère du contenu avant le contenu d'un élément sélectionné.
 ```
 p::before {
     content: "Note : "; /* Ajoute "Note : " avant chaque paragraphe */
@@ -816,7 +816,7 @@ p::before {
 }
 ```
 
-Exemple 02 : ::after, qui insère du contenu après le contenu d'un élément sélectionné.
+Exemple 02 : **::after**, qui insère du contenu après le contenu d'un élément sélectionné.
 ```
 p::after {
     content: " (fin)"; /* Ajoute " (fin)" après chaque paragraphe */
@@ -824,14 +824,14 @@ p::after {
 }
 ```
 
-Exemple 03 : ::first-line, qui cible la première ligne de texte d'un élément.
+Exemple 03 : **::first-line**, qui cible la première ligne de texte d'un élément.
 ```
 p::first-line {
     font-weight: bold; /* La première ligne de tous les paragraphes sera en gras */
 }
 ```
 
-Exemple 04 : ::first-letter, qui cible la première lettre d'un élément.
+Exemple 04 : **::first-letter**, qui cible la première lettre d'un élément.
 ```
 p::first-letter {
     font-size: 2em; /* Agrandit la première lettre de chaque paragraphe */
@@ -957,11 +957,11 @@ Un **prototype** est une **version préliminaire** d'un produit ou d'un système
 
 #### Types de prototypes :
 
-1. Prototypes papier : utilisent des dessins sur papier pour représenter des interfaces et des flux utilisateur.
+1. **Prototypes papier** : utilisent des dessins sur papier pour représenter des interfaces et des flux utilisateur.
 
-2. Prototypes numériques : créés à l'aide d'outils comme **Figma**, Adobe XD, ou InVision, permettant une simulation plus réaliste des interactions.
+2. **Prototypes numériques** : créés à l'aide d'outils comme **Figma**, Adobe XD, ou InVision, permettant une simulation plus réaliste des interactions.
 
-3. Prototypes fonctionnels : impliquent une certaine forme de code et de développement, permettant de tester des fonctionnalités spécifiques dans un **environnement plus proche du produit final**.
+3. **Prototypes fonctionnels** : impliquent une certaine forme de code et de développement, permettant de tester des fonctionnalités spécifiques dans un **environnement plus proche du produit final**.
 
 ___
 
