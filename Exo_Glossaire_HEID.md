@@ -381,15 +381,24 @@ ___
 
 ## 20.	Définir Javascript.
 
-Je n'utilise pas encore ce langage informatique. C'est l'un des 3 piliers du développement web, avec HMTL et CSS. 
-
+JavaScript (« JS » en abrégé) est un langage de programmation qui permet de **créer du contenu mis à jour de façon dynamique**, de **contrôler le contenu multimédia**, d'**animer des images**, etc. Il est utilisé pour améliorer les pages HTML et est couramment intégré dans le code HTML. Il permet d’ajouter des **fonctionnalités dynamiques** aux pages HTML, comme la manipulation des éléments de la page, la gestion des événements utilisateur, et la communication avec des serveurs via des requêtes AJAX. JavaScript est un langage interprété, ce qui signifie qu’il n’a pas besoin d’être compilé.
 ___
 
 ## 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
 
+JSON (**JavaScript Object Notation**) est un format léger de stockage et d'échange de données, facile à lire et à écrire pour les humains, et simple à analyser et à générer pour les machines. JSON utilise une **syntaxe similaire à celle des objets JavaScript**, ce qui le rend facilement compréhensible. Il représente des **données sous forme de paires clé-valeur et de tableaux**, ce qui permet de structurer les informations de manière hiérarchique. Bien que dérivé de JavaScript, JSON est un format de données indépendant du langage, supporté par de nombreux langages de programmation, y compris Python, Java, et PHP.
+
+### Contexte d'utilisation :
+
+1. **Échange de données entre client et serveur** : JSON est couramment utilisé pour transmettre des données entre un client (navigateur) et un serveur, notamment lors des requêtes AJAX.
+2. **Stockage de données** : JSON est utilisé pour sauvegarder des configurations ou des paramètres d'application, en raison de sa simplicité et de sa lisibilité.
+3. **Bases de données NoSQL** : Certaines bases de données, comme MongoDB, stockent des données en format JSON, ce qui facilite la manipulation et l'interrogation des données.
+
 ___
 
 ## 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+
+Oui, on peut interpréter JavaScript côté serveur, principalement **grâce à Node.js**. Node.js est un environnement d'exécution qui permet d'exécuter du JavaScript sur le serveur, en dehors d'un navigateur web.
 
 ___
 
