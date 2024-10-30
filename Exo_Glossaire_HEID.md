@@ -577,6 +577,51 @@ ___
 
 ## 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
 
+Une fonction anonyme en JavaScript est une fonction qui n'a pas de nom. Elle peut être définie à la volée et est souvent utilisée pour des cas spécifiques où une fonction temporaire est nécessaire, comme dans des callbacks ou des expressions fonctionnelles.
+
+### Caractéristiques des fonctions anonymes :
+
+1. **Sans nom** : contrairement aux fonctions déclarées qui ont un nom, les fonctions anonymes sont définies sans identifier.
+
+2. **Utilisation immédiate** : elles sont souvent utilisées comme arguments dans des appels de fonction ou pour créer des fonctions immédiatement invoquées (IIFE = Immediately Invoked Function Expression).
+
+3. **Flexibilité** : les fonctions anonymes peuvent être assignées à des variables, ce qui permet de les utiliser comme des objets de première classe.
+
+### Exemples de fonctions anonymes :
+
+1. **Comme callback** :
+
+```
+setTimeout(function() {
+    console.log("Ceci s'affiche après 2 secondes !");
+}, 2000);
+```
+
+2. **Fonction anonyme assignée à une variable** :
+
+```
+const somme = function(a, b) {
+    return a + b;
+};
+
+console.log(somme(5, 3)); // Affiche 8
+```
+
+3. **IIFE (Immediately Invoked Function Expression)** :
+
+```
+(function() {
+    console.log("Ceci s'exécute immédiatement !");
+})();
+```
+
+
+### Avantages des fonctions anonymes :
+- **Simplicité** : elles permettent d'écrire du code de manière concise, surtout pour des opérations temporaires.
+- **Encapsulation** : en utilisant des IIFE, on peut encapsuler des variables et des fonctions pour éviter la pollution de l'espace de noms global.
+
+### Limitations :
+- **Pas de nom** : l'absence de nom peut rendre le débogage plus difficile, car les erreurs ne pointeront pas vers une fonction nommée.
 ___
 
 ## 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
