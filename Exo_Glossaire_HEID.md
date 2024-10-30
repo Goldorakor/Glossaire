@@ -457,6 +457,53 @@ ___
 
 ## 14.	Comment effectuer une redirection en PHP ?
 
+Pour effectuer une redirection en PHP, tu peux utiliser la fonction header(). Cette fonction envoie un en-tête HTTP au navigateur, ce qui peut être utilisé pour rediriger l'utilisateur vers une autre page. Voici comment faire :
+
+### Exemple de redirection simple
+
+```
+<?php
+// Redirection vers une autre page
+header("Location: http://www.example.com");
+exit(); // Toujours utiliser exit() après header() pour arrêter l'exécution du script
+?>
+```
+
+### Étapes à suivre
+
+1. **Appel à header()** : utilise `header("Location: URL")` pour spécifier la nouvelle URL vers laquelle tu veux rediriger l'utilisateur.
+
+2. **Appel à exit()** : il est recommandé d'appeler `exit()` ou `die()` juste après `header()`. Cela arrête l'exécution du script, ce qui empêche d'autres sorties qui pourraient être envoyées au navigateur avant la redirection.
+
+### Points importants à considérer
+
+- **Envoi d'en-têtes** : la fonction `header()` doit être appelée avant tout envoi de contenu (comme HTML, texte, ou même des espaces). Si tu as déjà envoyé des données au navigateur, tu obtiendras une erreur de type "Headers already sent".
+
+- **Redirection avec des codes d'état** : tu peux également spécifier un code d'état HTTP pour indiquer le type de redirection. Par exemple, pour une redirection permanente (301) :
+
+```
+<?php
+header("Location: http://www.example.com", true, 301);
+exit();
+?>
+```
+
+
+- **Redirection conditionnelle** : tu peux effectuer une redirection basée sur une condition, par exemple, après une vérification d'authentification :
+
+```
+<?php
+session_start();
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+```
+
+### Conclusion
+La redirection en PHP est un processus simple mais puissant pour gérer la navigation dans tes applications web.
+
 ___
 
 ## 15.	Définir la partie « front-end » et « back-end » d’une application.
