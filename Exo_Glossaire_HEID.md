@@ -32,7 +32,13 @@ ___
 
 ## 2.	Qu’est-ce qu’un algorithme ?
 
-Un algorithme est une **succession finie d'instructions claires et de règles bien définies**, à réaliser pour **résoudre un problème ou effectuer une tâche complexe**. On doit garder en mémoire qu'il doit **être efficace** (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
+Un algorithme est une **succession finie d'instructions claires et de règles bien définies**, à réaliser pour **résoudre un problème ou effectuer une tâche complexe** qui sont organisées de manière structurée. On doit garder en mémoire qu'il doit **être efficace** (temps d'exécution le plus court possible et utilisation des ressources le moins possible).
+
+Un algorithme bien conçu doit être :
+
+- **Défini** : chaque étape est précise et a un sens clair.
+- **Fini** : il se termine après un certain nombre d'étapes.
+- **Efficace** : il résout le problème de la manière la plus optimale possible.
 
 ___
 
@@ -84,7 +90,7 @@ maFonction(); // Affiche "Je suis local !"
 ```
 
 ### 3. Portée statique
-Les variables déclarées avec le mot-clé `static` à l'intérieur d'une fonction conservent leur valeur entre les appels de fonction, mais elles ne sont accessibles qu'à l'intérieur de cette fonction.
+Les variables déclarées avec le mot-clé `static` à l'intérieur d'une fonction **conservent leur valeur entre les appels de fonction**, mais elles ne sont accessibles qu'à l'intérieur de cette fonction.
 
 ```
 function compteur() {
@@ -144,14 +150,14 @@ ___
 Une superglobale est **une variable (variable prédéfinie) qui est toujours accessible, peu importe le contexte dans lequel elle est utilisée**. Contrairement aux variables normales, qui ont une portée limitée, les superglobales sont **accessibles de n'importe où dans le script**.
 
 Il existe plusieurs superglobales en PHP :
-1. $GLOBALS : Contient toutes les variables globales.
-2. $_SERVER : Contient des informations sur les en-têtes, chemins, et emplacements des scripts.
-3. $_REQUEST : Contient les données envoyées via les méthodes GET et POST.
-4. $_POST : Contient les données envoyées via la méthode POST.
-5. $_GET : Contient les données envoyées via la méthode GET.
-6. $_FILES : Contient des informations sur les fichiers téléchargés via le script.
-7. $_COOKIE : Contient les cookies envoyés par le client.
-8. $_SESSION : Contient les variables de session.
+1. $GLOBALS : contient toutes les variables globales.
+2. $_SERVER : contient des informations sur les en-têtes, chemins, et emplacements des scripts.
+3. $_REQUEST : contient les données envoyées via les méthodes GET et POST.
+4. $_POST : contient les données envoyées via la méthode POST.
+5. $_GET : contient les données envoyées via la méthode GET.
+6. $_FILES : contient des informations sur les fichiers téléchargés via le script.
+7. $_COOKIE : contient les cookies envoyés par le client.
+8. $_SESSION : contient les variables de session.
 
 Une superglobale en PHP peut être vue comme un tableau associatif.
 
