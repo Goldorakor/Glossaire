@@ -2843,9 +2843,79 @@ ___
 ### c.	Cardinalité  
 ### d.	Clé primaire / clé étrangère  
 
+### a. Entité
+Une entité est un objet ou concept représenté dans un modèle de données, qui peut être identifié de manière unique. En modélisation, une entité correspond à une table dans une base de données et regroupe des informations liées à ce concept (comme "Client", "Produit", etc.). **Chaque entité a des attributs qui décrivent ses propriétés**.
+
+### b. Relation
+Une relation est un **lien logique entre deux ou plusieurs entités**. Elle décrit comment les entités sont connectées entre elles et le type d'interaction qu'elles ont. Par exemple, la relation "Achète" pourrait lier les entités "Client" et "Produit" pour modéliser l'achat de produits par des clients.
+
+### c. Cardinalité
+La cardinalité indique le nombre de fois qu'une entité peut être associée à une autre entité dans le cadre d'une relation. Elle est souvent représentée **sous la forme (0,1), (1,n), (0,n), etc.**, et permet de spécifier les contraintes sur le nombre de relations possibles entre les entités (par exemple, "un client peut acheter plusieurs produits", mais "chaque produit appartient à un seul fournisseur").
+
+### Notion de cardinalité -> explications approfondies : 
+
+Dans la méthode Merise, les cardinalités précisent les règles de correspondance entre les entités dans les relations. Elles définissent le nombre minimum et maximum d’occurrences d’une entité qui peuvent être associées à une occurrence d’une autre entité dans une relation. Cette notion de cardinalité est **cruciale pour modéliser les contraintes et les dépendances entre les entités** d’un système d’information.
+
+La cardinalité s'exprime par **une paire de valeurs**, généralement sous la forme **(min, max)** :
+
+  - **min** : indique le nombre minimum de relations que chaque occurrence d’une entité doit avoir avec une autre entité. Cela peut être 0 ou 1.
+  - **max** : indique le nombre maximum de relations que chaque occurrence d’une entité peut avoir avec une autre entité. Cela peut être 1, n (indéterminé), ou une autre limite numérique.
+
+Voici les **principaux types de cardinalités utilisées en modélisation Merise** :
+
+1. **(0,1)** : Une occurrence de l’entité A est **optionnellement** liée à une occurrence de l’entité B, et ne peut y être liée qu'une seule fois.
+2. **(1,1)** : Chaque occurrence de l’entité A doit être liée à une et une seule occurrence de l’entité B, et inversement.
+3. **(0,n)** : Une occurrence de l’entité A peut être liée à plusieurs occurrences de l’entité B, ou aucune (**relation optionnelle**).
+4. **(1,n)** : Chaque occurrence de l’entité A est liée à au moins une occurrence de l’entité B, mais peut être liée à plusieurs.
+
+**Exemple**  
+
+Supposons une relation entre **Client** et **Commande**. La cardinalité peut être :
+
+- **Client (1,n) — Commande (0,n)** : cela signifie qu’un client peut passer plusieurs commandes (1,n) mais qu'une commande peut exister sans être associée à un client particulier (0,n), comme lors de la saisie initiale.
+
+Ces cardinalités permettent de structurer et de formaliser les relations entre données dans un modèle, facilitant ainsi le passage de l'analyse fonctionnelle à la conception de bases de données.
+
+
+###d. Clé primaire / clé étrangère
+
+  - **Clé primaire** : c’est un ou plusieurs attributs d’une entité qui permet de l’identifier de manière unique. Elle **garantit l'unicité des enregistrements dans une table** (comme un numéro de client unique).
+  - **Clé étrangère** : c’est un attribut (ou un ensemble d'attributs) dans une table qui **fait référence à la clé primaire d’une autre table pour établir une relation entre les deux tables**. Elle assure l'intégrité référentielle en liant les données entre elles (par exemple, un identifiant de produit dans une table de commande qui fait référence à l’entité "Produit").
+
+
 ___
 
 ## 72.	Que devient une relation de type « Many To Many » dans le modèle logique de données ?
+
+Dans un **modèle logique de données** (**MLD**), une relation de type **Many-to-Many** (ou **n-n**) entre deux entités doit être transformée en une structure différente, car les bases de données relationnelles ne permettent pas directement ce type de relation.
+
+Pour **gérer une relation de type Many-to-Many**, on **crée une table intermédiaire ou table associative** qui "casse" cette relation en **deux relations One-to-Many** (ou **1-n**). Cette table intermédiaire contient des clés étrangères pointant vers chacune des deux entités initiales.
+
+### Comment ça fonctionne
+
+Imaginons une relation **Many-to-Many** entre les entités **Etudiant** et **Cours** :
+
+- Un étudiant peut être inscrit à plusieurs cours.
+- Un cours peut accueillir plusieurs étudiants.
+
+#### Étapes de transformation
+
+1. **Créer une table associative** : par exemple, une table nommée **Inscription**.
+
+2. **Inclure les clés étrangères** : cette table **Inscription** contient deux clés étrangères :
+  - Une clé étrangère qui fait référence à la clé primaire de **Etudiant**.
+  - Une clé étrangère qui fait référence à la clé primaire de **Cours**.
+
+3. **Ajouter des contraintes** : **la combinaison des deux clés étrangères** (clé étrangère Etudiant et clé étrangère Cours) **forme une clé primaire composée** dans la table associative **Inscription**. Cela garantit qu’un étudiant ne peut être inscrit qu’une seule fois à chaque cours.
+
+### Résultat
+
+La relation initiale Many-to-Many entre Etudiant et Cours est ainsi transformée en deux relations One-to-Many via la table Inscription :
+
+- **Etudiant (1,n) — Inscription (0,n)** : un étudiant peut avoir plusieurs inscriptions.
+- **Cours (1,n) — Inscription (0,n)** : un cours peut être lié à plusieurs inscriptions.
+
+La **table Inscription sert donc d’interface pour relier indirectement Etudiant et Cours**.
 
 ___
 
