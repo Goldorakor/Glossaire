@@ -3387,6 +3387,8 @@ ___
 ### h.	Concaténer 2 chaînes de caractères  
 
 
+  
+
 ### a. Insérer un nouvel enregistrement dans une table
 
 - **Clause** : `INSERT INTO`
@@ -3491,7 +3493,9 @@ sql
 ```
 
   
-**Ces clauses sont essentielles pour manipuler les données dans une base de données SQL, te permettant d'exécuter diverses opérations sur les enregistrements et de récupérer des résultats selon tes besoins.**
+###  Remarques
+
+Ces clauses sont essentielles pour manipuler les données dans une base de données SQL, te permettant d'exécuter diverses opérations sur les enregistrements et de récupérer des résultats selon tes besoins.
 
 
 ___
