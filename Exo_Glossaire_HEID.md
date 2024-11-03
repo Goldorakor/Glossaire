@@ -3504,47 +3504,370 @@ ___
 
 ## 83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
 
+Pour se connecter à une base de données en PHP, on utilise la **classe native PDO** (**PHP Data Objects**), qui offre une **interface simple et sécurisée pour interagir avec différents types de bases de données** (MySQL, PostgreSQL, SQLite, etc.). Elle est particulièrement appréciée pour sa **flexibilité** et ses options de **gestion des erreurs**.
+
+
+### Exemple de connexion avec PDO
+
+Voici un exemple de connexion à une base de données MySQL en utilisant PDO :
+
+```
+<?php
+// Informations de connexion
+$host = 'localhost';
+$dbname = 'nom_base_de_donnees';
+$username = 'nom_utilisateur';
+$password = 'mot_de_passe';
+
+try {
+    // Création d'une instance de la classe PDO
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+
+    // Configuration de PDO pour afficher les erreurs (mode exception)
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    echo "Connexion réussie !";
+} catch (PDOException $e) {
+    // Gestion des erreurs de connexion
+    echo "Erreur de connexion : " . $e->getMessage();
+}
+?>
+```
+
+
+### Explications des éléments clés
+
+- Création de l'instance PDO :
+
+```
+$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+```
+
+Ici, nous passons en argument une chaîne de connexion avec :
+
+  - `mysql` : type de base de données.
+  - `host` : adresse du serveur de base de données.
+  - `dbname` : nom de la base de données.
+  - `charset` : encodage des caractères (généralement UTF-8 pour la compatibilité avec les caractères spéciaux).
+
+- Configuration des options PDO :
+
+```
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+```
+
+    Cette ligne configure PDO pour qu'il lève une exception en cas d'erreur de connexion, ce qui permet de gérer les erreurs plus facilement.
+
+
+### Avantages de PDO
+
+1. **Support multi-SGBD** : PDO peut se connecter à plusieurs types de bases de données, ce qui le rend très flexible.
+2. **Sécurité** : PDO propose une méthode d’exécution de requêtes préparées (`prepare`), qui permet d’éviter les injections SQL en séparant les données des requêtes.
+3. **Gestion des erreurs** : avec le mode exception, les erreurs peuvent être interceptées et gérées de manière centralisée.
+
+
+### Exemple d'utilisation de requêtes préparées avec PDO
+
+Une fois connecté, voici comment effectuer une requête de manière sécurisée avec des paramètres :
+
+```
+<?php
+$sql = "SELECT * FROM utilisateurs WHERE nom = :nom";
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['nom' => 'Dupont']);
+$resultats = $stmt->fetchAll();
+```
+
+Dans cet exemple, le paramètre `:nom` est lié dynamiquement, ce qui empêche les injections SQL.
+
+
+___
 ___
 
 # Symfony
 
 ## 84.	Qu’est-ce que Symfony ?
 
+**Symfony** est un **framework PHP open-source** qui facilite le développement d'applications web et d'API. Créé en 2005 par SensioLabs, il offre un **ensemble de composants et d'outils pour structurer et accélérer le développement en suivant les bonnes pratiques**. Il est particulièrement utilisé pour développer des applications complexes, modulaires et maintenables, et est très populaire dans la communauté PHP.
+
+
+### Caractéristiques principales de Symfony
+
+1. **Architecture MVC (Modèle-Vue-Contrôleur)**
+  - Symfony suit le modèle MVC, qui organise le code en trois couches (**modèle, vue, contrôleur**) pour séparer la logique métier de la présentation. Cela rend le code plus structuré, modulaire et plus facile à maintenir.
+
+2. **Réutilisation des composants**
+  - Symfony est composé de nombreux composants PHP réutilisables (comme Symfony HTTPFoundation, Symfony Console, etc.), qui peuvent être utilisés de manière indépendante. Ces composants sont largement utilisés par d’autres frameworks, y compris Laravel.
+
+3. **Bundle et Modularité**
+  - Symfony utilise un **système de bundles**, qui sont **des modules ou des extensions** permettant d’ajouter facilement des fonctionnalités spécifiques à une application. Cette **approche modulaire rend l'application extensible** et permet de réutiliser des bundles dans plusieurs projets.
+
+4. **ORM intégré (Doctrine)**
+  - Symfony utilise **Doctrine**, un **ORM** (**Object-Relational Mapping**), pour gérer les interactions avec la base de données. **Doctrine facilite la manipulation des données en représentant les tables de la base sous forme d’objets PHP**, éliminant la nécessité d'écrire des requêtes SQL pour la plupart des opérations.
+
+5. **Console Symfony**
+  - La console Symfony est un outil en ligne de commande très puissant qui aide les développeurs à générer du code, à exécuter des migrations, à gérer la base de données et bien plus encore, ce qui accélère le développement.
+
+6. **Sécurité**
+  - Symfony dispose de **fonctionnalités de sécurité intégrées** pour la gestion de l'authentification, de l'autorisation et de la protection contre les failles courantes (injections SQL, CSRF, etc.).
+
+7. **Flexibilité**
+  - Symfony est flexible et peut être configuré pour des projets de toute taille, des API légères aux applications d'entreprise. Sa structure modulaire permet d'activer ou de désactiver des bundles selon les besoins.
+
+
+### Avantages de Symfony
+
+- **Standardisation** : Symfony encourage les bonnes pratiques de développement et l'adoption de standards, facilitant ainsi le travail en équipe.
+- **Communauté et Documentation** : Symfony possède une large communauté active, une documentation complète, et un support commercial avec SensioLabs. Cela garantit une aide et des ressources disponibles pour résoudre les problèmes.
+- **Performance** : les nouvelles versions de Symfony sont optimisées pour offrir de bonnes performances, même pour des applications complexes.
+
+
+### Cas d'utilisation
+
+Symfony est utilisé pour développer :
+
+- des applications web d'entreprise.
+- des API RESTful et des services web.
+- des sites e-commerce.
+- des systèmes de gestion de contenu.
+
+
+### Exemple de code avec Symfony
+
+Voici un exemple de route dans Symfony pour afficher un message de bienvenue :
+
+```
+php
+
+// src/Controller/WelcomeController.php
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class WelcomeController extends AbstractController
+{
+    #[Route('/welcome', name: 'welcome')]
+    public function index(): Response
+    {
+        return new Response('<html><body>Bienvenue sur Symfony !</body></html>');
+    }
+}
+```
+
+Dans cet exemple, la route `/welcome` renvoie un message de bienvenue. Symfony génère automatiquement le fichier de routage, et le contrôleur utilise une réponse HTTP pour envoyer le contenu.
+
+
+### En résumé
+
+Symfony est un framework puissant et flexible qui aide les développeurs PHP à créer des applications web robustes, modulaires et évolutives, avec une approche standardisée et maintenable.
+
 ___
 
 ## 85.	Sur quel langage de programmation et design pattern repose Symfony ?
+
+Symfony repose principalement sur le **langage de programmation PHP** et utilise le **design pattern MVC** (**Modèle-Vue-Contrôleur**) comme architecture de base.
+
+
+### Détails sur PHP et MVC dans Symfony
+
+- **Langage PHP** : Symfony est entièrement écrit en PHP, qui est un langage de programmation côté serveur largement utilisé pour le développement web. PHP est bien adapté à la création d'applications web dynamiques et offre une grande flexibilité et des performances optimisées pour les environnements web.
+
+- **Design pattern MVC** :
+  - **Modèle (Model)** : représente la logique métier et les données de l'application. Dans Symfony, cela se fait généralement via l’ORM Doctrine, qui permet de définir des entités PHP mappées sur les tables de la base de données.
+  - **Vue (View)** : gère l'affichage et la présentation des données. Symfony utilise le **moteur de templates Twig** pour simplifier et structurer les vues HTML.
+  - **Contrôleur (Controller)** : reçoit les requêtes de l'utilisateur, interagit avec le modèle pour récupérer les données nécessaires, et les transmet à la vue. Dans Symfony, les contrôleurs sont des classes PHP qui définissent les actions à exécuter pour chaque route.
+
+
+### Autres patterns utilisés dans Symfony
+
+Outre le pattern MVC, Symfony utilise d'autres design patterns pour renforcer sa modularité et sa maintenabilité :
+
+- **Service Container / Dependency Injection (DI)** : Symfony utilise un service container pour gérer les dépendances des classes. Cela permet de réduire le couplage entre les composants et de faciliter les tests et la maintenabilité.
+
+- **Event Dispatcher (Observer)** : le Event Dispatcher permet à des composants de réagir à des événements spécifiques, ce qui rend le framework très extensible et flexible. Par exemple, des événements peuvent être déclenchés avant ou après certaines actions (ex. sauvegarde en base de données).
+
+- **Singleton** : utilisé dans certains composants pour garantir qu'une seule instance de certaines classes critiques est utilisée.
+
+Symfony s'appuie donc principalement sur le PHP et le pattern MVC, enrichi par d'autres patterns comme l'injection de dépendances et l'observation d'événements, pour offrir un cadre structuré et modulaire pour le développement web.
+
 
 ___
 
 ## 86.	Quelle est la dernière version en date de Symfony ?
 
+La dernière version de Symfony actuellement disponible est **Symfony 7.1**, sortie en mai 2024. Cette version nécessite PHP 8.2 ou une version ultérieure. En parallèle, la version Symfony 6.4, publiée en novembre 2023, est la version LTS (Long Term Support). Elle bénéficiera de correctifs de bogues jusqu'en novembre 2026 et de correctifs de sécurité jusqu'en novembre 2027, assurant une stabilité à long terme pour les projets qui souhaitent rester sur une version plus durable.
+
+**Symfony 7.1**
+Symfony 7.1 is the current stable version.
+
+**Symfony 6.4**
+Symfony 6.4 is the current long-term support version.
+
+
 ___
 
 ## 87.	Qu’est-ce qu’un bundle ?
+
+Un **bundle** dans Symfony est **un module ou un regroupement de fichiers PHP, souvent sous forme de répertoire, qui ajoute des fonctionnalités spécifiques à une application Symfony**. En quelque sorte, un bundle dans Symfony fonctionne comme un plugin ou une extension dans d'autres frameworks, permettant de diviser une application en composants réutilisables et modulaires. **Les bundles facilitent ainsi l’ajout, la suppression, ou la réutilisation de fonctionnalités sans toucher au cœur de l’application**.
+
+
+### Caractéristiques d’un bundle
+
+1. **Modularité** : les bundles sont conçus pour regrouper des fonctionnalités indépendantes, comme la gestion des utilisateurs, l’authentification, ou encore l’intégration avec un service externe.
+
+2. **Réutilisabilité** : un même bundle peut être partagé entre plusieurs projets, ou installé depuis des sources externes comme Packagist.
+
+3. **Structure indépendante** : un bundle possède sa propre structure de répertoires, avec ses propres contrôleurs, vues, et services, permettant de maintenir et d’organiser le code.
+
+
+### Types de bundles
+
+- **Bundles tiers** : ce sont des bundles développés par la communauté et disponibles en ligne (par exemple, sur Packagist) pour ajouter des fonctionnalités courantes.
+- **Bundles spécifiques au projet** : créés spécifiquement pour les besoins d’une application, ils ne sont pas destinés à être réutilisés en dehors du projet actuel.
+
+
+### Exemples de bundles populaires
+
+- **FOSUserBundle** : gère les utilisateurs et l’authentification.
+- **DoctrineBundle** : intègre Doctrine ORM pour gérer les bases de données.
+
+Les bundles simplifient donc l’architecture d’une application Symfony en facilitant la **gestion des fonctionnalités de manière modulaire** et en encourageant la **réutilisabilité du code**.
 
 ___
 
 ## 88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
 
+Le **moteur de template utilisé par défaut dans Symfony est Twig**. Twig est un moteur de templates rapide, flexible et sécurisé, créé par SensioLabs, la même entreprise qui développe Symfony. Il est conçu **pour faciliter la création de vues HTML en permettant d’injecter des variables dynamiques dans les templates, de manipuler les données de manière simple, et de bénéficier de nombreuses fonctionnalités comme l’héritage de templates et des filtres intégrés**.
+
+
+### Avantages de Twig dans Symfony
+
+- **Lisibilité** : Twig utilise une syntaxe simple et claire, ce qui rend les templates plus lisibles et compréhensibles pour les développeurs.
+- **Sécurité** : il inclut des protections contre les failles XSS (cross-site scripting), en échappant automatiquement les données injectées dans les templates.
+- **Performances** : les templates Twig sont compilés en PHP pur, ce qui permet d'obtenir de bonnes performances.
+
+En plus de Twig, Symfony permet d’utiliser d’autres moteurs de templates si besoin, mais **Twig reste le choix privilégié et recommandé** pour sa compatibilité native et ses nombreuses fonctionnalités adaptées à Symfony.
+
 ___
 
 ## 89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
+
+Un **ORM** (**Object-Relational Mapping**) est une **technique qui permet de manipuler des bases de données relationnelles via du code orienté objet**. Un ORM **crée une abstraction entre le code et la base de données en représentant les tables et les relations sous forme d’objets**. Cela simplifie l'accès aux données, car les développeurs n’ont pas besoin d'écrire de requêtes SQL directement ; ils peuvent interagir avec les données via des méthodes d'objets.
+
+
+### Utilité de l’ORM
+
+- **Productivité** : les ORMs automatisent les tâches répétitives liées aux bases de données, comme les opérations CRUD (**Create, Read, Update, Delete**).
+- **Maintenabilité** : le code est plus lisible et facile à maintenir, car il reste cohérent avec les paradigmes de la programmation orientée objet.
+- **Portabilité** : l’ORM permet de changer de système de base de données sans devoir réécrire toutes les requêtes SQL.
+
+### ORM dans Symfony : Doctrine
+
+Dans Symfony, l’ORM par défaut est Doctrine. Doctrine est un ORM puissant et flexible qui offre un ensemble de fonctionnalités avancées, comme :
+
+- **Mapping des entités** : Doctrine utilise des annotations ou des fichiers de configuration pour mapper les classes PHP aux tables de la base de données.
+
+- **Gestion des relations** : Doctrine simplifie la gestion des relations entre entités (par exemple, les relations « un-à-plusieurs » ou « plusieurs-à-plusieurs »).
+
+- **Migration de schéma** : Doctrine peut générer automatiquement des migrations de schéma pour synchroniser la base de données avec les entités.
+
+Grâce à Doctrine, Symfony fournit un cadre robuste pour **gérer les interactions avec la base de données de manière orientée objet**, sans nécessiter de requêtes SQL directes dans le code.
+
 
 ___
 
 ## 90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
 
+L’**injection de dépendances** est un principe de conception en programmation qui consiste à fournir à une classe ses dépendances externes, plutôt que de laisser la classe les créer elle-même. Cela permet de découpler les composants d’une application, rendant le code plus modulaire, testable, et facile à maintenir.
+
+
+### Fonctionnement de l’injection de dépendances
+
+Au lieu qu’une classe instancie elle-même ses dépendances, celles-ci lui sont injectées, soit via le constructeur, soit via des méthodes spécifiques. Par exemple, si une classe A a besoin d'une instance de la classe B pour fonctionner, l'injection de dépendances permet d'injecter une instance de B dans A sans qu'A ait besoin de la créer directement. Cela facilite également le test unitaire, car il est possible d’injecter des objets de test (mocks) au lieu des vraies dépendances.
+Outil d’injection de dépendances dans Symfony
+
+Dans Symfony, **le conteneur de services gère l'injection de dépendances**. Le conteneur est un objet central qui connaît tous les services (c'est-à-dire, les objets avec des dépendances) et les instancie en injectant automatiquement leurs dépendances. Il est basé sur le concept d'**inversion de contrôle** (**Inversion of Control**, **IoC**), où **le conteneur de services prend en charge la création et la gestion des dépendances**.
+
+
+### Fichier contenant les dépendances d'un projet Symfony
+
+Les dépendances du projet (à la fois celles créées par les développeurs et celles provenant de bibliothèques externes) sont principalement définies dans deux fichiers :
+
+- `services.yaml` : situé dans le répertoire `config`, ce fichier contient la configuration des services et définit comment les dépendances sont injectées dans les classes de l'application.
+
+- `composer.json` : c’est ici que sont listées les dépendances externes du projet (par exemple, Doctrine, Twig). `composer.json` est utilisé par Composer, le gestionnaire de paquets PHP, pour installer et gérer les bibliothèques externes nécessaires au projet.
+
+Ainsi, grâce à l’injection de dépendances et au conteneur de services, Symfony offre une structure modulaire et maintenable, simplifiant le développement d’applications complexes.
+
+
 ___
 
 ## 91.	Que permet le bundle Maker au sein de Symfony ? 
+
+Le **bundle Maker** dans Symfony, ou **Symfony MakerBundle**, est un outil destiné à **générer automatiquement du code pour des tâches courantes** dans un projet Symfony. Il simplifie considérablement le développement en permettant de créer rapidement différents éléments d'une application sans devoir écrire manuellement toutes les configurations et structures de base.
+
+
+### Utilités du MakerBundle
+
+Le MakerBundle permet notamment de générer :
+
+1. **Contrôleurs** : création rapide de contrôleurs pour gérer les requêtes HTTP et la logique métier.
+
+2. **Entités** : génération d’entités (classes représentant les tables de base de données) avec des attributs, ainsi que le code nécessaire pour le mapping avec Doctrine ORM.
+
+3. **Formulaires** : création de formulaires pour interagir avec les données, comme les formulaires d'inscription ou de modification d'éléments.
+
+4. **Commandes de console** : génération de nouvelles commandes Symfony pour le terminal, utiles pour automatiser des tâches.
+
+5. **Tests** : génération de tests unitaires et fonctionnels de base pour vérifier le bon fonctionnement du code.
+
+
+### Comment fonctionne le MakerBundle ?
+
+Pour générer un composant, il suffit d’exécuter une commande `php bin/console make:<nom-du-composant>`, par exemple :
+
+- `php bin/console make:controller` pour créer un contrôleur,
+- `php bin/console make:entity` pour générer une entité.
+
+Le MakerBundle facilite ainsi la configuration initiale des composants en fournissant une base de code prête à l'emploi, permettant aux développeurs de se concentrer davantage sur la logique métier que sur la configuration et l’écriture du code standard.
+
 
 ___
 
 ## 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
 
+Dans un projet Symfony, le langage de requêtage principalement exploité est le **DQL** (**Doctrine Query Language**), qui est une syntaxe propre à l’ORM Doctrine intégré dans Symfony. **DQL est similaire au SQL, mais fonctionne sur des entités PHP au lieu de tables SQL**. Il permet d'interroger les données tout en respectant la structure orientée objet de Doctrine, en travaillant avec les entités définies dans le projet.
+
+En complément de DQL, Symfony permet également :
+
+- **SQL natif** : Doctrine supporte l'exécution de requêtes SQL brutes pour les cas où des requêtes spécifiques sont nécessaires ou pour optimiser des performances particulières.
+- **Query Builder** : Doctrine propose un **générateur de requêtes** (**Query Builder**), qui permet de construire des requêtes dynamiques en PHP, sans écrire directement du SQL ou du DQL, rendant les requêtes plus flexibles et modulables.
+
+L’utilisation de DQL et du Query Builder dans Symfony offre un niveau d'abstraction qui permet de manipuler les données tout en restant dans un paradigme orienté objet, ce qui rend le code plus maintenable et en accord avec les pratiques de développement recommandées par le framework.
+
+
 ___
 
 ## 93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
+
+Dans Symfony, le **composant qui garantit l’authentification et l’autorisation des utilisateurs** est le **Security Component**. Ce composant fournit un ensemble de fonctionnalités permettant de gérer la sécurité de l'application, y compris l'authentification des utilisateurs (vérification de leur identité) et l'autorisation (contrôle d'accès aux ressources en fonction des rôles ou des permissions attribués).
+
+
+### Principales fonctionnalités du Security Component
+
+1. **Authentification** : permet de gérer différentes méthodes d’authentification, comme le **login par formulaire**, l'**authentification par jeton** (token), ou l'**intégration avec des services externes** comme OAuth.
+
+2. **Autorisation** : gère les **permissions des utilisateurs**, permettant de **restreindre l'accès** à certaines parties de l'application en fonction de leurs rôles.
+ 
+3. **Gestion des utilisateurs** : intègre des fonctionnalités pour stocker et récupérer les informations des utilisateurs, y compris leurs rôles et autres attributs nécessaires à l’authentification et à l’autorisation.
+
+
+### Intégration avec d'autres composants
+
+Le **Security Component** peut être facilement intégré avec d'autres composants Symfony, comme **Doctrine** pour gérer les utilisateurs stockés dans une base de données, et il fonctionne bien avec le **MakerBundle** pour générer des fonctionnalités de sécurité de manière simple et rapide.
+
 
 ___
 
