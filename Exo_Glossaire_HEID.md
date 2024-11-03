@@ -3085,7 +3085,7 @@ Une **jointure croisée** produit un produit cartésien des deux tables, c’est
 
 Ces différents types de jointures permettent d'interroger et de combiner les données de manière flexible en fonction des besoins d’analyse et de la structure de la base de données.
 
-![Illustration de la notion de jointure dans une base de données](images/08_media.jpg)
+![Illustration de la notion de jointure dans une base de données](images/18_media.jpg)
 
 
 ### 6. Jointure semi-interne (SEMI JOIN)
