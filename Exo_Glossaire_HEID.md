@@ -3490,8 +3490,8 @@ sql
     SELECT Nom || ' ' || Prénom AS NomComplet FROM Employés;
 ```
 
-
-Ces clauses sont essentielles pour manipuler les données dans une base de données SQL, te permettant d'exécuter diverses opérations sur les enregistrements et de récupérer des résultats selon tes besoins.
+  
+**Ces clauses sont essentielles pour manipuler les données dans une base de données SQL, te permettant d'exécuter diverses opérations sur les enregistrements et de récupérer des résultats selon tes besoins.**
 
 
 ___
