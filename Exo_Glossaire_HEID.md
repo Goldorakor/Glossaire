@@ -3168,8 +3168,9 @@ L'**intégrité référentielle** est un concept fondamental dans les bases de d
   - **Clé étrangère** : c'est une colonne (ou un ensemble de colonnes) dans une table qui fait référence à la clé primaire d'une autre table. Elle établit une relation entre les deux tables.
 
 #### 2. Règles d'intégrité référentielle :
-        Une clé étrangère doit toujours pointer vers une clé primaire existante dans la table référencée. Cela signifie que si tu essaies d'insérer une valeur dans la colonne de clé étrangère, cette valeur doit déjà exister dans la table correspondante (table parente).
-        Si une ligne de la table parent est supprimée ou mise à jour, les règles d'intégrité référentielle déterminent comment gérer les lignes correspondantes dans la table enfant (table contenant la clé étrangère).
+
+  - Une clé étrangère doit toujours pointer vers une clé primaire existante dans la table référencée. Cela signifie que si tu essaies d'insérer une valeur dans la colonne de clé étrangère, cette valeur doit déjà exister dans la table correspondante (table parente).
+  - Si une ligne de la table parent est supprimée ou mise à jour, les règles d'intégrité référentielle déterminent comment gérer les lignes correspondantes dans la table enfant (table contenant la clé étrangère).
 
 
 ### Types de règles d'intégrité référentielle
@@ -3368,7 +3369,7 @@ Cet exemple supprime l'enregistrement de l'employé nommé Dupont.
 - **Développement et maintenance** : en suivant le modèle CRUD, les développeurs peuvent créer des interfaces utilisateur et des services API qui permettent aux utilisateurs de gérer les données de manière intuitive.
 
 
-###vEn résumé
+### En résumé
 
 Le concept de CRUD est essentiel pour comprendre comment les données sont manipulées dans une base de données. Il constitue la base de la plupart des applications qui nécessitent des opérations de gestion des données, qu'il s'agisse d'une simple application web ou d'un système d'information complexe.
 
