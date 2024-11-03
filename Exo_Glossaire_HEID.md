@@ -3385,6 +3385,114 @@ ___
 ### g.	Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique  
 ### h.	Concaténer 2 chaînes de caractères  
 
+
+### a. Insérer un nouvel enregistrement dans une table
+
+- **Clause** : `INSERT INTO`
+- **Exemple** :
+
+```
+    sql
+
+    INSERT INTO Employés (Nom, Prénom, Salaire) VALUES ('Dupont', 'Jean', 30000);
+```
+
+
+### b. Modifier un enregistrement dans une table
+
+- **Clause** : `UPDATE`
+- **Exemple** :
+
+```
+    sql
+
+    UPDATE Employés SET Salaire = 32000 WHERE Nom = 'Dupont';
+```
+
+
+### c. Supprimer un enregistrement dans une table
+
+- **Clause** : `DELETE FROM`
+- **Exemple** :
+
+```
+    sql
+
+    DELETE FROM Employés WHERE Nom = 'Dupont';
+```
+
+
+### d. Supprimer la base de données
+
+- **Clause** : `DROP DATABASE`
+- **Exemple** :
+    
+```
+    sql
+
+    DROP DATABASE NomDeLaBase;
+```
+
+
+### e. Filtrer les résultats d’une requête SQL
+
+- **Clause** : `WHERE`
+- **Exemple** :
+
+```
+    sql
+
+    SELECT * FROM Employés WHERE Salaire > 25000;
+```
+
+
+### f. Trier les résultats d’une requête SELECT
+
+- **Clause** : `ORDER BY`
+- **Exemple** :
+
+```
+    sql
+
+    SELECT * FROM Employés ORDER BY Salaire DESC;
+```
+
+
+### g. Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique
+
+- **Clause** : `GROUP BY`
+- **Exemple** :
+
+```
+    sql
+
+    SELECT Département, COUNT(*) AS Nombre_Employés FROM Employés GROUP BY Département;
+```
+
+
+### h. Concaténer 2 chaînes de caractères
+
+- **Clause** : `CONCAT()` (ou l'opérateur `||` selon le SGBD)
+- **Exemple** :
+    
+```
+    sql
+
+SELECT CONCAT(Nom, ' ', Prénom) AS NomComplet FROM Employés;
+```
+
+Ou, pour certains SGBD comme SQLite :
+
+```
+sql
+
+    SELECT Nom || ' ' || Prénom AS NomComplet FROM Employés;
+```
+
+
+Ces clauses sont essentielles pour manipuler les données dans une base de données SQL, te permettant d'exécuter diverses opérations sur les enregistrements et de récupérer des résultats selon tes besoins.
+
+
 ___
 
 ## 83.	Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
