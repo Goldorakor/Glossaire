@@ -3087,7 +3087,7 @@ Ces différents types de jointures permettent d'interroger et de combiner les do
 
 ![Illustration de la notion de jointure dans une base de données](images/18_media.jpg)  
   
-sur le **7ème diagramme**, il faut lire : **WHERE A.KEY IS NULL** et non WHERE B.KEY IS NULL
+sur le **7ème diagramme**, il faut lire : **WHERE A.KEY IS NULL** et non **WHERE B.KEY IS NULL**
 
 
 ### 6. Jointure semi-interne (SEMI JOIN)
