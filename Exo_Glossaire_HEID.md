@@ -4240,11 +4240,21 @@ ___
 
 ## 104.	Qu’est-ce que le RGPD ?
 
-Le **RGPD** (**Règlement Général sur la Protection des Données**) est une législation de l'Union européenne qui a été **mise en vigueur le 25 mai 2018**. Son objectif principal est de renforcer et d'harmoniser la protection des données personnelles au sein de l'UE. Voici les éléments clés à savoir :
+Le **RGPD** (**Règlement Général sur la Protection des Données**) est une législation de l'Union européenne qui a été **mise en vigueur le 25 mai 2018**. Son objectif principal est de renforcer et d'harmoniser la protection des données personnelles au sein de l'UE (et la Suisse et la Norvège). Comme son nom l'indique, c'est un règlement, il a donc un **caractère obligatoire**. Voici les éléments clés à savoir :
 
 ### 1. Protection des données personnelles :
 
 - Le RGPD vise à protéger les données personnelles des individus en régulant la manière dont les organisations collectent, traitent, et stockent ces données.
+- attention : certaines données personnelles sont dites sensibles, la collecte est interdite (par principe sauf cs particulier) :
+  - origine ethnique ou raciale
+  - orientation sexuelle
+  - conviction religieuse ou philosophie
+  - opinion politique
+  - opinion syndicale
+  - état de santé
+  - données génétiques
+  - données biométriques
+  - condamnations pénales et infractions
 
 ### 2. Consentement :
 
@@ -4270,7 +4280,7 @@ Le RGPD confère plusieurs droits aux individus, notamment :
 
 ### 6. Applicabilité :
 
-- Le RGPD s'applique non seulement aux entreprises basées dans l'UE, mais aussi à toute organisation traitant des données de citoyens de l'UE, peu importe sa localisation.
+- Le RGPD s'applique non seulement aux **entreprises basées dans l'UE**, mais aussi à **toute organisation traitant des données de citoyens de l'UE**, peu importe sa localisation.
 
 ### Conclusion :
 
@@ -4280,13 +4290,17 @@ ___
 
 ## 105.	Quel est son objectif principal ?
 
-Son objectif principal est de **renforcer et** d'**harmoniser la protection des données personnelles au sein de l'UE**.
+Ses objectifs principaaux sont :
+- **renforcer et harmoniser la protection des données personnelles au sein de l'UE**
+- **responsabiliser les acteurs**
+- **renforcer la confiance** des citoyens européens en améliorant la protection et la confidentialité
 
 ___
 
 ## 106.	Quelle est la date d’entrée en vigueur du RGPD ?
 
 Une législation de l'Union européenne mise en vigueur le **25 mai 2018**.
+Avant cela, en France, il y avait la **Loi informatique et liberté du 6 janvier 1978**, modifiée le 20 juin 2018, apparue suite au scandale monumental de la volonté de créer un super fichier par l'Etat français (**projet SAFARI**, acronyme de système automatisé pour les fichiers administratifs et le répertoire des individus).
 
 ___
 
@@ -4298,7 +4312,18 @@ ___
 
 ## 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
 
-En France, l'autorité administrative chargée de faire appliquer le RGPD est la **Commission Nationale de l'Informatique et des Libertés** (**CNIL**).
+En France, l'autorité administrative chargée de faire appliquer le RGPD est la **Commission Nationale de l'Informatique et des Libertés** (**CNIL**), composée d'un collège pluridisciplinaire de 18 membres élus ou nommés pour 5 ans et ayant une autoriyé administrative indépendante (= indépendante de l'Etat).
+
+### Rôles de la CNIL (par cours magistral de Stéphane) :
+
+1. **Informer et protéger les droits** 
+
+2. **Accompagner la conformité et conseiller** 
+
+3. **Anticiper et innover** 
+
+4. **Contrôler et sanctionner**
+
 
 ### Rôles de la CNIL :
 
@@ -4312,11 +4337,33 @@ En France, l'autorité administrative chargée de faire appliquer le RGPD est la
 
 5. **Médiation** : elle peut aussi intervenir en cas de litiges liés à la protection des données.
 
+
 ### Conclusion :
 
 La CNIL **joue un rôle clé dans la mise en œuvre et le respect des règles de protection des données en France**, assurant ainsi un cadre sécurisé pour les citoyens et les entreprises.
 
 ___
+
+### Introduction, grâce au cours magistral de Stéphane
+
+**Définition**
+*traitement de données* : toute opération (ou ensemble d'opérations) automatisée ou non portant sur des données personnelles quel que soit le procédé utilisé.
+*exemples d'opérations* : la collecte, l'enregistrement, l'organisation, la structuration, la conservation, l'adaptation ou la modification, l'extraction, la consultation, l'utilisation, la communication par transmission, la diffusion ou toute autre forme de mise à disposition, la rapprochement ou l'interconnexion, la limitation, l'effacement ou la destruction. (on tente de prendre tous les cas possibles).
+
+**Les fondamentaux du traitement de données :** 
+- loyauté et légalité de la collecte.
+- consentement des personnes explicite et éclairé
+- finalités du traitement déterminées, explicites et légitimes
+- proportionnalité (minimisation) -> on demande le strict nécessaire
+- exactitude et mise à jour -> penser à actualiser les données
+- temporalité : aucune information personnelle n'a vocation à être stockée de manière illimitée.
+
+**Les acteurs du traitement**
+- personne concernée (dont les données sont traitées)
+- responsable de traitement (**RT**) : il détermine pourquoi et comment les données doivent être traitées
+- sous-traitant : traite les données pour un RT
+- destinataire : personne qui reçoit la communication des données
+
 
 ## 109.	Quel est le consentement valide selon le RPGD ?
 
@@ -4349,6 +4396,7 @@ Selon le RGPD, le consentement valide **doit répondre à plusieurs critères sp
 ### Conclusion :
 
 En respectant ces exigences, les organisations peuvent s'assurer que le consentement est valide selon le RGPD, protégeant ainsi les droits des individus en matière de protection des données personnelles.
+
 
 ___
 
