@@ -4345,7 +4345,7 @@ La CNIL **joue un rôle clé dans la mise en œuvre et le respect des règles de
 
 ___
 
-### Introduction avant 109, grâce au cours magistral de Stéphane
+## Introduction avant 109, grâce au cours magistral de Stéphane
 
 **Définition**
 *traitement de données* : toute opération (ou ensemble d'opérations) automatisée ou non portant sur des données personnelles quel que soit le procédé utilisé.
@@ -4381,9 +4381,72 @@ Le DPO peut être un salarié de l'entreprise ou être externe à celle-ci.Sa d�
 - durée de conservation non illimitée
 - consentement
 - sécurité des données (confidentialité, intégrité = non piratée, disponibilité)
-- privacy by design and by default
+- privacy by design and by default : sécurité des données personnelles doit être prise en compte dès la conception du site
 - assurer les droits des personnés
 
+**Droit des personnes**
+*Droits renforcés*
+- droit d'information : on doit être informé du traitement de nos données, écrit noir sur blanc
+- droit d'accès : on doit pouvoir accéder à ses données -> bouton "nous contacter" pour faire cette demande
+- droit de rectification : on doit pouvoir modifier ses données personnelles -> bouton "edit profil" ou bouton "nous contacter" avec un délai de 72h00 pour rectifier les données
+- droit d'opposition : on peut s'opposer au traitement d'une ou plusieurs données personnelles
+- droit à l'effacement, appelé "droit à l'oubli" : on peut demander à ce que nos données soient effacées ou anonymisées (notre nom et prénom disparaissent et nos données ne sont plus reliées à notre identité)
+*Nouveaux droits*
+- droit à la portabilité (si le traitement est automatisé) : on doit pouvoir porter nos données d'un point A à un point B (entre opérateurs de téléphonie par exemple)
+- droit à la limitation du traitement : limiter une partie du traitement des données (le RT a 72h00 pour répondre)
+- droit lié à la prise de décision automatisée : on a le droit de ne pas accepter qu'un robot prenne une décision pour nous (ex : en cas de refus de prêt par une banque, on peut demander à ce que la décision soit revue par un humain)
+
+**Règles pour la gestion des droits des personnes**
+- gratuité pour le demandeur (-> formulaire de contact ou un email comme solution)
+- demandes satisfaites dans les meilleurs délais (avant 72h00)
+- formulation par mail possible
+- possibilité pour le RT de ne pas donner suite : la CNIL doit trancher le litige.
+
+**Répression de la CNIL**
+1. *le signalement*
+  - plaintes
+  - autosaisine (thèmes identifiés prioritaires) -> autosaisine = le fait de saisir sa propre juridiction, la saisine d'une autorité par elle-même
+  - presse
+  - coopération (signalement d'autres CNIL européennes)
+
+2. *le contrôle*
+  - sur place (pour les cas graves)
+  - en ligne (la plupart du temps)
+  - sur convocation (énorme bêtise)
+  - sur pièce (la CNIL peut demander des documents posant problème)
+
+3. *la suite donnée au contrôle*
+  - pas ou peu d'observations -> clôture du dossier
+  - manquement sérieux -> mise en demeure par la présidente (ou formation restreinte) qui peut sanctionner
+
+
+**Sanctions**
+- mise en demeure publique ou non (sur cnil.fr + legifrance.fr)
+- amende administrative
+  - (20 millions € ou 4% du CA mondial (maximum retenu)
+- sanction
+  - rappel à l'ordre par la présidente ou la formation restreinte
+  - injonction sous astreinte
+  - ordre de satisfaire aux demandes d'exercice des droits des personnes, y compris sous astreinte
+  - autres
+- sanction pénale
+  - 300 000 € et 5 ans de prison pour les personnes physiques
+  - 1 500 000 € pour les personnes morales
+
+
+**Bilan CNIL 2018**
+- 310 contrôles
+- 11 077 plaintes (soit +12%)
+- sanction pour une utilisation du fichier des locataires incompatible avec la finalité initiale
+  - OPH de Rennes : 30 000 €
+- sanctions pour manquement à la sécurité des données
+  - dailymotion : 50 000 €
+  - darty : 100 000 euros
+  - optical center et bouygues telecom : 250 000 €
+  - uber : 400 000 €
+- sanction pour manque de transparence, information insatisfaisante et absence de consentement valable pour la personnalisation de la publicité
+  - google : 50 000 000 €
+ 
 
 ## 109.	Quel est le consentement valide selon le RPGD ?
 
