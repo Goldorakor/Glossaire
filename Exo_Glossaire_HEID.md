@@ -477,9 +477,9 @@ exit(); // Toujours utiliser exit() après header() pour arrêter l'exécution d
 
 ### Points importants à considérer
 
-- **Envoi d'en-têtes** : la fonction `header()` doit être appelée avant tout envoi de contenu (comme HTML, texte, ou même des espaces). Si tu as déjà envoyé des données au navigateur, tu obtiendras une erreur de type "Headers already sent".
+- **Envoi d'en-têtes** : la fonction `header()` doit être appelée avant tout envoi de contenu (comme HTML, texte, ou même des espaces). Si on a déjà envoyé des données au navigateur, on obtiendra une erreur de type "Headers already sent".
 
-- **Redirection avec des codes d'état** : tu peux également spécifier un code d'état HTTP pour indiquer le type de redirection. Par exemple, pour une redirection permanente (301) :
+- **Redirection avec des codes d'état** : on peut également spécifier un code d'état HTTP pour indiquer le type de redirection. Par exemple, pour une redirection permanente (301) :
 
 ```
 <?php
