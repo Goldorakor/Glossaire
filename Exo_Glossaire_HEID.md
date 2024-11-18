@@ -4342,9 +4342,10 @@ En France, l'autorité administrative chargée de faire appliquer le RGPD est la
 
 La CNIL **joue un rôle clé dans la mise en œuvre et le respect des règles de protection des données en France**, assurant ainsi un cadre sécurisé pour les citoyens et les entreprises.
 
+
 ___
 
-### Introduction, grâce au cours magistral de Stéphane
+### Introduction avant 109, grâce au cours magistral de Stéphane
 
 **Définition**
 *traitement de données* : toute opération (ou ensemble d'opérations) automatisée ou non portant sur des données personnelles quel que soit le procédé utilisé.
@@ -4363,6 +4364,25 @@ ___
 - responsable de traitement (**RT**) : il détermine pourquoi et comment les données doivent être traitées
 - sous-traitant : traite les données pour un RT
 - destinataire : personne qui reçoit la communication des données
+
+**Délégué à la protection des données (DPO, Data Protection Officer)** : 'chef d'orchestre' de la conformité, principalement chargé de :
+- informer et conseiller le RT
+- sensibiliser les salariés
+- contrôler le respect du règlement et du droit national en matière de protection de données
+- être contacté par les personnes concernées pour toute question
+- coopérer avec la CNIL et être son point de contact
+Le DPO peut être un salarié de l'entreprise ou être externe à celle-ci.Sa désignation est obligatoire dans certains cas.
+
+**Mise en oeuvre** : grâce à l'auto-responsabilité des sociétés avec documentation (accountability) -> contrôle a posteriori.
+
+**Les fondamentaux du RGPD** :
+- accountability (dynamique)
+- minimisation des données
+- durée de conservation non illimitée
+- consentement
+- sécurité des données (confidentialité, intégrité = non piratée, disponibilité)
+- privacy by design and by default
+- assurer les droits des personnés
 
 
 ## 109.	Quel est le consentement valide selon le RPGD ?
@@ -4448,11 +4468,13 @@ Une **politique de confidentialité** est un **document qui explique comment une
 
 Une politique de confidentialité est **essentielle pour la transparence et la conformité légale**, notamment en vertu du RGPD. Elle aide les utilisateurs à **comprendre comment leurs données sont gérées** et à **exercer leurs droits en matière de protection des données**.
 
+
 ___
 
 ## 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
 
 Les données personnelles ne peuvent être conservées indéfiniment : une durée de conservation doit être déterminée par le responsable de traitement en fonction de l’objectif ayant conduit à la collecte de ces données. Ce principe de conservation limitée des données personnelles est prévu par le RGPD et la loi Informatique et Libertés.
+
 
 ___
 
@@ -4492,6 +4514,7 @@ Selon le RGPD, **les utilisateurs disposent de plusieurs droits** concernant leu
 
 Ces droits visent à renforcer la protection des données personnelles et à donner aux utilisateurs un meilleur contrôle sur leurs informations. Les organisations doivent être en mesure de répondre à ces demandes de manière appropriée et dans un délai raisonnable.
 
+
 ___
 
 ## 113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
@@ -4522,6 +4545,7 @@ Le **principe de minimisation des données** est l'un des principes fondamentaux
 
 Le principe de minimisation des données est crucial pour garantir une gestion responsable des données personnelles et pour respecter la vie privée des individus. En appliquant ce principe, les organisations contribuent à la conformité avec le RGPD et à la protection des droits des utilisateurs.
 
+
 ___
 
 # SEO
@@ -4546,6 +4570,7 @@ Voici quelques éléments clés du SEO :
 
 Le SEO est un **processus continu et évolutif**, car les algorithmes des moteurs de recherche changent régulièrement.
 
+
 ___
 
 ## 115.	Quel est l’objectif principal du SEO ?
@@ -4563,6 +4588,7 @@ L’objectif principal du SEO (Search Engine Optimization) est d'**augmenter la 
 5. **Maximiser le retour sur investissement (ROI)** : en attirant des visiteurs qualifiés, le SEO peut augmenter les conversions et, par conséquent, le chiffre d'affaires, tout en étant souvent moins coûteux que d'autres formes de publicité.
 
 En résumé, le SEO vise à optimiser la présence en ligne d'un site pour qu'il soit facilement trouvé par les utilisateurs et qu'il réponde à leurs besoins.
+
 
 ___
 
