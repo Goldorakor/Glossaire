@@ -510,14 +510,14 @@ ___
 
 La partie **front-end** d'une application contient toute la partie visible par l'utilisateur. Elle contient donc **la partie "contenu informatif du site" et la partie "mise en forme du site"**. Les langages associés à cette partie sont le **HTML** et le **CSS**.
 
-- **HTML pour fournir du contenu et le structurer**. (je maitrise les fondamentaux)
-- **CSS pour la mise en forme et la gestion graphique du site**. (je dois améliorer ma pratique des outils flexbox)
+- **HTML pour fournir du contenu et le structurer**.
+- **CSS pour la mise en forme et la gestion graphique du site**.
 
 Mon navigateur gère parfaitement l'affichage du front-end et je peux développer sans outil particulier. Le logiciel VSCode fait très bien le travail demandé.
 
 La partie **back-end** d'une application contient toute la machinerie cachée qui permet un bon fonctionnement de mon application. Le langage associé à cette partie est le PHP (en ce qui me concerne).
 
-- **PHP pour aller envoyer des requêtes au serveur**. (je découvre ce langage en ce moment même)
+- **PHP pour aller envoyer des requêtes au serveur**.
 
 **Mon navigateur ne gère pas correctement le langage PHP**. En plus du logiciel VSCode, je vais installer Laragon, qui va me fournir les outils adaptés au besoin du développement en PHP.
 
