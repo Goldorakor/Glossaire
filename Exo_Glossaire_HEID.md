@@ -124,7 +124,7 @@ $obj->afficherVariables();
 
 
 ### Conclusion
-La portée des variables en PHP est cruciale pour la gestion des données et la structure de ton code. Comprendre comment et où une variable peut être utilisée t'aide à éviter des erreurs et à écrire un code plus organisé.
+La portée des variables en PHP est cruciale pour la gestion des données et la structure du code. Comprendre comment et où une variable peut être utilisée aide à éviter des erreurs et à écrire un code plus organisé.
 ___
 
 ## 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
