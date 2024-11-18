@@ -66,14 +66,7 @@ function afficherVariable() {
 }
 
 afficherVariable(); // Affiche "Je suis global !"
-$variableGlobale = "Je suis global !";
 
-function afficherVariable() {
-    global $variableGlobale; // Déclaration de la variable globale
-    echo $variableGlobale;
-}
-
-afficherVariable(); // Affiche "Je suis global !"
 ```
 
 ### 2. Portée locale
