@@ -519,7 +519,7 @@ La partie **back-end** d'une application contient toute la machinerie cachée qu
 
 - **PHP pour aller envoyer des requêtes au serveur**.
 
-**Mon navigateur ne gère pas correctement le langage PHP**. En plus du logiciel VSCode, je vais installer Laragon, qui va me fournir les outils adaptés au besoin du développement en PHP.
+**Mon navigateur ne gère pas correctement le langage PHP**. En plus du logiciel VSCode, j'ai installé Laragon, qui me fournit les outils adaptés au besoin du développement en PHP.
 
 ___
 
