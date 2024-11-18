@@ -369,7 +369,7 @@ ___
 
 ## 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP.
 
-Une session en PHP est un mécanisme qui permet de stocker des données "utilisateur" sur le serveur afin de les conserver entre différentes requêtes HTTP. 
+Une session en PHP est un **mécanisme qui permet de stocker des données "utilisateur" sur le serveur** afin de les conserver entre différentes requêtes HTTP. 
 La **fonction session_start()** permet de démarrer une session en PHP.
 
 Sur un site marchand, la session permet de conserver le contenu du panier d'achat jusqu'à la finalisation de la commande.
