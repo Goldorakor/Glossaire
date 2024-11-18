@@ -336,7 +336,8 @@ Elle est utile lorsque vous souhaitez garantir qu'une action est effectuée au m
 pour i de 1 à 10 faire  
     si (i = 5) alors  
         sortir  
-    fin si  
+    fin si
+    faire quelque chose  
 fin pour  
 ```
 
