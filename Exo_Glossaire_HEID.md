@@ -532,13 +532,13 @@ Le **contrôle de version** est un système qui **enregistre les modifications a
 - On peut créer des branches pour travailler sur des fonctionnalités séparement puis fusionner ces branches à la branche principale.
 - En cas de conflits, on a à disposition des outils pour les résoudre.
 
-Git est un logiciel de contrôle de version très populaire, utilisé pour la gestion de code source. Utilisé avec la plateforme en ligne GitHub, il permet en plus une gesion décentralisée.
+**Git** est un logiciel de contrôle de version très populaire, utilisé pour la gestion de code source. Utilisé avec la plateforme en ligne GitHub, il permet en plus une gesion décentralisée.
 
 ___
 
 ## 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples.
 
-Un CMS (**Content Management System**), aussi appelé **système de gestion de contenu**, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
+Un **CMS** (**Content Management System**), aussi appelé **système de gestion de contenu**, est un logiciel qui permet de créer, gérer et modifier du contenu numérique sur un site web sans compétences techniques avancées en programmation.
 
 Deux exemples de CMS : 
 - **WordPress**
