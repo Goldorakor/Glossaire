@@ -362,7 +362,7 @@ ___
 
 ## 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
-La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : **strlen ()**. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
+La fonction PHP permettant de demander la longueur d’une chaîne de caractères est : **strlen()**. Cette fonction compte tous les caractères, y compris les espaces et la ponctuation.  
 *ATTENTION* : si la chaine contient des caractères spéciaux, on préfèrera utiliser la fonction **mb_strlen()**.
 
 ___
