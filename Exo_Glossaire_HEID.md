@@ -680,7 +680,7 @@ Une requête AJAX (**Asynchronous JavaScript and XML**) est une technique qui pe
 
 2. **Formats de données** : bien que le nom fasse référence à XML, AJAX peut également utiliser d'autres formats de données comme JSON, HTML ou texte brut.
 
-3. **Utilisation de JavaScript** : AJAX s'appuie sur JavaScript, souvent en utilisant l'objet ``XMLHttpRequest` ou la méthode `fetch()` pour effectuer des requêtes.
+3. **Utilisation de JavaScript** : AJAX s'appuie sur JavaScript, souvent en utilisant l'objet `XMLHttpRequest` ou la méthode `fetch()` pour effectuer des requêtes.
 
 #### Exemples simples
 
