@@ -521,6 +521,7 @@ La partie **back-end** d'une application contient toute la machinerie cachée qu
 
 **Mon navigateur ne gère pas correctement le langage PHP**. En plus du logiciel VSCode, j'ai installé Laragon, qui me fournit les outils adaptés au besoin du développement en PHP.
 
+> PHP signifie 'PHP: Hypertext Preprocessor', il s'agit d'un sigle auto-référentiel.
 ___
 
 ## 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
