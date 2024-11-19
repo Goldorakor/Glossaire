@@ -772,7 +772,7 @@ Une fonction anonyme en JavaScript est une fonction qui n'a pas de nom. Elle peu
 
 1. **Sans nom** : contrairement aux fonctions déclarées qui ont un nom, les fonctions anonymes sont définies sans identifier.
 
-2. **Utilisation immédiate** : elles sont souvent utilisées comme arguments dans des appels de fonction ou pour créer des fonctions immédiatement invoquées (IIFE = Immediately Invoked Function Expression).
+2. **Utilisation immédiate** : elles sont souvent utilisées comme arguments dans des appels de fonction ou pour créer des fonctions immédiatement invoquées (**IIFE = Immediately Invoked Function Expression**).
 
 3. **Flexibilité** : les fonctions anonymes peuvent être assignées à des variables, ce qui permet de les utiliser comme des objets de première classe.
 
