@@ -986,7 +986,7 @@ Un **wireframe** est une **représentation visuelle simplifiée** d'une interfac
 
 3. **Communication** : les wireframes facilitent la **communication entre les membres de l'équipe de projet** (designers, développeurs, clients) en fournissant un aperçu clair de l'interface sans distractions visuelles.
 
-4. **Itératif** : les wireframes peuvent être **facilement modifiés et améliorés** en fonction des **retours d'expérience**, ce qui permet de tester et d'affiner les idées avant de passer à des étapes de conception plus détaillées. (itératif -> processus qui se déroule en plusieurs étapes ou cycles, où chaque itération permet d'apporter des améliorations et des ajustements.)
+4. **Itératif** : les wireframes peuvent être **facilement modifiés et améliorés** en fonction des **retours d'expérience**, ce qui permet de tester et d'affiner les idées avant de passer à des étapes de conception plus détaillées. (itératif -> processus qui se déroule en plusieurs étapes ou cycles, où chaque itération permet d'apporter des améliorations et des ajustements.). Pour faire simple, on peut parler de caractère facilement évolutif après retour d'expérience.
 
 ___
 
