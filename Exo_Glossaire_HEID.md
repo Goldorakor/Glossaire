@@ -1124,17 +1124,13 @@ ___
 
 ## 41.	Qu’est-ce que la notion d’affordance en UX Design ?
   
-#### définitions 
+#### Définitions 
 
 **Faculté d'un objet ou d'un environnement à suggérer spontanément sa propre utilisation**.
 
-L’affordance est la **capacité d’un objet ou d’un système à évoquer son utilisation, sa fonction**.
-Par définition, l’affordance provoque une interaction spontanée entre un environnement et son utilisateur. En ergonomie, elle permet de rendre l’utilisation d’un objet ou d’un service **« intuitive »**. Pour améliorer l’interface utilisateur (UI) et l’expérience utilisateur (UX), les affordances sont donc essentielles dans le design des interfaces et des services.
-  
-  
-#### définition de chatGPT 
-
-L'affordance en UX Design désigne la qualité d'un objet ou d'un élément d'interface qui suggère son utilisation ou son interaction. En d'autres termes, c'est la manière dont un design communique à l'utilisateur comment il doit interagir avec un élément donné.
+1. **défintion 1** :l’affordance est la **capacité d’un objet ou d’un système à évoquer son utilisation, sa fonction**.
+2. **défintion 2** : par définition, l’affordance provoque une interaction spontanée entre un environnement et son utilisateur. En ergonomie, elle permet de rendre l’utilisation d’un objet ou d’un service **intuitive**. Pour améliorer l’interface utilisateur (UI) et l’expérience utilisateur (UX), les affordances sont donc essentielles dans le design des interfaces et des services.
+3. **définition de chatGPT** : l'affordance en UX Design désigne la qualité d'un objet ou d'un élément d'interface qui suggère son utilisation ou son interaction. En d'autres termes, c'est la manière dont un design communique à l'utilisateur comment il doit interagir avec un élément donné.
   
   
 #### Types d'affordance :
@@ -1161,7 +1157,7 @@ L'affordance en UX Design désigne la qualité d'un objet ou d'un élément d'in
 
 #### Conclusion
 
-En résumé, l'affordance en UX Design est essentielle pour créer des interfaces intuitives et faciles à utiliser. Elle permet aux utilisateurs de comprendre rapidement comment interagir avec les éléments d'une interface, améliorant ainsi l'efficacité et la satisfaction générale.
+L'affordance en UX Design est **essentielle pour créer des interfaces intuitives et faciles à utiliser**. Elle permet aux utilisateurs de **comprendre rapidement comment interagir avec les éléments d'une interface**, améliorant ainsi l'efficacité et la satisfaction générale.
 
 ___
 
@@ -1189,7 +1185,7 @@ Le **mobile first design** est une approche de conception web qui consiste à cr
 
 #### Conclusion
 
-En résumé, le mobile first design est une approche stratégique qui met l'accent sur la création d'expériences utilisateur optimales pour les appareils mobiles avant de s'étendre à des écrans plus grands. Cela permet de répondre aux besoins des utilisateurs modernes et d'assurer une interface efficace et conviviale.
+Le mobile first design est une approche stratégique qui met l'accent sur la création d'expériences utilisateur optimales pour les appareils mobiles avant de s'étendre à des écrans plus grands. Cela permet de répondre aux besoins des utilisateurs modernes et d'assurer une interface efficace et conviviale.
 
 ___
 ___
