@@ -1052,36 +1052,35 @@ L'accessibilité en UX Design fait référence à la conception d'interfaces et 
 
 #### Principes de l'accessibilité :
 
-- **Perceptibilité** : l'information et les éléments de l'interface doivent être présentés de manière à ce qu'ils puissent être perçus par tous les utilisateurs. Cela inclut des textes lisibles, des contrastes suffisants, et des alternatives textuelles pour les images.
+- **Perceptibilité** : l'information et les éléments de l'interface doivent être présentés de manière à ce qu'ils puissent être perçus par tous les utilisateurs. Cela inclut des textes lisibles, des contrastes suffisants et des alternatives textuelles pour les images.
 
-- **Utilisabilité** : l'interface doit être utilisable, c'est-à-dire que tous les utilisateurs doivent pouvoir interagir avec elle facilement. Cela peut impliquer des tailles de boutons appropriées, des zones cliquables assez grandes, et des éléments facilement navigables.
+- **Utilisabilité** : l'interface doit être utilisable, c'est-à-dire que tous les utilisateurs doivent pouvoir interagir avec elle facilement. Cela peut impliquer des tailles de boutons appropriées, des zones cliquables assez grandes et des éléments facilement navigables.
 
-- **Compréhensibilité** : le contenu doit être facile à comprendre. Cela inclut une terminologie simple, des instructions claires et une structure logique de l'information.
+- **Compréhensibilité** : le contenu doit être facile à comprendre (dans la mesure du possible). Cela inclut une terminologie simple, des instructions claires et une structure logique de l'information.
 
-- **Robustesse** : l'interface doit être compatible avec divers appareils et technologies d'assistance, tels que les lecteurs d'écran. Cela signifie que le code HTML doit être sémantique et bien structuré. Par exemple, un code sémantique utilisera des balises `<header>`, `<footer>`, `<nav>`, `<article>`, etc. plutôt que des balises `<div>` vides de sens quant à leur fonction dans le code).
+- **Robustesse** : l'interface doit être compatible avec divers appareils et technologies d'assistance, tels que les lecteurs d'écran. Cela signifie que le **code HTML doit être sémantique et bien structuré**. Par exemple, un code sémantique utilisera des balises `<header>`, `<footer>`, `<nav>`, `<article>`, etc. plutôt que des balises `<div>` vides de sens quant à leur fonction dans le code.
 
 #### Importance de l'accessibilité :
 
-- **Inclusion** : l'accessibilité garantit que tout le monde, quel que soit son handicap, peut accéder à l'information et aux services en ligne.
+- **Inclusion** : l'accessibilité garantit que tout le monde, quel que soit son handicap, peut accéder à l'information et aux services en ligne. 
     
 - **Conformité** : de nombreuses législations, comme la loi ADA (Americans with Disabilities Act) aux États-Unis ou les normes WCAG (Web Content Accessibility Guidelines), exigent que les sites web soient accessibles.
     
-- **Amélioration de l'expérience utilisateur** : une conception accessible bénéficie à tous les utilisateurs, car elle améliore la clarté et la facilité d'utilisation de l'interface.
+- **Amélioration de l'expérience utilisateur** : une conception accessible bénéficie à tous les utilisateurs, car elle améliore la clarté et la facilité d'utilisation de l'interface pour tous les utilisateurs.
     
-- **Élargissement de l'audience** : en rendant un produit accessible, tu peux toucher un public plus large, y compris des personnes ayant des besoins spécifiques.
+- **Élargissement de l'audience** : en rendant un produit accessible, on peut toucher un public plus large, y compris des personnes ayant des besoins spécifiques.
 
 
 #### Exemples de bonnes pratiques en accessibilité :
 
-- Utiliser un contraste élevé entre le texte et l'arrière-plan.
+- Utiliser un **contraste élevé entre le texte et l'arrière-plan**.
     
-- Fournir des descriptions alternatives pour les images.
+- Fournir des **descriptions alternatives pour les images**.
     
-- Assurer que tous les éléments interactifs sont accessibles au clavier.
+- Assurer que tous **les éléments interactifs sont accessibles au clavier**.
     
-- Utiliser des titres et des balises pour structurer le contenu de manière logique.
-
-En résumé, l'accessibilité en UX Design est **essentielle pour créer des expériences inclusives et conviviales** qui répondent aux besoins de tous les utilisateurs.
+- Utiliser des titres et des balises pour **structurer le contenu de manière logique**.
+  
 
 ___
 
