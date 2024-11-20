@@ -1058,7 +1058,7 @@ L'accessibilité en UX Design fait référence à la conception d'interfaces et 
 
 - **Compréhensibilité** : le contenu doit être facile à comprendre. Cela inclut une terminologie simple, des instructions claires et une structure logique de l'information.
 
-- **Robustesse** : l'interface doit être compatible avec divers appareils et technologies d'assistance, tels que les lecteurs d'écran. Cela signifie que le code HTML doit être sémantique et bien structuré.
+- **Robustesse** : l'interface doit être compatible avec divers appareils et technologies d'assistance, tels que les lecteurs d'écran. Cela signifie que le code HTML doit être sémantique et bien structuré. Par exemple, un code sémantique utilisera des balises <header>, <footer>, <nav>, <article>, etc plutôt que des balises <di> vides de sens quant à leur fonction dans le code).
 
 #### Importance de l'accessibilité :
 
