@@ -1194,13 +1194,16 @@ ___
 
 ## 43.	Donner une définition de la programmation orientée objet.   
 
-La programmation orientée objet (POO) est un paradigme de programmation qui organise le code autour d'objets, qui sont des instances de classes. Ces objets regroupent des données (attributs) et des comportements (méthodes) associés. La POO repose sur quatre concepts principaux :
+La programmation orientée objet (POO) est un paradigme de programmation qui **organise le code autour d'objets, qui sont des instances de classes**. Ces objets regroupent des **données (propriétés ou attributs)** et des **comportements (méthodes, qui sont des fonctions)** associés. La POO repose sur quatre concepts principaux :
 
-1. **Encapsulation** : regrouper les données et les méthodes qui manipulent ces données, tout en cachant les détails internes de l'objet.
+1. **Encapsulation** : regrouper les données et les méthodes qui manipulent ces données, tout en cachant les détails internes de l'objet. On attribue à chaque donnée et à chaque méthode un niveau de visibilité qui peut être :
+  - public : les attributs publics sont accessibles à tous
+  - protégé : les attributs protégés sont accessibles seulement à la classe elle-même et aux classes dérivées
+  - privé : les attributs privés sont accessibles seulement par la classe elle-même
 
 2. **Héritage** : permettre à une classe de dériver d'une autre classe, réutilisant ainsi le code existant et ajoutant ou modifiant des fonctionnalités.
 
-3. **Polymorphisme** : permettre à des objets de différentes classes d'être traités comme des objets de la même classe, facilitant ainsi la flexibilité et l'extensibilité du code.
+3. **Polymorphisme (par héritage)** : permettre à des objets de différentes classes d'être traités comme des objets de la même classe, facilitant ainsi la flexibilité et l'extensibilité du code.
 
 4. **Abstraction** : fournir une interface simplifiée tout en cachant la complexité sous-jacente, permettant aux utilisateurs de se concentrer sur les interactions essentielles.
 
@@ -1208,7 +1211,7 @@ La POO favorise la modularité, la réutilisation du code et facilite la mainten
 
 #### UTILE : une présentation des paradigmes les plus courants !
 
-Un **paradigme de programmation** est un style ou une approche fondamentale pour structurer et écrire du code. Il définit **la manière dont les problèmes sont résolus et comment les concepts de programmation sont organisés**.
+Un **paradigme de programmation** est un style ou une approche fondamentale pour structurer et écrire du code. Il définit **la manière dont les problèmes sont résolus et comment les concepts de programmation sont organisés**. On peut dire que le paradigme de programmation est la façon (parmi d'autres) d'approcher la programmation informatique et de formuler les solutions aux problèmes et leur formalisation dans un langage de programmation approprié.
 
 Les paradigmes de programmation influencent la façon dont les développeurs pensent et conçoivent leurs programmes. Voici quelques exemples courants :
 
@@ -1224,11 +1227,11 @@ Chaque paradigme a ses avantages et ses inconvénients, et le choix d'un paradig
 
 #### En ce qui nous concerne ...
 
-En PHP, tu as la liberté d'utiliser plusieurs paradigmes de programmation, ce qui en fait un langage polyvalent. Voici comment les principaux paradigmes peuvent être appliqués :
+En PHP, il y a la liberté d'utiliser plusieurs paradigmes de programmation, ce qui en fait un langage polyvalent. Voici comment les principaux paradigmes peuvent être appliqués :
 
 1. **Programmation impérative** : tu peux écrire du code de manière impérative en utilisant des instructions séquentielles, des boucles et des conditions. C’est le style le plus courant et accessible.
 
-2. **Programmation orientée objet (POO)** : PHP prend en charge la POO depuis sa version 5, te permettant de créer des classes, des objets, d'utiliser l'héritage, l'encapsulation et le polymorphisme. Cela te permet d'organiser ton code de manière modulaire et réutilisable.
+2. **Programmation orientée objet (POO)** : PHP prend en charge la POO depuis sa version 5, te permettant de créer des classes, des objets, d'utiliser l'héritage, l'encapsulation et le polymorphisme. Cela permet d'organiser le code de manière modulaire et réutilisable.
 
 3. **Programmation fonctionnelle** : bien que PHP ne soit pas un langage fonctionnel pur, il supporte certaines fonctionnalités de la programmation fonctionnelle, comme les fonctions anonymes (closures) et des fonctions de manipulation de tableaux comme array_map, array_filter, etc.
 
@@ -1250,7 +1253,7 @@ En programmation orientée objet (POO), une classe est un modèle ou un plan qui
 
 3. **Constructeur** : c'est une **méthode spéciale** qui est appelée lors de la création d'un objet. Elle permet d'**initialiser les attributs de l'objet**.
 
-4. **Encapsulation** : les attributs et les méthodes d'une classe peuvent être rendus privés ou protégés pour contrôler l'accès, ce qui aide à **protéger les données**.
+4. **Encapsulation** : les attributs et les méthodes d'une classe peuvent être rendus privés ou protégés pour contrôler l'accès, ce qui aide à **protéger les données** (par défaut, ils sont publics).
 
 #### Exemple en PHP :
 
@@ -1297,7 +1300,7 @@ En résumé, **un objet est une instance concrète d'une classe**, combinant ét
 
 > commentaire : En PHP, on utilise le double underscore __ devant construct pour indiquer qu'il s'agit d'une méthode spéciale, appelée **méthode magique**.
 
-> - Constructeur : la méthode __construct est le constructeur de la classe. Elle est automatiquement appelée lors de la création d'une nouvelle instance de la classe (lorsque tu utilises le mot-clé new).
+> - Constructeur : la méthode __construct est le constructeur de la classe. Elle est automatiquement appelée lors de la création d'une nouvelle instance de la classe (lorsqu'on utilise le mot-clé new).
 
 > - Initialisation : son rôle principal est d'initialiser les attributs de l'objet. Dans l'exemple précédent, __construct est utilisé pour définir la couleur, la marque et la vitesse de la voiture au moment de sa création.
 
@@ -1422,7 +1425,7 @@ class Voiture {
 $maVoiture = new Voiture("Toyota", "Corolla");
 ```
 
-Dans cet exemple, lorsque tu crées un nouvel objet `Voiture`, le constructeur `__construct()` est appelé, et les propriétés `marque` et `modele` sont initialisées avec les valeurs fournies.
+Dans cet exemple, lorsqu'on crée un nouvel objet `Voiture`, le constructeur `__construct()` est appelé, et les propriétés `marque` et `modele` sont initialisées avec les valeurs fournies.
 
 ___
 
@@ -1537,7 +1540,7 @@ echo $monChat->parler(); // Affiche "Le chat miaule."
 
 - **Réutilisation du code** : les sous-classes peuvent utiliser le code de la superclasse sans le réécrire.
 - **Extension des fonctionnalités** : les sous-classes peuvent ajouter des méthodes et des propriétés supplémentaires.
-- **Polymorphisme** : les sous-classes peuvent être traitées comme des instances de leur superclasse, ce qui facilite le travail avec des collections d'objets de différentes classes. (notions à éclaircir !)
+- **Polymorphisme** : les instances des sous-classes peuvent être traitées comme des instances de leur superclasse, ce qui facilite le travail avec des collections d'objets de différentes classes. -> par exemple, si on utilise une certaine méthode unique de la superclasse, alors en fonction de chaque objet, cela appelle la méthode correspondante, qui a été redéfinie dans la sous-classe auquel appartient l'objet en question.
   
   
 ### Ajouts d'explications sur le polymorphisme :
@@ -1546,9 +1549,9 @@ Le polymorphisme est un **concept fondamental en programmation orientée objet**
 
 #### Types de polymorphisme :
 
-1. **Polymorphisme de substitution (ou d'héritage)** : cela se produit lorsque des classes dérivées remplacent ou étendent les méthodes d'une classe parente. Tu peux traiter les objets des classes dérivées comme s'ils étaient des objets de la classe parente.
+1. **Polymorphisme de substitution (ou d'héritage)** : cela se produit lorsque des classes dérivées remplacent ou étendent les méthodes d'une classe parente. On peut traiter les objets des classes dérivées comme s'ils étaient des objets de la classe parente. --> c'est la situation où nous nous trouvons ! 
 
-2. **Polymorphisme paramétrique** : cela se produit lorsque des fonctions ou des méthodes peuvent accepter des arguments de différents types, comme dans les génériques (ceci est plus courant dans d'autres langages, comme Java ou C#).
+2. **Polymorphisme paramétrique** : cela se produit lorsque des fonctions ou des méthodes peuvent accepter des arguments de différents types, comme dans les génériques (ceci est plus courant dans d'autres langages, comme Java ou C#). --> on se moque de cette notion, ce n'est pas notre sujet.
 
 #### Exemple de polymorphisme de substitution en PHP :
 
@@ -1592,15 +1595,15 @@ faireParler($monChat);  // Affiche "Le chat miaule."
 #### Explication :
 
 - La fonction `faireParler()` prend un paramètre de type `Animal`. Grâce au polymorphisme, elle peut accepter des objets de n'importe quelle classe qui hérite d'`Animal`, comme `Chien` ou `Chat`.
-- Quand tu appelles `faireParler($monChien)`, cela exécute la méthode `parler()` de la classe `Chien`.
-- Quand tu appelles `faireParler($monChat)`, cela exécute la méthode `parler()` de la classe `Chat`.
+- Quand on appelle `faireParler($monChien)`, cela exécute la méthode `parler()` de la classe `Chien`.
+- Quand on appelle `faireParler($monChat)`, cela exécute la méthode `parler()` de la classe `Chat`.
 - Le même code peut fonctionner avec des types d'objets différents, ce qui rend le code plus flexible et extensible.
 
 #### Avantages du polymorphisme :
 
-- **Flexibilité** : tu peux écrire du code qui fonctionne avec différents types d'objets sans connaître leurs classes spécifiques.
-- **Extensibilité** : tu peux ajouter de nouvelles classes sans modifier le code existant, tant qu'elles respectent l'interface de la classe parente.
-- **Réduction de la duplication de code** : les comportements communs peuvent être centralisés dans la classe parente.
+- **Flexibilité** : on peut écrire du code qui fonctionne avec différents types d'objets sans connaître leurs classes spécifiques.
+- **Extensibilité** : on peut ajouter de nouvelles classes sans modifier le code existant, tant qu'elles respectent l'interface de la classe parente.
+- **Réduction de la duplication de code** : les comportements communs peuvent être centralisés dans la classe parente, c'est un "tronc commun".
 
 ___
 
