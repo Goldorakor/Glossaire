@@ -932,7 +932,7 @@ Lorsqu'un formulaire HTML est créé, les deux méthodes qui peuvent lui être a
 
 #### Méthode POST
 
-- Description : **La méthode POST envoie les données du formulaire dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.**
+- Description : **la méthode POST envoie les données du formulaire dans le corps de la requête HTTP, ce qui les rend invisibles dans l'URL.**
 
 - Caractéristiques :
     - Pas de limite de taille stricte, permettant d'envoyer des volumes de données plus importants.
