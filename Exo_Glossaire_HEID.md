@@ -3577,6 +3577,20 @@ $resultats = $stmt->fetchAll();
 
 Dans cet exemple, le paramètre `:nom` est lié dynamiquement, ce qui empêche les injections SQL.
 
+### Exemple2 d'utilisation de requêtes préparées avec PDO, avec la base de données gaulois.
+
+```
+$sql1 = "SELECT potion.nom_potion
+FROM potion
+WHERE potion.id_potion = :id
+ORDER BY potion.nom_potion";
+
+$potionsStatement1 = $mysqlClient->prepare($sql1);
+$potionsStatement1->execute(["id" => $id_potionChoisie]);
+$potions1 = $potionsStatement1->fetch();
+```
+
+On constate la similitude dans la méthode.
 
 ___
 ___
