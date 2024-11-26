@@ -4716,29 +4716,29 @@ En résumé, la densité de mots-clés est un élément à prendre en compte, ma
 
 ___
 
-## 118.	Qu’est-ce qu’une balise « alt » ?
+## 118.	Qu’est-ce qu’un attribut `alt` ?
 
-Une balise **« alt »** (ou **attribut alt**) est utilisée dans le code HTML pour fournir une description textuelle d'une image. Son but principal est d'améliorer l'accessibilité et le référencement des pages web. Voici quelques points clés à propos des balises « alt » :
+Un attribut `alt` est utilisé dans le code HTML pour fournir une description textuelle d'une image. Son but principal est d'améliorer l'accessibilité et le référencement des pages web. Voici quelques points clés à propos des attributs `alt` :
 
 ### 1. Accessibilité :
 
-  - Les lecteurs d'écran utilisent le texte de la balise « alt » pour décrire l'image aux utilisateurs malvoyants. Cela leur permet de comprendre le contenu visuel de la page.
+  - Les lecteurs d'écran utilisent le texte de l'attribut `alt` pour décrire l'image aux utilisateurs malvoyants. Cela leur permet de comprendre le contenu visuel de la page.
 
 ### 2. SEO :
 
-  - Les moteurs de recherche ne peuvent pas "voir" les images, donc ils se basent sur les balises « alt » pour comprendre le contenu des images. Une bonne utilisation peut aider à améliorer le classement de la page pour des recherches liées à ces images.
+  - Les moteurs de recherche ne peuvent pas "voir" les images, donc ils se basent sur les attributs `alt` pour comprendre le contenu des images. Une bonne utilisation peut aider à améliorer le classement de la page pour des recherches liées à ces images.
 
 ### 3. Affichage alternatif :
 
-  - Si une image ne peut pas être chargée (par exemple, en raison d'une connexion lente ou d'un problème de serveur), le texte de la balise « alt » s'affichera à la place, informant l'utilisateur de ce qu'il aurait dû voir.
+  - Si une image ne peut pas être chargée (par exemple, en raison d'une connexion lente ou d'un problème de serveur), le texte de l'attribut `alt` s'affichera à la place, informant l'utilisateur de ce qu'il aurait dû voir.
 
-### Bonnes pratiques pour les balises « alt » :
+### Bonnes pratiques pour les attributs `alt` :
 
 - **Etre descriptif** : utiliser un langage clair et concis pour décrire l'image.
 - **Éviter le bourrage de mots-clés** : bien qu'il soit bon d'inclure des mots-clés pertinents, cela ne doit pas être le principal objectif. La priorité doit être de décrire l'image.
-- **Utiliser des balises « alt » pour toutes les images** : cela inclut les images décoratives (qu'on peut marquer avec une balise « alt » vide, comme `alt=""`, pour indiquer qu'elles n'ont pas besoin d'être décrites).
+- **Utiliser des attributs `alt` pour toutes les images** : cela inclut les images décoratives (qu'on peut marquer avec un attribut `alt` vide, comme `alt=""`, pour indiquer qu'elles n'ont pas besoin d'être décrites).
 
-En résumé, la balise « alt » est **un élément essentiel pour l'accessibilité et le référencement des images sur le web**.
+En résumé, l'attribut `alt` est **un élément essentiel pour l'accessibilité et le référencement des images sur le web**.
 
 ___
 
