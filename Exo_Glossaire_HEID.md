@@ -4718,7 +4718,7 @@ ___
 
 ## 118.	Qu’est-ce qu’un attribut `alt` ?
 
-Un attribut `alt` est utilisé dans le code HTML pour fournir une description textuelle d'une image. Son but principal est d'améliorer l'accessibilité et le référencement des pages web. Voici quelques points clés à propos des attributs `alt` :
+Dans le code HTML, l'attribut `alt` est **spécifiquement conçu pour être utilisé avec la balise `<img>`** afin de fournir une description textuelle d'une image. Son but principal est d'améliorer l'accessibilité et le référencement des pages web. Voici quelques points clés à propos des attributs `alt` :
 
 ### 1. Accessibilité :
 
