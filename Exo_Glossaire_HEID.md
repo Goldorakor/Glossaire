@@ -1128,7 +1128,7 @@ ___
 
 **Faculté d'un objet ou d'un environnement à suggérer spontanément sa propre utilisation**.
 
-1. **défintion 1** :l’affordance est la **capacité d’un objet ou d’un système à évoquer son utilisation, sa fonction**.
+1. **défintion 1** : l’affordance est la **capacité d’un objet ou d’un système à évoquer son utilisation, sa fonction**.
 2. **défintion 2** : par définition, l’affordance provoque une interaction spontanée entre un environnement et son utilisateur. En ergonomie, elle permet de rendre l’utilisation d’un objet ou d’un service **intuitive**. Pour améliorer l’interface utilisateur (UI) et l’expérience utilisateur (UX), les affordances sont donc essentielles dans le design des interfaces et des services.
 3. **définition de chatGPT** : l'affordance en UX Design désigne la qualité d'un objet ou d'un élément d'interface qui suggère son utilisation ou son interaction. En d'autres termes, c'est la manière dont un design communique à l'utilisateur comment il doit interagir avec un élément donné.
   
@@ -1186,6 +1186,51 @@ Le **mobile first design** est une approche de conception web qui consiste à cr
 #### Conclusion
 
 Le mobile first design est une approche stratégique qui met l'accent sur la création d'expériences utilisateur optimales pour les appareils mobiles avant de s'étendre à des écrans plus grands. Cela permet de répondre aux besoins des utilisateurs modernes et d'assurer une interface efficace et conviviale.
+
+___
+
+## 42bis.	Qu’est-ce qu’un « mobile first design » ?
+
+Les "UX Laws" ou "lois de l'expérience utilisateur" sont un **ensemble de principes et de lignes directrices** qui aident aux designers et concepteurs des services numériques à créer des **interfaces plus intuitives, engageantes et efficaces**.
+
+Ces lois sont basées sur des recherches en psychologie, en design, en ergonomie, et en sciences cognitives, offrant des insights sur la manière dont les utilisateurs interagissent avec les systèmes. Elles servent à guider la prise de décision dans le processus de conception pour améliorer l'expérience utilisateur.
+
+> **insight** : intuition soudaine de la solution d'un problème.
+
+
+### L’histoire des lois UX
+
+L'histoire des lois de l'UX remonte aux premières études sur l'ergonomie et la psychologie cognitive, où des chercheurs ont commencé à explorer comment les gens perçoivent, apprennent et utilisent les objets dans leur environnement. Avec l'avènement des ordinateurs personnels et de l'Internet, ces principes ont été adaptés et appliqués au domaine de l'interaction homme-machine (IHM) et du design d'interface.
+
+Des figures importantes dans ce domaine, comme Donald Norman avec son livre "The Design of Everyday Things" et Jakob Nielsen avec ses heuristiques d'utilisabilité, ont contribué à formaliser ces principes et à les rendre accessibles aux designers d'expérience utilisateur (UX).
+
+L'**objectif principal des lois de l'UX est de fournir un cadre conceptuel pour créer des produits qui répondent aux besoins, préférences et comportements des utilisateurs**. Ces lois aident à :
+
+- **Améliorer l'usabilité et l'accessibilité des produits.**
+- **Augmenter la satisfaction et l'engagement des utilisateurs.**
+- **Faciliter la navigation et la recherche d'information.**
+- **Réduire les erreurs et la frustration des utilisateurs.**
+- **Optimiser le processus de conception en fournissant des guidelines basées sur des études empiriques.**
+
+### Quelques exemples des lois UX :
+
+Parmi toutes les lois UX existantes, cet article se concentre spécifiquement sur les lois heuristiques.
+
+1. **La loi de l’esthétique** : les gens ont tendance à croire que les choses qui semblent bonnes fonctionneront mieux. Ce phénomène a été étudié pour la première fois par des chercheurs du Hitachi Design Center en 1995, qui ont découvert une **forte corrélation entre l'attrait esthétique et la facilité d'utilisation**. En d’autres termes, les utilisateurs perçoivent les produits attrayants comme étant plus utiles et sont plus tolérants aux problèmes mineurs d’utilisation si le produit est beau. Apple est un excellent exemple d'entreprise qui a utilisé l'esthétique à son avantage.
+2. **La loi de Fitts** : le temps nécessaire pour atteindre une cible est fonction de la distance à la cible et de sa taille. Cela suggère que **les éléments interactifs doivent être grands et placés à proximité des utilisateurs**. Par exemple, les boutons ou les **icônes fréquemment utilisés doivent être plus grands et placés dans des zones faciles d'accès**, tandis que les éléments moins importants ou rarement utilisés peuvent être plus petits ou placés plus loin. En concevant des interfaces conformes à la loi de Fitts, les utilisateurs peuvent effectuer leurs tâches plus rapidement et plus facilement.  Google Maps utilise la loi de Fitts pour rendre le parcours utilisateur simple et efficace.
+3. **La loi de Hick** : plus il y a de choix, plus le temps pris pour prendre une décision est long. Cela indique l'**importance de simplifier les interfaces et de limiter les options pour accélérer la prise de décision**. Si vous surchargez vos utilisateurs avec trop d’options, ils passeront plus de temps à réfléchir et moins de temps à agir. C'est comme faire la queue dans un magasin de glaces bondé avec 50 saveurs différentes parmi lesquelles choisir : il faut une éternité pour prendre une décision et ce n'est pas très agréable. L’application Shazam qui propose un seul bouton pour commencer l’expérience globale.
+4. **Le principe de Jakob** : **les utilisateurs préfèrent que votre site fonctionne de la même manière que tous les autres sites qu'ils connaissent**. Les utilisateurs sont des créatures d’habitudes. Ils sont plus susceptibles d’interagir avec une interface qu’ils connaissent déjà plutôt que d’essayer d’en apprendre une nouvelle. Cela souligne l'**importance des conventions de design et de la cohérence avec les attentes des utilisateurs**. Par exemple, les sites e-commerce qui ont une présentation similaire, avec une barre de navigation en haut, une barre de recherche bien en vue et des catégories de produits répertoriées dans une barre latérale. En concevant une interface familière, vous permettez aux utilisateurs de trouver plus facilement ce qu'ils recherchent et d'effectuer un achat.
+5. **La loi de Miller** : une personne moyenne ne peut conserver que 7 éléments (plus ou moins 2) dans sa mémoire à un moment donné. Ce principe recommande de **limiter les informations présentées en même temps pour ne pas surcharger la mémoire des utilisateurs**. Les notifications mobiles sont créées pour fonctionner dans la mémoire de travail de l'utilisateur.
+6. **Goal-gradient effect** : est un concept psychologique qui suggère que **plus une personne se rapproche d'un objectif, plus sa motivation à l'atteindre augmente**. Cet effet a été initialement observé par Clark Hull en 1932, qui a constaté que des animaux dans un labyrinthe couraient plus vite à mesure qu'ils se rapprochaient de la nourriture. **Les systèmes de récompense progressifs, la barre de progression et les tâches fractionnées** sont différentes sources de motivation psychologique qui peuvent être utilisés pour améliorer l'expérience utilisateur en encourageant la persévérance, l'engagement et la réalisation des objectifs.
+7. **La loi de Parkinson** : est également largement connue dans d'autres domaines, notamment parmi les adeptes de la productivité. De point de vue UX, cette loi signifie qu'il faut **limiter le temps nécessaire à la réalisation d'une tâche à ce que les utilisateurs attendent d'elle**. Disons que les utilisateurs s'attendent à ce que les formulaires soient remplis en trois minutes, ce qui encourage une concentration et une efficacité accrues, réduisant ainsi la tendance à la procrastination ou à l'extension inutile des travaux. Tout ce qui raccourcit cette durée est considéré comme une expérience positive.
+
+### Conclusion
+
+La mise en œuvre des lois UX dans l'expérience utilisateur (UX) et l'interface utilisateur (UI) joue un rôle crucial dans la création de **produits numériques efficaces et engageants**. L'application de ces lois permet d'**anticiper les besoins et les comportements des utilisateurs**, augmentant la satisfaction générale. Toutefois, cela nécessite une compréhension approfondie du contexte d'utilisation, des caractéristiques spécifiques de l'audience cible, et des objectifs d'affaires.
+
+L'adoption de ces heuristiques favorise une **approche centrée sur l'utilisateur**, essentielle pour le succès des produits numériques. Elle **aide à identifier et à éliminer les obstacles potentiels dans le parcours de l'utilisateur**, améliorant ainsi l'efficacité et l'efficience de l'interaction utilisateur-produit. Cela peut également contribuer à renforcer la fidélité et la rétention des utilisateurs, car une expérience utilisateur positive incite à l'utilisation répétée et à la recommandation du produit.
+
+> **heuristique** : « l'art d'inventer, de faire des découvertes2 » en résolvant des problèmes à partir de connaissances incomplètes. Le terme heuristique désigne d'une manière courante une méthode de résolution d'un problème qui ne passe pas par l'analyse détaillée du problème mais par son appartenance ou adhérence à une classe de problèmes donnés déjà identifiés.
 
 ___
 ___
