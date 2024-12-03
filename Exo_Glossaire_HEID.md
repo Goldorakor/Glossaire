@@ -1189,7 +1189,7 @@ Le mobile first design est une approche stratégique qui met l'accent sur la cr�
 
 ___
 
-## 42bis.	Qu’est-ce qu’un « mobile first design » ?
+## 42bis.	Qu’est-ce que les UX Laws (lois de l'expérience utilisateur) ?
 
 Les "UX Laws" ou "lois de l'expérience utilisateur" sont un **ensemble de principes et de lignes directrices** qui aident aux designers et concepteurs des services numériques à créer des **interfaces plus intuitives, engageantes et efficaces**.
 
