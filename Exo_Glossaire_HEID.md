@@ -3660,9 +3660,11 @@ ___
 
 4. **ORM intégré (Doctrine)**
   - Symfony utilise **Doctrine**, un **ORM** (**Object-Relational Mapping**), pour gérer les interactions avec la base de données. **Doctrine facilite la manipulation des données en représentant les tables de la base sous forme d’objets PHP**, éliminant la nécessité d'écrire des requêtes SQL pour la plupart des opérations.
+    - Créer la base de données (dans la console) : symfony console doctrine:database:create
+    - Effectuer la migration (2 étapes !) (dans la console) : symfony console make:migration (ou m:mi) puis symfony console doctrine:migrations:migrate (ou d:m:m)
 
 5. **Console Symfony**
-  - La console Symfony est un outil en ligne de commande très puissant qui aide les développeurs à générer du code, à exécuter des migrations, à gérer la base de données et bien plus encore, ce qui accélère le développement.
+  - La console Symfony est un outil en ligne de commande très puissant qui aide les développeurs à générer du code, à exécuter des migrations, à gérer la base de données et bien plus encore, ce qui accélère le développement. -> voir le fichier pdf "Commandes Symfony" pour avoir les commandes les plus utilisées.
 
 6. **Sécurité**
   - Symfony dispose de **fonctionnalités de sécurité intégrées** pour la gestion de l'authentification, de l'autorisation et de la protection contre les failles courantes (injections SQL, CSRF, etc.).
