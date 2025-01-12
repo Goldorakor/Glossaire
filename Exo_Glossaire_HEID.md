@@ -526,7 +526,7 @@ ___
 
 ## 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 
-Le **contrôle de version** est un système qui **enregistre les modifications apportés à des fichiers au fil de l'avancement d'un projet**. 
+Le **contrôle de version** est un système qui **enregistre les modifications apportées à des fichiers au fil de l'avancement d'un projet**. 
 - On sait quelle modification a été faite, qui a fait la modification et quand elle a été faite.
 - On garde un historique complet des versions des fichiers, pour revenir facilement à une version ancienne si besoin.
 - On peut travailler à plusieurs sur un même projet, en travaillant chacun sur sa propre copie des fichiers.
