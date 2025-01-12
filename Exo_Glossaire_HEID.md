@@ -530,7 +530,7 @@ Le **contrôle de version** est un système qui **enregistre les modifications a
 - On sait quelle modification a été faite, qui a fait la modification et quand elle a été faite.
 - On garde un historique complet des versions des fichiers, pour revenir facilement à une version ancienne si besoin.
 - On peut travailler à plusieurs sur un même projet, en travaillant chacun sur sa propre copie des fichiers.
-- On peut créer des branches pour travailler sur des fonctionnalités séparement puis fusionner ces branches à la branche principale.
+- On peut créer des branches pour travailler sur des fonctionnalités séparément puis fusionner ces branches à la branche principale.
 - En cas de conflits, on a à disposition des outils pour les résoudre.
 
 **Git** est un logiciel de contrôle de version très populaire, utilisé pour la gestion de code source. Utilisé avec la plateforme en ligne GitHub, il permet en plus une gesion décentralisée.
