@@ -4298,7 +4298,7 @@ ___
 
 ## 104.	Qu’est-ce que le RGPD ?
 
-Le **RGPD** (**Règlement Général sur la Protection des Données**) est une législation de l'Union européenne qui a été **mise en vigueur le 25 mai 2018**. Son objectif principal est de renforcer et d'harmoniser la protection des données personnelles au sein de l'UE (et la Suisse et la Norvège). Comme son nom l'indique, c'est un règlement, il a donc un **caractère obligatoire**. Voici les éléments clés à savoir :
+Le **RGPD** (**Règlement Général sur la Protection des Données**) est une législation de l'Union Européenne qui a été **mise en vigueur le 25 mai 2018**. Son objectif principal est de renforcer et d'harmoniser la protection des données personnelles au sein de l'UE (et la Suisse et la Norvège). Comme son nom l'indique, c'est un règlement, il a donc un **caractère obligatoire**. Voici les éléments clés à savoir :
 
 ### 1. Protection des données personnelles :
 
