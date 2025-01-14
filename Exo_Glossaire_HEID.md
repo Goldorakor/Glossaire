@@ -4348,7 +4348,7 @@ ___
 
 ## 105.	Quel est son objectif principal ?
 
-Ses objectifs principaaux sont :
+Ses objectifs principaux sont :
 - **renforcer et harmoniser la protection des données personnelles au sein de l'UE**
 - **responsabiliser les acteurs**
 - **renforcer la confiance** des citoyens européens en améliorant la protection et la confidentialité
