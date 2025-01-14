@@ -4442,13 +4442,13 @@ Le DPO peut être un salarié de l'entreprise ou être externe à celle-ci.Sa d�
 - privacy by design and by default : sécurité des données personnelles doit être prise en compte dès la conception du site
 - assurer les droits des personnés
 
-**Droit des personnes**
+**Droit des personnes**  
 *Droits renforcés*
 - droit d'information : on doit être informé du traitement de nos données, écrit noir sur blanc
 - droit d'accès : on doit pouvoir accéder à ses données -> bouton "nous contacter" pour faire cette demande
 - droit de rectification : on doit pouvoir modifier ses données personnelles -> bouton "edit profil" ou bouton "nous contacter" avec un délai de 72h00 pour rectifier les données
 - droit d'opposition : on peut s'opposer au traitement d'une ou plusieurs données personnelles
-- droit à l'effacement, appelé "droit à l'oubli" : on peut demander à ce que nos données soient effacées ou anonymisées (notre nom et prénom disparaissent et nos données ne sont plus reliées à notre identité)
+- droit à l'effacement, appelé "droit à l'oubli" : on peut demander à ce que nos données soient effacées ou anonymisées (notre nom et prénom disparaissent et nos données ne sont plus reliées à notre identité)  
 *Nouveaux droits*
 - droit à la portabilité (si le traitement est automatisé) : on doit pouvoir porter nos données d'un point A à un point B (entre opérateurs de téléphonie par exemple)
 - droit à la limitation du traitement : limiter une partie du traitement des données (le RT a 72h00 pour répondre)
