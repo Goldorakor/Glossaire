@@ -4448,8 +4448,9 @@ Le DPO peut être un salarié de l'entreprise ou être externe à celle-ci.Sa d�
 - droit d'accès : on doit pouvoir accéder à ses données -> bouton "nous contacter" pour faire cette demande
 - droit de rectification : on doit pouvoir modifier ses données personnelles -> bouton "edit profil" ou bouton "nous contacter" avec un délai de 72h00 pour rectifier les données
 - droit d'opposition : on peut s'opposer au traitement d'une ou plusieurs données personnelles
-- droit à l'effacement, appelé "droit à l'oubli" : on peut demander à ce que nos données soient effacées ou anonymisées (notre nom et prénom disparaissent et nos données ne sont plus reliées à notre identité)  
-*Nouveaux droits*
+- droit à l'effacement, appelé "droit à l'oubli" : on peut demander à ce que nos données soient effacées ou anonymisées (notre nom et prénom disparaissent et nos données ne sont plus reliées à notre identité)
+
+*Nouveaux droits*  
 - droit à la portabilité (si le traitement est automatisé) : on doit pouvoir porter nos données d'un point A à un point B (entre opérateurs de téléphonie par exemple)
 - droit à la limitation du traitement : limiter une partie du traitement des données (le RT a 72h00 pour répondre)
 - droit lié à la prise de décision automatisée : on a le droit de ne pas accepter qu'un robot prenne une décision pour nous (ex : en cas de refus de prêt par une banque, on peut demander à ce que la décision soit revue par un humain)
