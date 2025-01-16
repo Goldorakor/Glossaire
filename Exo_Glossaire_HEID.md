@@ -1230,7 +1230,7 @@ La mise en œuvre des lois UX dans l'expérience utilisateur (UX) et l'interface
 
 L'adoption de ces heuristiques favorise une **approche centrée sur l'utilisateur**, essentielle pour le succès des produits numériques. Elle **aide à identifier et à éliminer les obstacles potentiels dans le parcours de l'utilisateur**, améliorant ainsi l'efficacité et l'efficience de l'interaction utilisateur-produit. Cela peut également contribuer à renforcer la fidélité et la rétention des utilisateurs, car une expérience utilisateur positive incite à l'utilisation répétée et à la recommandation du produit.
 
-> **heuristique** : « l'art d'inventer, de faire des découvertes2 » en résolvant des problèmes à partir de connaissances incomplètes. Le terme heuristique désigne d'une manière courante une méthode de résolution d'un problème qui ne passe pas par l'analyse détaillée du problème mais par son appartenance ou adhérence à une classe de problèmes donnés déjà identifiés.
+> **heuristique** : « l'art d'inventer, de faire des découvertes » en résolvant des problèmes à partir de connaissances incomplètes. Le terme heuristique désigne d'une manière courante une méthode de résolution d'un problème qui ne passe pas par l'analyse détaillée du problème mais par son appartenance ou adhérence à une classe de problèmes donnés déjà identifiés.
 
 ___
 ___
